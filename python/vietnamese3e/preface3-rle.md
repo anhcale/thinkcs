@@ -5,6 +5,7 @@
 Bởi Peter Wentworth
 
 > **Một lời cảm ơn...**
+>
 > Chúng tôi đã chuyển từ Java sang Python trong các khóa học giới thiệu của mình vào năm 2010. Cho đến nay, chúng tôi nghĩ rằng kết quả có vẻ khả quan. Thời gian sẽ trả lời.
 >
 > `@todo:` Tiền thân của cuốn sách này là một điểm khởi đầu tuyệt vời đối với chúng tôi, đặc biệt là vì sự cho phép tự do để thay đổi mọi thứ. Có các ghi chú hoặc tài liệu phát tay về khóa học trong nhà của riêng chúng tôi cho phép chúng tôi thích nghi và luôn mới mẻ, sắp xếp lại, xem những gì hiệu quả và nó mang lại cho chúng tôi sự nhanh nhẹn. Chúng tôi cũng có thể đảm bảo rằng mọi sinh viên trong khóa học đều nhận được một bản sao của tài liệu phát - điều không phải lúc nào cũng xảy ra nếu chúng tôi kê những cuốn sách giáo khoa đắt tiền.

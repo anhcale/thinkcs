@@ -98,4 +98,4 @@ Nếu bạn có cơ hội xem qua danh sách, bạn sẽ nhận ra rằng mỗi 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
 - [Trang trước](preface3-rle.md) - Lời nói đầu 3-RLE
-- [Trang kế](01-way_of_the_program.md.md) - Cách thức của chương trình
+- [Trang kế](01-way_of_the_program.md) - Cách thức của chương trình
