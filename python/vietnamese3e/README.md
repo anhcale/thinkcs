@@ -22,7 +22,7 @@
 - [Thông báo Bản quyền](copyright.md)
 - [Lời tựa](foreword.md)
 - [Lời nói đầu](preface.md)
-- [Preface-3](preface3-rle.md) - This Rhodes Local Edition (RLE) of the book
+- [Lời nói đầu 3-RLE](preface3-rle.md) - Rhodes Local Edition (RLE) (Phiên bản Tháng 8 năm 2012)
 - [Contributor List](contrib.md)
 - [Chapter 1](01-way_of_the_program.md) - The way of the program
 - [Chapter 2](02-variables_expressions_statements.md) - Variables, expressions, and statements
