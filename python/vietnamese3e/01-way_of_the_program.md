@@ -42,16 +42,16 @@ A **program** is a sequence of instructions that specifies how to perform a comp
 
 The details look different in different languages, but a few basic instructions appear in just about every language:
 
-|input||
-||Get data from the keyboard, a file, or some other device.|
-|output||
-||Display data on the screen or send data to a file or other device.|
-|math||
-||Perform basic mathematical operations like addition and multiplication.|
-|conditional execution||
-||Check for certain conditions and execute the appropriate sequence of statements.|
-|repetition||
-||Perform some action repeatedly, usually with some variation.|
+|input|&nbsp;|
+|&nbsp;|Get data from the keyboard, a file, or some other device.|
+|output|&nbsp;|
+|&nbsp;|Display data on the screen or send data to a file or other device.|
+|math|&nbsp;|
+|&nbsp;|Perform basic mathematical operations like addition and multiplication.|
+|conditional execution|&nbsp;|
+|&nbsp;|Check for certain conditions and execute the appropriate sequence of statements.|
+|repetition|&nbsp;|
+|&nbsp;|Perform some action repeatedly, usually with some variation.|
 
 Believe it or not, that’s pretty much all there is to it. Every program you’ve ever used, no matter how complicated, is made up of instructions that look more or less like these. Thus, we can describe programming as the process of breaking a large, complex task into smaller and smaller subtasks until the subtasks are simple enough to be performed with sequences of these basic instructions.
 
@@ -119,21 +119,21 @@ For example, when you hear the sentence, “The other shoe fell”, you understa
 
 Although formal and natural languages have many features in common — tokens, structure, syntax, and semantics — there are many differences:
 
-|**ambiguity**||
-||Natural languages are full of ambiguity, which people deal with by using contextual clues and other information. Formal languages are designed to be nearly or completely unambiguous, which means that any statement has exactly one meaning, regardless of context.|
-|**redundancy**||
-||n order to make up for ambiguity and reduce misunderstandings, natural languages employ lots of redundancy. As a result, they are often verbose. Formal languages are less redundant and more concise.|
-|**literalness**||
-||Formal languages mean exactly what they say. On the other hand, natural languages are full of idiom and metaphor. If someone says, “The other shoe fell”, there is probably no shoe and nothing falling. You’ll need to find the original joke to understand the idiomatic meaning of the other shoe falling. Yahoo! Answers thinks it knows!|
+|**ambiguity**|&nbsp;|
+|&nbsp;|Natural languages are full of ambiguity, which people deal with by using contextual clues and other information. Formal languages are designed to be nearly or completely unambiguous, which means that any statement has exactly one meaning, regardless of context.|
+|**redundancy**|&nbsp;|
+|&nbsp;|n order to make up for ambiguity and reduce misunderstandings, natural languages employ lots of redundancy. As a result, they are often verbose. Formal languages are less redundant and more concise.|
+|**literalness**|&nbsp;|
+|&nbsp;|Formal languages mean exactly what they say. On the other hand, natural languages are full of idiom and metaphor. If someone says, “The other shoe fell”, there is probably no shoe and nothing falling. You’ll need to find the original joke to understand the idiomatic meaning of the other shoe falling. Yahoo! Answers thinks it knows!|
 
 People who grow up speaking a natural language—everyone—often have a hard time adjusting to formal languages. In some ways, the difference between formal and natural language is like the difference between poetry and prose, but more so:
 
-|**poetry**||
-||Words are used for their sounds as well as for their meaning, and the whole poem together creates an effect or emotional response. Ambiguity is not only common but often deliberate.|
-|**prose**||
-||The literal meaning of words is more important, and the structure contributes more meaning. Prose is more amenable to analysis than poetry but still often ambiguous.|
-|**program**||
-||The meaning of a computer program is unambiguous and literal, and can be understood entirely by analysis of the tokens and structure.|
+|**poetry**|&nbsp;|
+|&nbsp;|Words are used for their sounds as well as for their meaning, and the whole poem together creates an effect or emotional response. Ambiguity is not only common but often deliberate.|
+|**prose**|&nbsp;|
+|&nbsp;|The literal meaning of words is more important, and the structure contributes more meaning. Prose is more amenable to analysis than poetry but still often ambiguous.|
+|**program**|&nbsp;|
+|&nbsp;|The meaning of a computer program is unambiguous and literal, and can be understood entirely by analysis of the tokens and structure.|
 
 Here are some suggestions for reading programs (and other formal languages). First, remember that formal languages are much more dense than natural languages, so it takes longer to read them. Also, the structure is very important, so it is usually not a good idea to read from top to bottom, left to right. Instead, learn to parse the program in your head, identifying the tokens and interpreting the structure. Finally, the details matter. Little things like spelling errors and bad punctuation, which you can get away with in natural languages, can make a big difference in a formal language.
 
@@ -163,58 +163,58 @@ In Python, the # token starts a comment. The rest of the line is ignored. Here i
 
 ## 1.11. Glossary
 
-|**algorithm**||
-||A set of specific steps for solving a category of problems.|
-|**bug**||
-||An error in a program.|
-|**comment**||
-||Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.|
-|**debugging**||
-||The process of finding and removing any of the three kinds of programming errors.|
-|**exception**||
-||Another name for a runtime error.|
-|**formal language**||
-||Any one of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs; all programming languages are formal languages.|
+|**algorithm**|&nbsp;|
+|&nbsp;|A set of specific steps for solving a category of problems.|
+|**bug**|&nbsp;|
+|&nbsp;|An error in a program.|
+|**comment**|&nbsp;|
+|&nbsp;|Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.|
+|**debugging**|&nbsp;|
+|&nbsp;|The process of finding and removing any of the three kinds of programming errors.|
+|**exception**|&nbsp;|
+|&nbsp;|Another name for a runtime error.|
+|**formal language**|&nbsp;|
+|&nbsp;|Any one of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs; all programming languages are formal languages.|
 |**high-level language**|
-||A programming language like Python that is designed to be easy for humans to read and write.|
-|**immediate mode**||
-||A style of using Python where we type expressions at the command prompt, and the results are shown immediately. Contrast with script, and see the entry under Python shell.|
-|**interpreter**||
-||The engine that executes your Python scripts or expressions.|
-|**low-level language**||
-|A programming language that is designed to be easy for a computer to execute; also called machine language or assembly language.||
-|**natural language**||
-||Any one of the languages that people speak that evolved naturally.|
-|**object code**||
-||The output of the compiler after it translates the program.|
-|**parse**||
-||To examine a program and analyze the syntactic structure.|
-|**portability**||
-||A property of a program that can run on more than one kind of computer.|
-|**print function**||
-||A function used in a program or script that causes the Python interpreter to display a value on its output device.|
-|**problem solving**||
-|The process of formulating a problem, finding a solution, and expressing the solution.||
-|**program**||
-|**a sequence of instructions that specifies to a computer actions and computations to be performed.*|||
-|**Python shell**||
-||An interactive user interface to the Python interpreter. The user of a Python shell types commands at the prompt (>>>), and presses the return key to send these commands immediately to the interpreter for processing. The word `shell` comes from Unix. In the PyScripter used in this RLE version of the book, the Interpreter Window is where we’d do the immediate mode interaction.|
-|**runtime error**||
-||An error that does not occur until the program has started to execute but that prevents the program from continuing.|
-|**script**||
-||A program stored in a file (usually one that will be interpreted).|
-|**semantic error**||
-||An error in a program that makes it do something other than what the programmer intended.|
-|**semantics**||
-||The meaning of a program.|
-|**source code**||
-||A program in a high-level language before being compiled.|
-|**syntax**||
-||The structure of a program.|
-|**syntax error**||
-||An error in a program that makes it impossible to parse — and therefore impossible to interpret.|
-|**token**||
-||One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.|
+|&nbsp;|A programming language like Python that is designed to be easy for humans to read and write.|
+|**immediate mode**|&nbsp;|
+|&nbsp;|A style of using Python where we type expressions at the command prompt, and the results are shown immediately. Contrast with script, and see the entry under Python shell.|
+|**interpreter**|&nbsp;|
+|&nbsp;|The engine that executes your Python scripts or expressions.|
+|**low-level language**|&nbsp;|
+|A programming language that is designed to be easy for a computer to execute; also called machine language or assembly language.|&nbsp;|
+|**natural language**|&nbsp;|
+|&nbsp;|Any one of the languages that people speak that evolved naturally.|
+|**object code**|&nbsp;|
+|&nbsp;|The output of the compiler after it translates the program.|
+|**parse**|&nbsp;|
+|&nbsp;|To examine a program and analyze the syntactic structure.|
+|**portability**|&nbsp;|
+|&nbsp;|A property of a program that can run on more than one kind of computer.|
+|**print function**|&nbsp;|
+|&nbsp;|A function used in a program or script that causes the Python interpreter to display a value on its output device.|
+|**problem solving**|&nbsp;|
+|The process of formulating a problem, finding a solution, and expressing the solution.|&nbsp;|
+|**program**|&nbsp;|
+|**a sequence of instructions that specifies to a computer actions and computations to be performed.*|&nbsp;||
+|**Python shell**|&nbsp;|
+|&nbsp;|An interactive user interface to the Python interpreter. The user of a Python shell types commands at the prompt (>>>), and presses the return key to send these commands immediately to the interpreter for processing. The word `shell` comes from Unix. In the PyScripter used in this RLE version of the book, the Interpreter Window is where we’d do the immediate mode interaction.|
+|**runtime error**|&nbsp;|
+|&nbsp;|An error that does not occur until the program has started to execute but that prevents the program from continuing.|
+|**script**|&nbsp;|
+|&nbsp;|A program stored in a file (usually one that will be interpreted).|
+|**semantic error**|&nbsp;|
+|&nbsp;|An error in a program that makes it do something other than what the programmer intended.|
+|**semantics**|&nbsp;|
+|&nbsp;|The meaning of a program.|
+|**source code**|&nbsp;|
+|&nbsp;|A program in a high-level language before being compiled.|
+|**syntax**|&nbsp;|
+|&nbsp;|The structure of a program.|
+|**syntax error**|&nbsp;|
+|&nbsp;|An error in a program that makes it impossible to parse — and therefore impossible to interpret.|
+|**token**|&nbsp;|
+|&nbsp;|One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.|
 
 ## 1.12. Exercises
 
