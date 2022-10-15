@@ -163,6 +163,8 @@ In Python, the # token starts a comment. The rest of the line is ignored. Here i
 
 ## 1.11. Glossary
 
+| Command | Description |
+| --- | --- |
 |**algorithm**|&nbsp;|
 |&nbsp;|A set of specific steps for solving a category of problems.|
 |**bug**|&nbsp;|
