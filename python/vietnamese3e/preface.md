@@ -201,7 +201,9 @@ Với sự phát triển không ngừng của Python, tôi hy vọng sự phát 
 </details>
 
 Jeffrey Elkner
+
 Governor’s Career and Technical Academy in Arlington
+
 Arlington, Virginia
 
 ## Liên kết hữu dụng
