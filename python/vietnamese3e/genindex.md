@@ -1,4 +1,4 @@
-[English Version](http://openbookproject.net/thinkcs/python/english3e/genindex.md)
+[English Version](http://openbookproject.net/thinkcs/python/english3e/genREADME.md)
 
 # Index
 
@@ -2174,7 +2174,7 @@
         <li class="right" style="margin-right: 10px">
           <a href="#" title="General Index"
              >index</a></li>
-        <li><a href="index.md">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li>
+        <li><a href="README.md">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li>
       </ul>
     </div>
     <div class="footer">

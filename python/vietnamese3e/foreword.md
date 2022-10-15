@@ -55,6 +55,6 @@ Mặc dù Python vẫn còn là một ngôn ngữ trẻ và đang phát triển,
 </details>
 
 ## Liên kết hữu dụng
-- [Mục lục](index.md)
+- [Mục lục](README.md)
 - [Trang trước](copyright.md) - Thông báo Bản quyền
 - [Trang kế](preface.md) - Lời nói đầu
