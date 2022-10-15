@@ -12,7 +12,7 @@
 - Source repository is at [https://code.launchpad.net/~thinkcspy-rle-team/thinkcspy/thinkcspy3-rle](https://code.launchpad.net/~thinkcspy-rle-team/thinkcspy/thinkcspy3-rle)
 
 - Vietnamese version by: [Google Translate](https://translate.google.com/) and edited by [Anh Ca](mailto:anhca.net@gmail.com)
-- Vietnamese version source repository is at [https://github.com/anhcale/thinkcs/python/vietnamese3e/README.md] (https://github.com/anhcale/thinkcs/python/vietnamese3e/README.md)
+- Vietnamese version source repository is at [https://github.com/anhcale/thinkcs/python/vietnamese3e/README.md](https://github.com/anhcale/thinkcs/python/vietnamese3e/README.md)
 
 - Để sử dụng ngoại tuyến, hãy tải xuống file nén html hoặc pdf (pdf ít được cập nhật thường xuyên hơn) từ [http://www.ict.ru.ac.za/Resources/cspw/thinkcspy3](http://www.ict.ru.ac.za/Resources/cspw/thinkcspy3)
 
