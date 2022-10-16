@@ -180,7 +180,7 @@ Lập trình là một quá trình phức tạp và vì nó được thực hi�
   > Programming is a complex process, and because it is done by human beings, it often leads to errors. Programming errors are called **bugs** and the process of tracking them down and correcting them is called **debugging**. Use of the term *bug* to describe small engineering difficulties dates back to at least 1889, when Thomas Edison had a bug with his phonograph.
 </details>
 
-Ba loại lỗi có thể xảy ra trong một chương trình: [lỗi cú pháp - syntax](http://en.wikipedia.org/wiki/Syntax_error), [lỗi thực thi - runtime](http://en.wikipedia.org/wiki/Runtime_error), và [lỗi ngữ nghĩa - semantic](http://en.wikipedia.org/wiki/Logic_error). Sẽ rất hữu ích khi phân biệt giữa chúng để theo dõi chúng nhanh hơn.
+Ba loại lỗi có thể xảy ra trong một chương trình: [lỗi cú pháp - syntax](http://en.wikipedia.org/wiki/Syntax_error), [lỗi runtime](http://en.wikipedia.org/wiki/Runtime_error), và [lỗi ngữ nghĩa - semantic](http://en.wikipedia.org/wiki/Logic_error). Sẽ rất hữu ích khi phân biệt giữa chúng để theo dõi chúng nhanh hơn.
 
 <details>
   <summary>English version</summary>
@@ -206,9 +206,9 @@ Python chỉ có thể thực thi một chương trình nếu chương trình đ
   > For most readers, a few syntax errors are not a significant problem, which is why we can read the poetry of E. E. Cummings without problems. Python is not so forgiving. If there is a single syntax error anywhere in your program, Python will display an error message and quit, and you will not be able to run your program. During the first few weeks of your programming career, you will probably spend a lot of time tracking down syntax errors. As you gain experience, though, you will make fewer errors and find them faster.
 </details>
 
-## 1.5. Lỗi thực thi (Runtime)
+## 1.5. Lỗi runtime
 
-Loại lỗi thứ hai là lỗi thực thi, được gọi như vậy vì lỗi không xuất hiện cho đến khi bạn chạy chương trình. Những lỗi này còn được gọi là **ngoại lệ** vì chúng thường chỉ ra rằng một điều gì đó ngoại lệ (và tồi tệ) đã xảy ra.
+Loại lỗi thứ hai là lỗi runtime, được gọi như vậy vì lỗi không xuất hiện cho đến khi bạn chạy chương trình. Những lỗi này còn được gọi là **ngoại lệ** vì chúng thường chỉ ra rằng một điều gì đó ngoại lệ (và tồi tệ) đã xảy ra.
 
 <details>
   <summary>English version</summary>
@@ -216,7 +216,7 @@ Loại lỗi thứ hai là lỗi thực thi, được gọi như vậy vì lỗi
   > The second type of error is a runtime error, so called because the error does not appear until you run the program. These errors are also called **exceptions** because they usually indicate that something exceptional (and bad) has happened.
 </details>
 
-Lỗi thực thi hiếm khi xảy ra trong các chương trình đơn giản mà bạn sẽ thấy trong một vài chương đầu tiên, vì vậy có thể mất một lúc trước khi bạn gặp phải lỗi này.
+Lỗi runtime hiếm khi xảy ra trong các chương trình đơn giản mà bạn sẽ thấy trong một vài chương đầu tiên, vì vậy có thể mất một lúc trước khi bạn gặp phải lỗi này.
 
 <details>
   <summary>English version</summary>
@@ -440,64 +440,157 @@ Theo truyền thống, chương trình đầu tiên được viết bằng một
 print("Hello, World!")
 ```
 
-This is an example of using the **print function**, which doesn’t actually print anything on paper. It displays a value on the screen. In this case, the result shown is
+Đây là một ví dụ về việc sử dụng hàm **print**, hàm này không thực sự in bất cứ thứ gì trên giấy. Nó hiển thị một giá trị trên màn hình. Trong trường hợp này, kết quả hiển thị là
+
+<details>
+  <summary>English version</summary>
+
+  > This is an example of using the **print function**, which doesn’t actually print anything on paper. It displays a value on the screen. In this case, the result shown is
+</details>
 
 ```
 Hello, World!
 ```
 
-The quotation marks in the program mark the beginning and end of the value; they don’t appear in the result.
+Dấu ngoặc kép trong chương trình đánh dấu phần đầu và phần cuối của giá trị; chúng không xuất hiện trong kết quả.
 
-Some people judge the quality of a programming language by the simplicity of the Hello, World! program. By this standard, Python does about as well as possible.
+<details>
+  <summary>English version</summary>
 
-## 1.10. Comments
+  > The quotation marks in the program mark the beginning and end of the value; they don’t appear in the result.
+</details>
 
-As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
+Một số người đánh giá chất lượng của một ngôn ngữ lập trình bằng sự đơn giản của chương trình `Hello, World!`. Theo tiêu chuẩn này, Python làm tốt nhất có thể.
 
-For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing.
+<details>
+  <summary>English version</summary>
 
-A **comment** in a computer program is text that is intended only for the human reader — it is completely ignored by the interpreter.
+  > Some people judge the quality of a programming language by the simplicity of the Hello, World! program. By this standard, Python does about as well as possible.
+</details>
 
-In Python, the # token starts a comment. The rest of the line is ignored. Here is a new version of *Hello, World!*.
+## 1.10. Chú thích
 
-## 1.11. Glossary
+Khi các chương trình ngày càng lớn hơn và phức tạp hơn, chúng sẽ khó đọc hơn. Các ngôn ngữ hình thức thường tối nghĩa, và thường rất khó để nhìn vào một đoạn mã và tìm ra nó đang làm gì hoặc tại sao.
 
-| Keyword | Description |
+<details>
+  <summary>English version</summary>
+
+  > As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
+</details>
+
+Vì lý do này, bạn nên thêm chú thích vào chương trình của mình để giải thích bằng ngôn ngữ tự nhiên về những gì chương trình đang làm.
+
+<details>
+  <summary>English version</summary>
+
+  > For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing.
+</details>
+
+**Chú thích** trong một chương trình máy tính là văn bản chỉ dành cho người đọc - nó hoàn toàn bị trình thông dịch bỏ qua.
+
+<details>
+  <summary>English version</summary>
+
+  > A **comment** in a computer program is text that is intended only for the human reader — it is completely ignored by the interpreter.
+</details>
+
+Trong Python, token `#` là bắt đầu của một chú thích. Phần còn lại của dòng được bỏ qua. Đây là phiên bản mới của *Hello, World!*.
+
+<details>
+  <summary>English version</summary>
+
+  > In Python, the `#` token starts a comment. The rest of the line is ignored. Here is a new version of *Hello, World!*.
+</details>
+
+```python
+#---------------------------------------------------
+# This demo program shows off how elegant Python is!
+# Written by Joe Soap, December 2010.
+# Anyone may freely copy or modify this program.
+#---------------------------------------------------
+
+print("Hello, World!")     # Isn't this easy!
+```
+
+Bạn cũng sẽ nhận thấy rằng chúng tôi đã để lại một dòng trống trong chương trình. Các dòng trống cũng bị trình thông dịch bỏ qua, nhưng chú thích và dòng trống có thể giúp con người phân tích cú pháp chương trình của bạn dễ dàng hơn nhiều. Hãy sử dụng chúng một cách phóng khoáng!
+
+<details>
+  <summary>English version</summary>
+
+  > You’ll also notice that we’ve left a blank line in the program. Blank lines are also ignored by the interpreter, but comments and blank lines can make your programs much easier for humans to parse. Use them liberally!
+</details>
+
+## 1.11. Bảng chú giải
+
+| Từ khóa | Mô tả |
 | --- | --- |
-|**algorithm**|A set of specific steps for solving a category of problems.|
-|**bug**|An error in a program.|
-|**comment**|Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.|
-|**debugging**|The process of finding and removing any of the three kinds of programming errors.|
-|**exception**|Another name for a runtime error.|
-|**formal language**|Any one of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs; all programming languages are formal languages.|
-|**high-level language**|A programming language like Python that is designed to be easy for humans to read and write.|
-|**immediate mode**|A style of using Python where we type expressions at the command prompt, and the results are shown immediately. Contrast with script, and see the entry under Python shell.|
-|**interpreter**|The engine that executes your Python scripts or expressions.|
-|**low-level language**|A programming language that is designed to be easy for a computer to execute; also called machine language or assembly language.|
-|**natural language**|Any one of the languages that people speak that evolved naturally.|
-|**object code**|The output of the compiler after it translates the program.|
-|**parse**|To examine a program and analyze the syntactic structure.|
-|**portability**|A property of a program that can run on more than one kind of computer.|
-|**print function**|A function used in a program or script that causes the Python interpreter to display a value on its output device.|
-|**problem solving**|The process of formulating a problem, finding a solution, and expressing the solution.
-|**program**|a sequence of instructions that specifies to a computer actions and computations to be performed.|
-|**Python shell**|An interactive user interface to the Python interpreter. The user of a Python shell types commands at the prompt (>>>), and presses the return key to send these commands immediately to the interpreter for processing. The word `shell` comes from Unix. In the PyScripter used in this RLE version of the book, the Interpreter Window is where we’d do the immediate mode interaction.|
-|**runtime error**|An error that does not occur until the program has started to execute but that prevents the program from continuing.|
-|**script**|A program stored in a file (usually one that will be interpreted).|
-|**semantic error**|An error in a program that makes it do something other than what the programmer intended.|
-|**semantics**|The meaning of a program.|
-|**source code**|A program in a high-level language before being compiled.|
-|**syntax**|The structure of a program.|
-|**syntax error**|An error in a program that makes it impossible to parse — and therefore impossible to interpret.|
-|**token**|One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.|
+|**thuật toán**|Một tập hợp các bước cụ thể để giải quyết một loại vấn đề.|
+|**bug**|Một lỗi trong một chương trình.|
+|**chú thích**|Thông tin trong chương trình dành cho các lập trình viên khác (hoặc bất kỳ ai đọc mã nguồn) và không ảnh hưởng đến việc thực thi chương trình.|
+|**gỡ lỗi**|Quá trình tìm và loại bỏ bất kỳ lỗi nào trong ba loại lỗi lập trình.|
+|**ngoại lệ**|Tên khác của lỗi runtime.|
+|**ngôn ngữ hình thức**|Bất kỳ một trong những ngôn ngữ mà mọi người đã thiết kế cho các mục đích cụ thể, chẳng hạn như đại diện cho các ý tưởng toán học hoặc chương trình máy tính; tất cả các ngôn ngữ lập trình đều là ngôn ngữ hình thức.|
+|**ngôn ngữ cấp cao**|Một ngôn ngữ lập trình như Python được thiết kế để con người dễ đọc và viết.|
+|**chế độ tức thì**|Một kiểu sử dụng Python trong đó chúng ta nhập các biểu thức tại dấu nhắc lệnh và kết quả được hiển thị ngay lập tức. Tương phản với tập lệnh và được tìm thấy trong Python shell.|
+|**trình thông dịch**|Công cụ thực thi các tập lệnh hoặc biểu thức Python của bạn.|
+|**ngôn ngữ cấp thấp**|Một ngôn ngữ lập trình được thiết kế để máy tính dễ thực thi; còn được gọi là ngôn ngữ máy hoặc hợp ngữ.|
+|**ngôn ngữ tự nhiên**|Bất kỳ ngôn ngữ nói nào của con người được phát triển một cách tự nhiên.|
+|**object code**|Đầu ra của trình biên dịch sau khi nó dịch chương trình.|
+|**phân tích cú pháp**|Để kiểm tra một chương trình và phân tích cấu trúc cú pháp.|
+|**tính di động**|Thuộc tính của chương trình có thể chạy trên nhiều loại máy tính.|
+|**hàm print**|Một hàm được sử dụng trong một chương trình hoặc tập lệnh khiến trình thông dịch Python hiển thị một giá trị trên thiết bị đầu ra của nó.|
+|**giải quyết vấn đề**|Quá trình hình thành một vấn đề, tìm ra giải pháp và thể hiện giải pháp.|
+|**chương trình**|một chuỗi các hướng dẫn chỉ định các hành động và tính toán của máy tính sẽ được thực hiện.|
+|**Python shell**|Một giao diện người dùng tương tác với trình thông dịch Python. Người dùng Python shell nhập các lệnh tại dấu nhắc (>>>) và nhấn phím enter để gửi các lệnh này ngay lập tức đến trình thông dịch để xử lý. Từ `shell` bắt nguồn từ Unix.|
+|**runtime error**|Một lỗi không xảy ra cho đến khi chương trình bắt đầu thực thi nhưng điều đó ngăn chương trình tiếp tục.|
+|**script**|Một chương trình được lưu trữ trong một tệp (thường là một chương trình sẽ được thông dịch).|
+|**lỗi ngữ nghĩa**|Một lỗi trong một chương trình khiến nó làm điều gì đó khác với những gì lập trình viên dự định.|
+|**ngữ nghĩa**|Ý nghĩa của một chương trình.|
+|**mã nguồn**|Một chương trình bằng ngôn ngữ cấp cao trước khi được biên dịch.|
+|**cú pháp**|Cấu trúc của một chương trình.|
+|**lỗi cú pháp**|Một lỗi trong chương trình khiến nó không thể phân tích cú pháp - và do đó không thể diễn giải.|
+|**token**|Một trong những yếu tố cơ bản của cấu trúc cú pháp của chương trình, tương tự như một từ trong ngôn ngữ tự nhiên.|
 
-## 1.12. Exercises
+<details>
+  <summary>English version</summary>
 
-1. Write an English sentence with understandable semantics but incorrect syntax. Write another English sentence which has correct syntax but has semantic errors.
+  > | Keyword | Description |
+  > | --- | --- |
+  > |**algorithm**|A set of specific steps for solving a category of problems.|
+  > |**bug**|An error in a program.|
+  > |**comment**|Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program.|
+  > |**debugging**|The process of finding and removing any of the three kinds of programming errors.|
+  > |**exception**|Another name for a runtime error.|
+  > |**formal language**|Any one of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs; all programming languages are formal languages.|
+  > |**high-level language**|A programming language like Python that is designed to be easy for humans to read and write.|
+  > |**immediate mode**|A style of using Python where we type expressions at the command prompt, and the results are shown immediately. Contrast with script, and see the entry under Python shell.|
+  > |**interpreter**|The engine that executes your Python scripts or expressions.|
+  > |**low-level language**|A programming language that is designed to be easy for a computer to execute; also called machine language or assembly language.|
+  > |**natural language**|Any one of the languages that people speak that evolved naturally.|
+  > |**object code**|The output of the compiler after it translates the program.|
+  > |**parse**|To examine a program and analyze the syntactic structure.|
+  > |**portability**|A property of a program that can run on more than one kind of computer.|
+  > |**print function**|A function used in a program or script that causes the Python interpreter to display a value on its output device.|
+  > |**problem solving**|The process of formulating a problem, finding a solution, and expressing the solution.|
+  > |**program**|a sequence of instructions that specifies to a computer actions and computations to be performed.|
+  > |**Python shell**|An interactive user interface to the Python interpreter. The user of a Python shell types commands at the prompt (>>>), and presses the return key to send these commands immediately to the interpreter for processing. The word `shell` comes from Unix. In the PyScripter used in this RLE version of the book, the Interpreter Window is where we’d do the immediate mode interaction.|
+  > |**runtime error**|An error that does not occur until the program has started to execute but that prevents the program from continuing.|
+  > |**script**|A program stored in a file (usually one that will be interpreted).|
+  > |**semantic error**|An error in a program that makes it do something other than what the programmer intended.|
+  > |**semantics**|The meaning of a program.|
+  > |**source code**|A program in a high-level language before being compiled.|
+  > |**syntax**|The structure of a program.|
+  > |**syntax error**|An error in a program that makes it impossible to parse — and therefore impossible to interpret.|
+  > |**token**|One of the basic elements of the syntactic structure of a program, analogous to a word in a natural language.|
+</details>
 
-2. Using the Python interpreter, type `1 + 2` and then hit return. Python *evaluates* this *expression*, displays the result, and then shows another prompt. _*_ is the *multiplication operator*, and _**_ is the _exponentiation operator_. Experiment by entering different expressions and recording what is displayed by the Python interpreter.
+## 1.12. Bài tập
 
-3. Type `1 2` and then hit return. Python tries to evaluate the expression, but it can’t because the expression is not syntactically legal. Instead, it shows the error message:
+1. Viết một câu tiếng Anh với ngữ nghĩa dễ hiểu nhưng sai cú pháp. Viết một câu tiếng Anh khác đúng cú pháp nhưng có lỗi ngữ nghĩa.
+
+2. Sử dụng trình thông dịch Python, nhập `1 + 2` và sau đó nhấn Enter. Python *đánh giá* *biểu thức* này, hiển thị kết quả và sau đó hiển thị một lời nhắc khác. _*_ là *multiplication operator* (toán tử nhân) và _**_ là toán tử _exponentiation operator_ (toán tử lũy thừa). Thử nghiệm bằng cách nhập các biểu thức khác nhau và ghi lại những gì được trình thông dịch Python hiển thị.
+
+3. Nhập `1 2` và sau đó nhấn Enter. Python cố gắng đánh giá biểu thức, nhưng không thể vì biểu thức không hợp lệ về mặt cú pháp. Thay vào đó, nó hiển thị thông báo lỗi:
 
 ```python
   File "<interactive input>", line 1
@@ -506,17 +599,17 @@ In Python, the # token starts a comment. The rest of the line is ignored. Here i
 SyntaxError: invalid syntax
 ```
 
-In many cases, Python indicates where the syntax error occurred, but it is not always right, and it doesn’t give you much information about what is wrong.
+Trong nhiều trường hợp, Python cho biết lỗi cú pháp xảy ra ở đâu, nhưng không phải lúc nào lỗi cú pháp cũng đúng và không cung cấp cho bạn nhiều thông tin về lỗi cú pháp.
 
-So, for the most part, the burden is on you to learn the syntax rules.
+Vì vậy, phần lớn, bạn phải học các quy tắc cú pháp.
 
-In this case, Python is complaining because there is no operator between the numbers.
+Trong trường hợp này, Python đang phàn nàn vì không có toán tử giữa các số.
 
-See if you can find a few more examples of things that will produce error messages when you enter them at the Python prompt. Write down what you enter at the prompt and the last line of the error message that Python reports back to you.
+Hãy xem liệu bạn có thể tìm thêm một vài ví dụ về những thứ sẽ tạo ra thông báo lỗi khi bạn nhập chúng tại dấu nhắc Python hay không. Viết ra những gì bạn nhập tại dấu nhắc và dòng cuối cùng của thông báo lỗi mà Python báo cáo lại cho bạn.
 
-4. Type `print("hello")`. Python executes this, which has the effect of printing the letters h-e-l-l-o. Notice that the quotation marks that you used to enclose the string are not part of the output. Now type `"hello"` and describe your result. Make notes of when you see the quotation marks and when you don’t.
+4. Gõ `print("hello")`. Python thực thi điều này, có tác dụng in các chữ cái h-e-l-l-o. Lưu ý rằng dấu ngoặc kép mà bạn đã sử dụng để bao quanh chuỗi không phải là một phần của đầu ra. Bây giờ gõ `"hello"` và mô tả kết quả của bạn. Ghi chú khi nào bạn thấy dấu ngoặc kép và khi nào thì không.
 
-5. Type `cheese` without the quotation marks. The output will look something like this:
+5. Gõ `cheese` không có dấu ngoặc kép. Đầu ra sẽ giống như thế này:
 
 ```python
 Traceback (most recent call last):
@@ -524,31 +617,92 @@ Traceback (most recent call last):
 NameError: name 'cheese' is not defined
 ```
 
-This is a run-time error; specifically, it is a NameError, and even more specifically, it is an error because the name `cheese` is not defined. If you don’t know what that means yet, you will soon.
+Đây là lỗi  runtime; cụ thể, nó là NameError, và cụ thể hơn, nó là lỗi do tên `cheese` không được xác định. Nếu bạn chưa biết điều đó có nghĩa là gì, bạn sẽ sớm làm biết.
 
-6. Type `6 + 4 * 9` at the Python prompt and hit enter. Record what happens.
+6. Nhập `6 + 4 * 9` tại dấu nhắc Python và nhấn enter. Ghi lại những gì xảy ra.
 
-Now create a Python script with the following contents:
+Bây giờ hãy tạo một tệp Python với các nội dung sau:
 
 ```python
  6 + 4 * 9
 ```
 
-What happens when you run this script? Now change the script contents to:
+Điều gì xảy ra khi bạn chạy tệp này? Bây giờ thay đổi nội dung tệp thành:
 
 ```python
 print(6 + 4 * 9)
 ```
 
-and run it again.
+và chạy lại.
 
-What happened this time?
+Điều gì đã xảy ra lần này?
 
-Whenever an _expression_ is typed at the Python prompt, it is evaluated and the result is _automatically_ shown on the line below. (Like on your calculator, if you type this expression you’ll get the result 42.)
+Bất cứ khi nào một _biểu thức_ được nhập tại dấu nhắc Python, nó sẽ được thực thi và kết quả _tự động_ được hiển thị ở dòng bên dưới. (Giống như trên máy tính bỏ túi của bạn, nếu bạn nhập biểu thức này, bạn sẽ nhận được kết quả 42.)
 
-A script is different, however. Evaluations of expressions are not automatically displayed, so it is necessary to use the **print** function to make the answer show up.
+Tuy nhiên, một tệp là khác. Các thực thi của biểu thức không được hiển thị tự động, vì vậy cần sử dụng hàm **print** để hiển thị câu trả lời.
 
-It is hardly ever necessary to use the print function in immediate mode at the command prompt.
+Hầu như không cần thiết phải sử dụng hàm *print* ở chế độ tức thì tại dấu nhắc lệnh.
+
+<details>
+  <summary>English version</summary>
+
+  > 1. Write an English sentence with understandable semantics but incorrect syntax. Write another English sentence which has correct syntax but has semantic errors.
+  >
+  > 2. Using the Python interpreter, type `1 + 2` and then hit return. Python *evaluates* this *expression*, displays the result, and then shows another prompt. _*_ is the *multiplication operator*, and _**_ is the _exponentiation operator_. Experiment by entering different expressions and recording what is displayed by the Python interpreter.
+  >
+  > 3. Type `1 2` and then hit return. Python tries to evaluate the expression, but it can’t because the expression is not syntactically legal. Instead, it shows the error message:
+  >
+  > ```python
+  >   File "<interactive input>", line 1
+  >     1 2
+  >       ^
+  > SyntaxError: invalid syntax
+  > ```
+  >
+  > In many cases, Python indicates where the syntax error occurred, but it is not always right, and it doesn’t give you much information about what is wrong.
+  >
+  > So, for the most part, the burden is on you to learn the syntax rules.
+  >
+  > In this case, Python is complaining because there is no operator between the numbers.
+  >
+  > See if you can find a few more examples of things that will produce error messages when you enter them at the Python prompt. Write down what you enter at the prompt and the last line of the error message that Python reports back to you.
+  >
+  > 4. Type `print("hello")`. Python executes this, which has the effect of printing the letters h-e-l-l-o. Notice that the quotation marks that you used to enclose the string are not part of the output. Now type `"hello"` and describe your result. Make notes of when you see the quotation marks and when you don’t.
+  >
+  > 5. Type `cheese` without the quotation marks. The output will look something like this:
+  >
+  > ```python
+  > Traceback (most recent call last):
+  >   File "<interactive input>", line 1, in ?
+  > NameError: name 'cheese' is not defined
+  > ```
+  >
+  > This is a run-time error; specifically, it is a NameError, and even more specifically, it is an error because the name `cheese` is not defined. If you don’t know what that means yet, you will soon.
+  >
+  > 6. Type `6 + 4 * 9` at the Python prompt and hit enter. Record what happens.
+  >
+  > Now create a Python script with the following contents:
+  >
+  > ```python
+  >  6 + 4 * 9
+  > ```
+  >
+  > What happens when you run this script? Now change the script contents to:
+  >
+  > ```python
+  > print(6 + 4 * 9)
+  > ```
+  >
+  > and run it again.
+  >
+  > What happened this time?
+  >
+  > Whenever an _expression_ is typed at the Python prompt, it is evaluated and the result is _automatically_ shown on the line below. (Like on your calculator, if you type this expression you’ll get the result 42.)
+  >
+  > A script is different, however. Evaluations of expressions are not automatically displayed, so it is necessary to use the **print** function to make the answer show up.
+  >
+  > It is hardly ever necessary to use the print function in immediate mode at the command prompt.
+</details>
 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
