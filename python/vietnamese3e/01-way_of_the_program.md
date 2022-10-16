@@ -2,39 +2,123 @@
 
 # 1. Cách thức của chương trình
 
-The goal of this book is to teach you to think like a computer scientist. This way of thinking combines some of the best features of mathematics, engineering, and natural science. Like mathematicians, computer scientists use formal languages to denote ideas (specifically computations). Like engineers, they design things, assembling components into systems and evaluating tradeoffs among alternatives. Like scientists, they observe the behavior of complex systems, form hypotheses, and test predictions.
+Mục tiêu của cuốn sách này là dạy bạn suy nghĩ như một nhà khoa học máy tính. Cách suy nghĩ này bao gồm một số tính năng tốt nhất của toán học, kỹ thuật và khoa học tự nhiên. Giống như các nhà toán học, các nhà khoa học máy tính sử dụng các ngôn ngữ hình thức - [formal language](https://en.wikipedia.org/wiki/Formal_language) - để biểu thị các ý tưởng (cụ thể là các phép tính). Giống như các kỹ sư, họ thiết kế mọi thứ, lắp ráp các thành phần vào hệ thống và đánh giá sự cân bằng giữa các lựa chọn thay thế. Giống như các nhà khoa học, họ quan sát hành vi của các hệ thống phức tạp, hình thành giả thuyết và kiểm tra các dự đoán.
 
-The single most important skill for a computer scientist is **problem solving**. Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem-solving skills. That’s why this chapter is called, The way of the program.
+<details>
+  <summary>English version</summary>
 
-On one level, you will be learning to program, a useful skill by itself. On another level, you will use programming as a means to an end. As we go along, that end will become clearer.
+  > The goal of this book is to teach you to think like a computer scientist. This way of thinking combines some of the best features of mathematics, engineering, and natural science. Like mathematicians, computer scientists use formal languages to denote ideas (specifically computations). Like engineers, they design things, assembling components into systems and evaluating tradeoffs among alternatives. Like scientists, they observe the behavior of complex systems, form hypotheses, and test predictions.
+</details>
 
-## 1.1. The Python programming language
+Kỹ năng quan trọng nhất đối với một nhà khoa học máy tính là **giải quyết vấn đề**. Giải quyết vấn đề có nghĩa là khả năng hình thành vấn đề, suy nghĩ sáng tạo về giải pháp và diễn đạt giải pháp một cách rõ ràng và chính xác. Hóa ra, quá trình học lập trình là một cơ hội tuyệt vời để thực hành các kỹ năng giải quyết vấn đề. Đó là lý do tại sao chương này được gọi là Cách của chương trình.
 
-The programming language you will be learning is Python. Python is an example of a **high-level language**; other high-level languages you might have heard of are C++, PHP, Pascal, C#, and Java.
+<details>
+  <summary>English version</summary>
 
-As you might infer from the name high-level language, there are also **low-level languages**, sometimes referred to as machine languages or assembly languages. Loosely speaking, computers can only execute programs written in low-level languages. Thus, programs written in a high-level language have to be translated into something more suitable before they can run.
+  > The single most important skill for a computer scientist is **problem solving**. Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem-solving skills. That’s why this chapter is called, The way of the program.
+</details>
 
-Almost all programs are written in high-level languages because of their advantages. It is much easier to program in a high-level language so programs take less time to write, they are shorter and easier to read, and they are more likely to be correct. Second, high-level languages are **portable**, meaning that they can run on different kinds of computers with few or no modifications.
+Ở một cấp độ, bạn sẽ học lập trình, một kỹ năng hữu ích của chính nó. Ở một cấp độ khác, bạn sẽ sử dụng lập trình như một phương tiện để kết thúc. Khi chúng ta đi cùng, kết thúc đó sẽ trở nên rõ ràng hơn.
 
-The engine that translates and runs Python is called the **Python Interpreter**: There are two ways to use it: *immediate mode* and *script mode*. In immediate mode, you type Python expressions into the Python Interpreter window, and the interpreter immediately shows the result:
+<details>
+  <summary>English version</summary>
+
+  > On one level, you will be learning to program, a useful skill by itself. On another level, you will use programming as a means to an end. As we go along, that end will become clearer.
+</details>
+
+## 1.1. Ngôn ngữ lập trình Python
+
+Ngôn ngữ lập trình bạn sẽ học là Python. Python là một ví dụ về **ngôn ngữ cấp cao**; các ngôn ngữ cấp cao khác mà bạn có thể đã nghe nói đến là C++, PHP, Pascal, C# và Java.
+
+<details>
+  <summary>English version</summary>
+
+  > The programming language you will be learning is Python. Python is an example of a **high-level language**; other high-level languages you might have heard of are C++, PHP, Pascal, C#, and Java.
+</details>
+
+Như bạn có thể suy ra từ tên ngôn ngữ cấp cao, cũng có **ngôn ngữ cấp thấp**, đôi khi được gọi là ngôn ngữ máy hoặc ngôn ngữ hợp ngữ. Nói một cách dễ hiểu, máy tính chỉ có thể thực thi các chương trình được viết bằng ngôn ngữ cấp thấp. Do đó, các chương trình được viết bằng ngôn ngữ cấp cao phải được dịch sang một thứ gì đó phù hợp hơn trước khi chúng có thể chạy.
+
+<details>
+  <summary>English version</summary>
+
+  > As you might infer from the name high-level language, there are also **low-level languages**, sometimes referred to as machine languages or assembly languages. Loosely speaking, computers can only execute programs written in low-level languages. Thus, programs written in a high-level language have to be translated into something more suitable before they can run.
+</details>
+
+Hầu hết tất cả các chương trình đều được viết bằng ngôn ngữ bậc cao vì những ưu điểm của chúng. Việc lập trình bằng ngôn ngữ cấp cao dễ dàng hơn nhiều nên các chương trình mất ít thời gian hơn để viết, chúng ngắn hơn và dễ đọc hơn, và chúng có nhiều khả năng chính xác hơn. Thứ hai, các ngôn ngữ cấp cao là **portable**, có nghĩa là chúng có thể chạy trên các loại máy tính khác nhau với ít hoặc không có sửa đổi.
+
+<details>
+  <summary>English version</summary>
+
+  > Almost all programs are written in high-level languages because of their advantages. It is much easier to program in a high-level language so programs take less time to write, they are shorter and easier to read, and they are more likely to be correct. Second, high-level languages are **portable**, meaning that they can run on different kinds of computers with few or no modifications.
+</details>
+
+Công cụ dịch và chạy Python được gọi là **Trình thông dịch Python**: Có hai cách để sử dụng: *chế độ tức thì* và *chế độ tập lệnh*. Ở chế độ tức thì, bạn nhập biểu thức Python vào cửa sổ Trình thông dịch Python và trình thông dịch ngay lập tức hiển thị kết quả:
+
+<details>
+  <summary>English version</summary>
+
+  > The engine that translates and runs Python is called the **Python Interpreter**: There are two ways to use it: *immediate mode* and *script mode*. In immediate mode, you type Python expressions into the Python Interpreter window, and the interpreter immediately shows the result:
+</details>
 
 ![interpreter_sshot.png](images/interpreter_sshot.png)
 
-The `>>>` is called the **Python prompt**. The interpreter uses the prompt to indicate that it is ready for instructions. We typed `2 + 2`, and the interpreter evaluated our expression, and replied `4`, and on the next line it gave a new prompt, indicating that it is ready for more input.
+Dấu `>>>` được gọi là **Lời nhắc Python**. Trình thông dịch sử dụng Lời nhắc để chỉ ra rằng nó đã sẵn sàng cho các hướng dẫn. Chúng tôi đã nhập `2 + 2` và Trình thông dịch đánh giá biểu thức của chúng tôi và trả lời là`4`, và trên dòng tiếp theo, nó đưa ra một Lời nhắc mới, cho biết rằng nó đã sẵn sàng để nhập thêm.
 
-Alternatively, you can write a program in a file and use the interpreter to execute the contents of the file. Such a file is called a **script**. Scripts have the advantage that they can be saved to disk, printed, and so on.
+<details>
+  <summary>English version</summary>
 
-In this Rhodes Local Edition of the textbook, we use a program development environment called **PyScripter**. (It is available at [http://code.google.com/p/pyscripter](http://code.google.com/p/pyscripter).) There are various other development environments. If you’re using one of the others, you might be better off working with the authors’ original book rather than this edition.
+  > The `>>>` is called the **Python prompt**. The interpreter uses the prompt to indicate that it is ready for instructions. We typed `2 + 2`, and the interpreter evaluated our expression, and replied `4`, and on the next line it gave a new prompt, indicating that it is ready for more input.
+</details>
 
-For example, we created a file named `firstprogram.py` using PyScripter. By convention, files that contain Python programs have names that end with `.py`
+Ngoài ra, bạn có thể viết một chương trình trong một tệp và sử dụng trình thông dịch để thực thi nội dung của tệp. Một tệp như vậy được gọi là **script**. Các script có lợi thế là chúng có thể được lưu vào đĩa, in, v.v.
 
-To execute the program, we can click the **Run** button in PyScripter:
+<details>
+  <summary>English version</summary>
+
+  > Alternatively, you can write a program in a file and use the interpreter to execute the contents of the file. Such a file is called a **script**. Scripts have the advantage that they can be saved to disk, printed, and so on.
+</details>
+
+Trong bản dịch tiếng Việt này chúng tôi sử dụng [Visual Studio Code](https://code.visualstudio.com/docs/languages/python), một IDE phổ biến được dùng bởi các lập trình viên hiện nay. Bạn có thể sử dụng bất kỳ IDE khác nào bạn muốn.
+
+<details>
+  <summary>English version</summary>
+
+  > In this Rhodes Local Edition of the textbook, we use a program development environment called **PyScripter**. (It is available at [http://code.google.com/p/pyscripter](http://code.google.com/p/pyscripter).) There are various other development environments. If you’re using one of the others, you might be better off working with the authors’ original book rather than this edition.
+</details>
+
+Ví dụ: chúng tôi đã tạo một tệp có tên là `firstprogram.py` bằng cách sử dụng VS Code. Theo quy ước, các tệp chứa chương trình Python có tên kết thúc bằng `.py`
+
+<details>
+  <summary>English version</summary>
+
+  > For example, we created a file named `firstprogram.py` using PyScripter. By convention, files that contain Python programs have names that end with `.py`
+</details>
+
+Để thực thi chương trình, chúng ta có thể nhấp vào nút **Run** trong VS Code:
+
+<details>
+  <summary>English version</summary>
+
+  > To execute the program, we can click the **Run** button in PyScripter:
+</details>
 
 ![my_first_program.png](images/my_first_program.png)
 
-Most programs are more interesting than this one.
+Hầu hết các chương trình thú vị hơn chương trình này.
 
-Working directly in the interpreter is convenient for testing short bits of code because you get immediate feedback. Think of it as scratch paper used to help you work out problems. Anything longer than a few lines should be put into a script.
+<details>
+  <summary>English version</summary>
+
+  > Most programs are more interesting than this one.
+</details>
+
+Làm việc trực tiếp trong Trình thông dịch thuận tiện cho việc kiểm tra các đoạn mã ngắn vì bạn nhận được phản hồi ngay lập tức. Hãy coi nó như một tờ giấy nháp được sử dụng để giúp bạn giải quyết các vấn đề. Bất cứ điều gì dài hơn một vài dòng nên được đưa vào một script.
+
+<details>
+  <summary>English version</summary>
+
+  > Working directly in the interpreter is convenient for testing short bits of code because you get immediate feedback. Think of it as scratch paper used to help you work out problems. Anything longer than a few lines should be put into a script.
+</details>
 
 ## 1.2. What is a program?
 
