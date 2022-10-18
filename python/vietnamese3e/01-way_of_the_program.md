@@ -418,7 +418,7 @@ Mỗi người lớn lên nói một ngôn ngữ tự nhiên - tất cả mọi 
   > |**program**|The meaning of a computer program is unambiguous and literal, and can be understood entirely by analysis of the tokens and structure.|
 </details>
 
-Dưới đây là một số gợi ý cho việc đọc các chương trình (và các ngôn ngữ hình thức khác). Đầu tiên, hãy nhớ rằng ngôn ngữ hình thức đần độn hơn nhiều so với ngôn ngữ tự nhiên, vì vậy sẽ mất nhiều thời gian hơn để đọc chúng. Ngoài ra, cấu trúc cũng rất quan trọng, vì vậy bạn thường không nên đọc từ trên xuống dưới, từ trái sang phải. Thay vào đó, hãy học cách phân tích chương trình trong đầu bạn, xác định các token và diễn giải cấu trúc. Cuối cùng, các chi tiết quan trọng. Những điều nhỏ nhặt như lỗi chính tả và dấu câu sai, mà bạn có thể loại bỏ bằng ngôn ngữ tự nhiên, có thể tạo ra sự khác biệt lớn trong một ngôn ngữ hình thức.
+Dưới đây là một số gợi ý cho việc đọc các chương trình (và các ngôn ngữ hình thức khác). Đầu tiên, hãy nhớ rằng ngôn ngữ hình thức nghiêm ngặt hơn nhiều so với ngôn ngữ tự nhiên, vì vậy sẽ mất nhiều thời gian hơn để đọc chúng. Ngoài ra, cấu trúc cũng rất quan trọng, vì vậy bạn thường không nên đọc từ trên xuống dưới, từ trái sang phải. Thay vào đó, hãy học cách phân tích chương trình trong đầu bạn, xác định các token và diễn giải cấu trúc. Cuối cùng, các chi tiết quan trọng. Những điều nhỏ nhặt như lỗi chính tả và dấu câu sai, mà bạn có thể loại bỏ bằng ngôn ngữ tự nhiên, có thể tạo ra sự khác biệt lớn trong một ngôn ngữ hình thức.
 
 <details>
   <summary>English version</summary>

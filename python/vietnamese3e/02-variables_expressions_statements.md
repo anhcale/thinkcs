@@ -2,19 +2,31 @@
 
 # 2. Biến, biểu thức và câu lệnh
 
-## 2.1. Values and data types
+## 2.1. Giá trị và kiểu dữ liệu
+
+**Giá trị** là một trong những thứ cơ bản - như một chữ cái hoặc một số - mà một chương trình thao tác. Các giá trị mà chúng ta đã thấy cho đến bây giờ là 4 (kết quả khi chúng ta làm phép tínhthêm `2 + 2`) và `"Hello, World!"`.
 
 <details>
   <summary>English version</summary>
 
-  > You’ll also notice that we’ve left a blank line in the program. Blank lines are also ignored by the interpreter, but comments and blank lines can make your programs much easier for humans to parse. Use them liberally!
+  > A **value** is one of the fundamental things — like a letter or a number — that a program manipulates. The values we have seen so far are 4 (the result when we added `2 + 2`), and `"Hello, World!"`.
 </details>
 
-A **value** is one of the fundamental things — like a letter or a number — that a program manipulates. The values we have seen so far are 4 (the result when we added `2 + 2`), and `"Hello, World!"`.
+Các giá trị này được phân loại thành các **lớp** (class) hoặc **kiểu dữ liệu** (data type) khác nhau: `4` là một *số nguyên* và `"Hello, World!"` là một *chuỗi*, được gọi như thế là vì nó chứa một chuỗi các chữ cái. Bạn (và trình thông dịch) có thể xác định các chuỗi vì chúng được đặt trong dấu nháy kép.
 
-These values are classified into different **classes**, or **data types**: `4` is an *integer*, and `"Hello, World!"` is a *string*, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.
+<details>
+  <summary>English version</summary>
 
-If you are not sure what class a value falls into, Python has a function called **type** which can tell you.
+  > These values are classified into different **classes**, or **data types**: `4` is an *integer*, and `"Hello, World!"` is a *string*, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.
+</details>
+
+Nếu bạn không chắc giá trị thuộc lớp nào, Python có một hàm gọi là **type** có thể cho bạn biết.
+
+<details>
+  <summary>English version</summary>
+
+  > If you are not sure what class a value falls into, Python has a function called **type** which can tell you.
+</details>
 
 ```python
 >>> type("Hello, World!")
@@ -23,14 +35,26 @@ If you are not sure what class a value falls into, Python has a function called 
 <class 'int'>
 ```
 
-Not surprisingly, strings belong to the class **str** and integers belong to the class **int**. Less obviously, numbers with a decimal point belong to a class called **float**, because these numbers are represented in a format called *floating-point*. At this stage, you can treat the words *class* and *type* interchangeably. We’ll come back to a deeper understanding of what a class is in later chapters.
+Các chuỗi thuộc về lớp **str** và các số nguyên thuộc về lớp **int**. Ít rõ ràng hơn, các số có dấu thập phân thuộc về một lớp được gọi là **float**, vì những số này được biểu diễn ở định dạng được gọi là *floating-point* (dấu phẩy động). Ở giai đoạn này, bạn có thể coi các từ *class* và *type* thay thế cho nhau. Chúng ta sẽ trở lại để hiểu sâu hơn về lớp là gì trong các chương sau.
+
+<details>
+  <summary>English version</summary>
+
+  > Not surprisingly, strings belong to the class **str** and integers belong to the class **int**. Less obviously, numbers with a decimal point belong to a class called **float**, because these numbers are represented in a format called *floating-point*. At this stage, you can treat the words *class* and *type* interchangeably. We’ll come back to a deeper understanding of what a class is in later chapters.
+</details>
 
 ```python
 >>> type(3.2)
 <class 'float'>
 ```
 
-What about values like `"17"` and `"3.2"`? They look like numbers, but they are in quotation marks like strings.
+Còn các giá trị như `"17"` và `"3.2"` thì sao? Chúng trông giống như số, nhưng chúng nằm trong dấu nháy kép giống như chuỗi.
+
+<details>
+  <summary>English version</summary>
+
+  > What about values like `"17"` and `"3.2"`? They look like numbers, but they are in quotation marks like strings.
+</details>
 
 ```python
 >>> type("17")
@@ -39,9 +63,17 @@ What about values like `"17"` and `"3.2"`? They look like numbers, but they are 
 <class 'str'>
 ```
 
-They’re strings!
+Chúng là chuỗi!
 
-Strings in Python can be enclosed in either single quotes (`'`) or double quotes (`"`), or three of each (`'''` or `"""`)
+Các chuỗi trong Python có thể được đặt trong dấu nháy đơn (`'`) hoặc dấu nháy kép (`"`) hoặc ba trong số mỗi dấu (`'''` hoặc `"""`)
+
+<details>
+  <summary>English version</summary>
+
+  > They’re strings!
+  >
+  > Strings in Python can be enclosed in either single quotes (`'`) or double quotes (`"`), or three of each (`'''` or `"""`)
+</details>
 
 ```python
 >>> type('This is a string.')
@@ -54,9 +86,21 @@ Strings in Python can be enclosed in either single quotes (`'`) or double quotes
 <class 'str'>
 ```
 
-Double quoted strings can contain single quotes inside them, as in `"Bruce's beard"`, and single quoted strings can have double quotes inside them, as in `'The knights who say "Ni!"'`.
+Các chuỗi nằm trong dấu nháy kép có thể bao gồm các dấu nháy đơn bên trong chúng, như trong `"Bruce's beard"`, và Các chuỗi nằm trong dấu nháy đơn có thể bao gồm các dấu nháy kép bên trong chúng, như trong `'The knights who say "Ni!"'`.
 
-Strings enclosed with three occurrences of either quote symbol are called triple quoted strings. They can contain either single or double quotes:
+<details>
+  <summary>English version</summary>
+
+  > Double quoted strings can contain single quotes inside them, as in `"Bruce's beard"`, and single quoted strings can have double quotes inside them, as in `'The knights who say "Ni!"'`.
+</details>
+
+Các chuỗi nằm trong ba dấu nháy đơn hoặc ba dấu nháy kép được gọi là chuỗi được trích dẫn ba lần (triple quoted strings). Chúng có thể chứa dấu nháy đơn hoặc dấu nháy kép:
+
+<details>
+  <summary>English version</summary>
+
+  > Strings enclosed with three occurrences of either quote symbol are called triple quoted strings. They can contain either single or double quotes:
+</details>
 
 ```php
 >>> print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
@@ -64,7 +108,13 @@ Strings enclosed with three occurrences of either quote symbol are called triple
 >>>
 ```
 
-Triple quoted strings can even span multiple lines:
+Chuỗi được trích dẫn ba lần thậm chí có thể kéo dài nhiều dòng:
+
+<details>
+  <summary>English version</summary>
+
+  > Triple quoted strings can even span multiple lines:
+</details>
 
 ```python
 >>> message = """This message will
@@ -77,7 +127,13 @@ lines.
 >>>
 ```
 
-Python doesn’t care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings: once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value. But when the interpreter wants to display a string, it has to decide which quotes to use to make it look like a string.
+Python không quan tâm đến việc bạn sử dụng dấu nháy đơn hay dấu nháy kép hoặc trích dẫn ba lần để bao quanh chuỗi của bạn: một khi nó đã phân tích cú pháp văn bản của chương trình hoặc lệnh của bạn, cách nó lưu trữ giá trị là giống nhau trong mọi trường hợp và các dấu nháy bao quanh không phải là một phần của giá trị. Nhưng khi trình thông dịch muốn hiển thị một chuỗi, nó phải quyết định sử dụng dấu nháy nào để làm cho nó giống như một chuỗi.
+
+<details>
+  <summary>English version</summary>
+
+  > Python doesn’t care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings: once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value. But when the interpreter wants to display a string, it has to decide which quotes to use to make it look like a string.
+</details>
 
 ```python
 >>> 'This is a string.'
@@ -86,9 +142,19 @@ Python doesn’t care whether you use single or double quotes or the three-of-a-
 'And so is this.'
 ```
 
-So the Python language designers usually chose to surround their strings by single quotes. What do think would happen if the string already contained single quotes?
+Vì vậy, các nhà thiết kế ngôn ngữ Python thường chọn bao quanh các chuỗi của họ bằng các dấu nháy đơn. Điều gì sẽ xảy ra nếu chuỗi đã chứa dấu nháy đơn?
 
-When you type a large integer, you might be tempted to use commas between groups of three digits, as in `42,000`. This is not a legal integer in Python, but it does mean something else, which is legal:
+<details>
+  <summary>English version</summary>
+
+  > So the Python language designers usually chose to surround their strings by single quotes. What do think would happen if the string already contained single quotes?
+</details>
+
+<details>
+  <summary>English version</summary>
+
+  > Khi bạn nhập một số nguyên lớn, bạn có thể muốn sử dụng dấu phẩy giữa các nhóm gồm ba chữ số, như trong `42,000`. Đây không phải là một số nguyên hợp pháp trong Python, nhưng nó có nghĩa là hai số nguyên, hợp pháp:
+</details>
 
 ```python
 >>> 42000
@@ -97,7 +163,13 @@ When you type a large integer, you might be tempted to use commas between groups
 (42, 0)
 ```
 
-Well, that’s not what we expected at all! Because of the comma, Python chose to treat this as a pair of values. We’ll come back to learn about pairs later. But, for the moment, remember not to put commas or spaces in your integers, no matter how big they are. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
+Chà, đó không phải là những gì chúng ta mong đợi! Do dấu phẩy, Python đã chọn coi đây là một cặp giá trị. Chúng ta sẽ quay lại để tìm hiểu về các cặp sau. Tuy nhiên, hiện tại, hãy nhớ không đặt dấu phẩy hoặc dấu cách trong số nguyên của bạn, bất kể chúng lớn đến mức nào. Ngoài ra, hãy xem lại những gì chúng ta đã nói trong chương trước: ngôn ngữ hình thức là nghiêm ngặt, ký hiệu ngắn gọn và ngay cả những thay đổi nhỏ nhất cũng có thể có ý nghĩa hoàn toàn khác với những gì bạn dự định.
+
+<details>
+  <summary>English version</summary>
+
+  > Well, that’s not what we expected at all! Because of the comma, Python chose to treat this as a pair of values. We’ll come back to learn about pairs later. But, for the moment, remember not to put commas or spaces in your integers, no matter how big they are. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
+</details>
 
 ## 2.2. Variables
 
