@@ -467,13 +467,7 @@ print("Hrs=", hours, "  mins=", minutes,
 
 | Keyword | Description |
 | --- | --- |
-| assignment statement | A statement that assigns a value to a name (variable). To the left of the assignment operator, `=`, is a name. To the right of the assignment token is an expression which is evaluated by the Python interpreter and then assigned to the name. The difference between the left and right hand sides of the assignment statement is often confusing to new programmers. In the following assignment:
-
-```python
-n = n + 1
-```
-
-`n` plays a very different role on each side of the `=`. On the right it is a *value* and makes up part of the *expression* which will be evaluated by the Python interpreter before assigning it to the name on the left. |
+| assignment statement | A statement that assigns a value to a name (variable). To the left of the assignment operator, `=`, is a name. To the right of the assignment token is an expression which is evaluated by the Python interpreter and then assigned to the name. The difference between the left and right hand sides of the assignment statement is often confusing to new programmers. In the following assignment: ```python n = n + 1``` `n` plays a very different role on each side of the `=`. On the right it is a *value* and makes up part of the *expression* which will be evaluated by the Python interpreter before assigning it to the name on the left. |
 | assignment token | `=` is Python’s assignment token. Do not confuse it with *equals*, which is an operator for comparing values. |
 | composition | The ability to combine simple expressions and statements into compound statements and expressions in order to represent complex computations concisely. |
 | concatenate | To join two strings end-to-end. |
