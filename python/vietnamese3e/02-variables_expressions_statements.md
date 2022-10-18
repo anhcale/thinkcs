@@ -341,14 +341,14 @@ When more than one operator appears in an expression, the order of evaluation de
 4. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression `6-3+2`, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been `6-(3+2)`, which is 1. (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don’t be misled. Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
    1. Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator `**`, so a useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
-    ```python
-    >>> 2 ** 3 ** 2     # The right-most ** operator gets done first!
-    512
-    >>> (2 ** 3) ** 2   # Use parentheses to force the order you want!
-    64
-    ```
+        ```python
+        >>> 2 ** 3 ** 2     # The right-most ** operator gets done first!
+        512
+        >>> (2 ** 3) ** 2   # Use parentheses to force the order you want!
+        64
+        ```
 
-    The immediate mode command prompt of Python is great for exploring and experimenting with expressions like this.
+        The immediate mode command prompt of Python is great for exploring and experimenting with expressions like this.
 
 ## 2.9. Operations on strings
 
