@@ -26,7 +26,7 @@
 - [Danh sách cộng tác viên](contrib.md)
 - [Chương 1](01-way_of_the_program.md) - Cách thức của chương trình
 - [Chương 2](02-variables_expressions_statements.md) - Biến, biểu thức và câu lệnh
-- [Chương 3](03-hello_little_turtles.md) - Hello, little turtles!
+- [Chương 3](03-hello_little_turtles.md) - Hello, little turtles!con!
 - [Chương 4](04-functions.md) - Functions
 - [Chương 5](05-conditionals.md) - Conditionals
 - [Chương 6](06-fruitful_functions.md) - Fruitful functions
