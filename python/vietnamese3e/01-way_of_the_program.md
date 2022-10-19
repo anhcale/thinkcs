@@ -138,6 +138,8 @@ Các chi tiết có thể khác nhau ở các ngôn ngữ khác nhau, nhưng m�
   > The details look different in different languages, but a few basic instructions appear in just about every language:
 </details>
 
+|kw|ds|
+| --- | --- |
 |input|Nhận dữ liệu từ bàn phím, tệp hoặc một số thiết bị khác.|
 |output|Hiển thị dữ liệu trên màn hình hoặc gửi dữ liệu đến một tệp hoặc thiết bị khác.|
 |math|Thực hiện các phép toán cơ bản như cộng và nhân.|
