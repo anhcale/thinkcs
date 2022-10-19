@@ -35,7 +35,7 @@ Nếu bạn không chắc giá trị thuộc lớp nào, Python có một hàm g
 <class 'int'>
 ```
 
-Các chuỗi thuộc về lớp **str** và các số nguyên thuộc về lớp **int**. Ít rõ ràng hơn, các số có dấu thập phân thuộc về một lớp được gọi là **float**, vì những số này được biểu diễn ở định dạng được gọi là *floating-point* (dấu phẩy động). Ở giai đoạn này, bạn có thể coi các từ *class* và *type* thay thế cho nhau. Chúng ta sẽ trở lại để hiểu sâu hơn về lớp là gì trong các chương sau.
+Các chuỗi thuộc về lớp **str** và các số nguyên thuộc về lớp **int**. Ít rõ ràng hơn, các số có dấu thập phân thuộc về một lớp được gọi là **float**, vì những số này được biểu diễn ở định dạng được gọi là *floating-point* ([dấu phẩy động](https://vi.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng)). Ở giai đoạn này, bạn có thể coi các từ *class* và *type* thay thế cho nhau. Chúng ta sẽ trở lại để hiểu sâu hơn về lớp là gì trong các chương sau.
 
 <details>
   <summary>English version</summary>
@@ -171,11 +171,23 @@ Chà, đó không phải là những gì chúng ta mong đợi! Do dấu phẩy,
   > Well, that’s not what we expected at all! Because of the comma, Python chose to treat this as a pair of values. We’ll come back to learn about pairs later. But, for the moment, remember not to put commas or spaces in your integers, no matter how big they are. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
 </details>
 
-## 2.2. Variables
+## 2.2. Biến
 
-One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
+Một trong những tính năng mạnh mẽ nhất của ngôn ngữ lập trình là khả năng thao tác các **biến**. Một biến là một tên tham chiếu đến một giá trị.
 
-The **assignment statement** gives a value to a variable:
+<details>
+  <summary>English version</summary>
+
+  > One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
+</details>
+
+Đây là **câu lệnh gán** một giá trị cho một biến:
+
+<details>
+  <summary>English version</summary>
+
+  > The **assignment statement** gives a value to a variable:
+</details>
 
 ```python
 >>> message = "What's up, Doc?"
@@ -183,9 +195,21 @@ The **assignment statement** gives a value to a variable:
 >>> pi = 3.14159
 ```
 
-This example makes three assignments. The first assigns the string value `"What's up, Doc?"` to a variable named `message`. The second gives the integer `17` to `n`, and the third assigns the `floating-point` number `3.14159` to a variable called `pi`.
+Ví dụ này thực hiện ba câu lệnh gán. Đầu tiên gán giá trị chuỗi `"What's up, Doc?"` cho một biến có tên là `message`. Thứ hai gán số nguyên `17` cho biến `n` và thứ ba gán số `dấu phẩy động` `3.14159` cho một biến có tên là `pi`.
 
-The **assignment token**,`=`, should not be confused with `equals`, which uses the token `==`. The assignment statement binds a `name`, on the left-hand side of the operator, to a `value`, on the right-hand side. This is why you will get an error if you enter:
+<details>
+  <summary>English version</summary>
+
+  > This example makes three assignments. The first assigns the string value `"What's up, Doc?"` to a variable named `message`. The second gives the integer `17` to `n`, and the third assigns the `floating-point` number `3.14159` to a variable called `pi`.
+</details>
+
+**token gán**, `=`, không được nhầm lẫn với `bằng`, sử dụng token `==`. Câu lệnh gán liên kết một `tên`, ở phía bên trái của toán tử, với một `giá trị`, ở phía bên phải. Đây là lý do tại sao bạn sẽ gặp lỗi nếu nhập:
+
+<details>
+  <summary>English version</summary>
+
+  > The **assignment token**,`=`, should not be confused with `equals`, which uses the token `==`. The assignment statement binds a `name`, on the left-hand side of the operator, to a `value`, on the right-hand side. This is why you will get an error if you enter:
+</details>
 
 ```python
 >>> 17 = n
@@ -193,15 +217,33 @@ File "<interactive input>", line 1
 SyntaxError: can't assign to literal
 ```
 
-> **Tip**
+> **Mẹo**
 >
-> When reading or writing code, say to yourself “n is assigned 17” or “n gets the value 17”. Don’t say “n equals 17”.
+> Khi đọc hoặc viết mã, hãy tự nói “n được gán 17” hoặc “n nhận giá trị 17”. Đừng nói “n bằng 17”.
 
-A common way to represent variables on paper is to write the name with an arrow pointing to the variable’s value. This kind of figure is called a **state snapshot** because it shows what state each of the variables is in at a particular instant in time. (Think of it as the variable’s state of mind). This diagram shows the result of executing the assignment statements:
+<details>
+  <summary>English version</summary>
+
+  > When reading or writing code, say to yourself “n is assigned 17” or “n gets the value 17”. Don’t say “n equals 17”.
+</details>
+
+Một cách phổ biến để biểu diễn biến trên giấy là viết tên có mũi tên trỏ đến giá trị của biến. Loại hình này được gọi là **ảnh chụp trạng thái** vì nó hiển thị trạng thái của mỗi biến tại một thời điểm cụ thể trong thời gian. (Hãy coi đó là trạng thái tâm trí của biến). Biểu đồ này cho thấy kết quả của việc thực hiện các câu lệnh gán:
+
+<details>
+  <summary>English version</summary>
+
+  > A common way to represent variables on paper is to write the name with an arrow pointing to the variable’s value. This kind of figure is called a **state snapshot** because it shows what state each of the variables is in at a particular instant in time. (Think of it as the variable’s state of mind). This diagram shows the result of executing the assignment statements:
+</details>
 
 ![state](images/state.png)
 
-If you ask the interpreter to evaluate a variable, it will produce the value that is currently linked to the variable:
+Nếu bạn yêu cầu trình thông dịch đánh giá một biến, nó sẽ hiện ra giá trị được liên kết với biến:
+
+<details>
+  <summary>English version</summary>
+
+  > If you ask the interpreter to evaluate a variable, it will produce the value that is currently linked to the variable:
+</details>
 
 ```python
 >>> message
@@ -212,7 +254,13 @@ If you ask the interpreter to evaluate a variable, it will produce the value tha
 3.14159
 ```
 
-We use variables in a program to “remember” things, perhaps the current score at the football game. But variables are *variable*. This means they can change over time, just like the scoreboard at a football game. You can assign a value to a variable, and later assign a different value to the same variable. (*This is different from maths. In maths, if you give `x` the value 3, it cannot change to link to a different value half-way through your calculations!*)
+Chúng ta sử dụng các biến trong một chương trình để "ghi nhớ" nhiều thứ, ví dụ như tỷ số hiện tại của một trận bóng đá. Nhưng các biến đều là *biến*. Điều này có nghĩa là chúng có thể thay đổi theo thời gian, giống như bảng tỷ số trong một trận đấu bóng đá. Bạn có thể gán một giá trị cho một biến và sau đó gán một giá trị khác cho cùng một biến. (*Điều này khác với toán học. Trong toán học, nếu bạn cho `x` giá trị 3, nó không thể thay đổi để liên kết với một giá trị khác trong suốt quá trình tính toán của bạn!*)
+
+<details>
+  <summary>English version</summary>
+
+  > We use variables in a program to “remember” things, perhaps the current score at the football game. But variables are *variable*. This means they can change over time, just like the scoreboard at a football game. You can assign a value to a variable, and later assign a different value to the same variable. (*This is different from maths. In maths, if you give `x` the value 3, it cannot change to link to a different value half-way through your calculations!*)
+</details>
 
 ```python
 >>> day = "Thursday"
@@ -226,11 +274,24 @@ We use variables in a program to “remember” things, perhaps the current scor
 21
 ```
 
-You’ll notice we changed the value of `day` three times, and on the third assignment we even made it refer to a value that was of a different type.
+Bạn sẽ nhận thấy rằng chúng ta đã thay đổi giá trị của `day` ba lần và trong lần gán thứ ba, chúng ta thậm chí còn đặt nó tham chiếu đến một giá trị thuộc một kiểu dữ liệu khác.
 
-A great deal of programming is about having the computer remember things, e.g. *The number of missed calls on your phone*, and then arranging to update or change the variable when you miss another call.
+<details>
+  <summary>English version</summary>
 
-## 2.3. Variable names and keywords
+  > You’ll notice we changed the value of `day` three times, and on the third assignment we even made it refer to a value that was of a different type.
+</details>
+
+Phần lớn lập trình là để máy tính ghi nhớ mọi thứ, ví dụ: *Số cuộc gọi nhỡ trên điện thoại của bạn*, sau đó sắp xếp cập nhật hoặc thay đổi biến số khi bạn bỏ lỡ cuộc gọi khác.
+
+<details>
+  <summary>English version</summary>
+
+  > A great deal of programming is about having the computer remember things, e.g. *The number of missed calls on your phone*, and then arranging to update or change the variable when you miss another call.
+</details>
+
+
+## 2.3. Tên biến và từ khóa
 
 `Variable names` can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. `Bruce` and `bruce` are different variables.
 
