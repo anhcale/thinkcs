@@ -293,13 +293,37 @@ Phần lớn lập trình là để máy tính ghi nhớ mọi thứ, ví dụ: 
 
 ## 2.3. Tên biến và từ khóa
 
-`Variable names` can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. `Bruce` and `bruce` are different variables.
+`Tên biến` có thể dài tùy ý. Chúng có thể chứa cả chữ cái và chữ số, nhưng chúng phải bắt đầu bằng một chữ cái hoặc một dấu gạch dưới. Mặc dù sử dụng chữ hoa là hợp pháp, nhưng theo quy ước thì không. Nếu bạn làm vậy, hãy nhớ rằng một điều quan trọng: `Bruce` và `bruce` là các biến khác nhau.
 
-The underscore character (`_`) can appear in a name. It is often used in names with multiple words, such as `my_name` or `price_of_tea_in_china`.
+<details>
+  <summary>English version</summary>
 
-There are some situations in which names beginning with an underscore have special meaning, so a safe rule for beginners is to start all names with a letter.
+  > `Variable names` can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. `Bruce` and `bruce` are different variables.
+</details>
 
-If you give a variable an illegal name, you get a syntax error:
+Ký tự gạch dưới (`_`) có thể xuất hiện trong tên biến. Nó thường được sử dụng trong các tên biến có nhiều từ, chẳng hạn như `my_name` hoặc `price_of_tea_in_china`.
+
+<details>
+  <summary>English version</summary>
+
+  > The underscore character (`_`) can appear in a name. It is often used in names with multiple words, such as `my_name` or `price_of_tea_in_china`.
+</details>
+
+Có một số tình huống mà tên biến bắt đầu bằng dấu gạch dưới có ý nghĩa đặc biệt, vì vậy quy tắc an toàn cho người mới bắt đầu là bắt đầu tất cả các tên biến bằng một chữ cái.
+
+<details>
+  <summary>English version</summary>
+
+  > There are some situations in which names beginning with an underscore have special meaning, so a safe rule for beginners is to start all names with a letter.
+</details>
+
+Nếu bạn đặt tên biến không hợp lệ cho một biến, bạn sẽ gặp lỗi cú pháp:
+
+<details>
+  <summary>English version</summary>
+
+  > If you give a variable an illegal name, you get a syntax error:
+</details>
 
 ```python
 >>> 76trombones = "big parade"
@@ -310,11 +334,29 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax
 ```
 
-`76trombones` is illegal because it does not begin with a letter. `more$` is illegal because it contains an illegal character, the dollar sign. But what’s wrong with `class`?
+`76trombone` là không hợp lệ vì nó không bắt đầu bằng một chữ cái. `more$` là không hợp lệ vì nó chứa một ký tự không hợp lệ, ký hiệu đô la. Nhưng sao `class` lại không hợp lệ?
 
-It turns out that class is one of the Python **keywords**. Keywords define the language’s syntax rules and structure, and they cannot be used as variable names.
+<details>
+  <summary>English version</summary>
 
-Python has thirty-something keywords (and every now and again improvements to Python introduce or eliminate one or two):
+  > `76trombones` is illegal because it does not begin with a letter. `more$` is illegal because it contains an illegal character, the dollar sign. But what’s wrong with `class`?
+</details>
+
+Hóa ra rằng `class` là một trong những **từ khóa** trong Python. Từ khóa xác định các quy tắc và cấu trúc cú pháp của ngôn ngữ và chúng không thể được sử dụng làm tên biến.
+
+<details>
+  <summary>English version</summary>
+
+  > It turns out that class is one of the Python **keywords**. Keywords define the language’s syntax rules and structure, and they cannot be used as variable names.
+</details>
+
+Python có ba mươi từ khóa gì đó (và các cải tiến liên tục của Python đều giới thiệu hoặc loại bỏ một hoặc hai từ khóa):
+
+<details>
+  <summary>English version</summary>
+
+  > Python has thirty-something keywords (and every now and again improvements to Python introduce or eliminate one or two):
+</details>
 
 |-|-|-|-|-|-|
 | --- | --- | --- | --- | --- | --- |
@@ -325,25 +367,63 @@ Python has thirty-something keywords (and every now and again improvements to Py
 | pass | raise | return | try | while | with |
 | yield | True | False | None | - | - |
 
-You might want to keep this list handy. If the interpreter complains about one of your variable names and you don’t know why, see if it is on this list.
+Bạn có thể muốn giữ danh sách hữu ích này. Nếu trình thông dịch phàn nàn về một trong các tên biến của bạn và bạn không biết tại sao, hãy xem liệu nó có trong danh sách này không.
 
-Programmers generally choose names for their variables that are meaningful to the human readers of the program — they help the programmer document, or remember, what the variable is used for.
+<details>
+  <summary>English version</summary>
 
-> **Caution**
+  > You might want to keep this list handy. If the interpreter complains about one of your variable names and you don’t know why, see if it is on this list.
+</details>
+
+Các lập trình viên thường chọn tên cho các biến của họ có ý nghĩa đối với người đọc chương trình - chúng giúp lập trình viên lập tài liệu hoặc ghi nhớ: biến này được sử dụng để làm gì.
+
+<details>
+  <summary>English version</summary>
+
+  > Programmers generally choose names for their variables that are meaningful to the human readers of the program — they help the programmer document, or remember, what the variable is used for.
+</details>
+
+> **Thận trọng**
 >
-> Beginners sometimes confuse “meaningful to the human readers” with “meaningful to the computer”. So they’ll wrongly think that because they’ve called some variable average or pi, it will somehow magically calculate an average, or magically know that the variable pi should have a value like 3.14159. No! The computer doesn’t understand what you intend the variable to mean.
+> Những người mới bắt đầu đôi khi nhầm lẫn “có ý nghĩa đối với người đọc là con người” với “có ý nghĩa đối với máy tính”. Vì vậy, họ sẽ nghĩ sai rằng bởi vì họ đã gọi một biến là số trung bình hoặc số pi; bằng cách nào đó, nó sẽ tính toán một cách kỳ diệu giá trị trung bình hoặc số pi phải có giá trị như 3.14159. Không! Máy tính không hiểu ý bạn muốn biến có nghĩa là gì.
 >
-> So you’ll find some instructors who deliberately don’t choose meaningful names when they teach beginners — not because we don’t think it is a good habit, but because we’re trying to reinforce the message that you — the programmer — must write the program code to calculate the average, and you must write an assignment statement to give the variable pi the value you want it to have.
+> Vì vậy, bạn sẽ thấy một số người hướng dẫn cố tình không chọn những cái tên có ý nghĩa khi họ dạy người mới bắt đầu - không phải vì chúng tôi không nghĩ đó là thói quen tốt, mà vì chúng tôi đang cố gắng củng cố thông điệp rằng bạn - người lập trình - phải viết mã chương trình để tính giá trị trung bình và bạn phải viết một câu lệnh gán để cung cấp cho biến pi giá trị mà bạn muốn.
 
-## 2.4. Statements
+<details>
+  <summary>English version</summary>
 
-A **statement** is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far. Some other kinds of statements that we’ll see shortly are `while` statements, `for` statements, `if` statements, and `import` statements. (There are other kinds too!)
+  > Beginners sometimes confuse “meaningful to the human readers” with “meaningful to the computer”. So they’ll wrongly think that because they’ve called some variable average or pi, it will somehow magically calculate an average, or magically know that the variable pi should have a value like 3.14159. No! The computer doesn’t understand what you intend the variable to mean.
+  >
+  > So you’ll find some instructors who deliberately don’t choose meaningful names when they teach beginners — not because we don’t think it is a good habit, but because we’re trying to reinforce the message that you — the programmer — must write the program code to calculate the average, and you must write an assignment statement to give the variable pi the value you want it to have.
+</details>
 
-When you type a statement on the command line, Python executes it. Statements don’t produce any result.
+## 2.4. Các câu lệnh
 
-## 2.5. Evaluating expressions
+Một **câu lệnh** là một lệnh mà trình thông dịch Python có thể thực thi. Cho đến nay, chúng tôi mới chỉ giới thiệu câu lệnh gán. Một số loại câu lệnh khác mà chúng ta sẽ thấy ngay sau đây là câu lệnh `while`, câu lệnh `for`, câu lệnh `if` và câu lệnh `import`. (Còn có nhiều loại khác nữa!)
 
-An **expression** is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter **evaluates** it and displays the result:
+<details>
+  <summary>English version</summary>
+
+  > A **statement** is an instruction that the Python interpreter can execute. We have only seen the assignment statement so far. Some other kinds of statements that we’ll see shortly are `while` statements, `for` statements, `if` statements, and `import` statements. (There are other kinds too!)
+</details>
+
+Khi bạn nhập một câu lệnh trên dòng lệnh, Python sẽ thực thi nó. Các câu lệnh không hiện ra bất kỳ kết quả nào.
+
+<details>
+  <summary>English version</summary>
+
+  > When you type a statement on the command line, Python executes it. Statements don’t produce any result.
+</details>
+
+## 2.5. Đánh giá biểu thức
+
+**Biểu thức** là sự kết hợp của các giá trị, biến, toán tử và lệnh gọi hàm. Nếu bạn nhập một biểu thức tại dấu nhắc Python, trình thông dịch sẽ **đánh giá** nó và hiển thị kết quả:
+
+<details>
+  <summary>English version</summary>
+
+  > An **expression** is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter **evaluates** it and displays the result:
+</details>
 
 ```python
 >>> 1 + 1
@@ -352,9 +432,21 @@ An **expression** is a combination of values, variables, operators, and calls to
 5
 ```
 
-In this example `len` is a built-in Python function that returns the number of characters in a string. We’ve previously seen the `print` and the `type` functions, so this is our third example of a function!
+Trong ví dụ này `len` là một hàm Python tích hợp sẵn trả về số ký tự trong một chuỗi. Trước đây chúng ta đã thấy các hàm `print` và `type`, vì vậy đây là ví dụ thứ ba của chúng ta về một hàm!
 
-The *evaluation of an expression* produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable.
+<details>
+  <summary>English version</summary>
+
+  > In this example `len` is a built-in Python function that returns the number of characters in a string. We’ve previously seen the `print` and the `type` functions, so this is our third example of a function!
+</details>
+
+Phép đánh giá *của một biểu thức* tạo ra một giá trị, đó là lý do tại sao các biểu thức có thể xuất hiện ở phía bên phải của các câu lệnh gán. Bản thân một giá trị là một biểu thức đơn giản, và một biến cũng vậy.
+
+<details>
+  <summary>English version</summary>
+
+  > The *evaluation of an expression* produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable.
+</details>
 
 ```python
 >>> 17
@@ -367,17 +459,35 @@ The *evaluation of an expression* produces a value, which is why expressions can
 3.14
 ```
 
-## 2.6. Operators and operands
+## 2.6. Toán tử và toán hạng
 
-**Operators** are special tokens that represent computations like addition, multiplication and division. The values the operator uses are called **operands**.
+**Toán tử** là các mã thông báo đặc biệt đại diện cho các phép tính như cộng, nhân và chia. Các giá trị mà toán tử sử dụng được gọi là **toán hạng**.
 
-The following are all legal Python expressions whose meaning is more or less clear:
+<details>
+  <summary>English version</summary>
+
+  > **Operators** are special tokens that represent computations like addition, multiplication and division. The values the operator uses are called **operands**.
+</details>
+
+Sau đây là tất cả các biểu thức Python hợp pháp có ý nghĩa ít nhiều rõ ràng:
+
+<details>
+  <summary>English version</summary>
+
+  > The following are all legal Python expressions whose meaning is more or less clear:
+</details>
 
 ```
 20+32   hour-1   hour*60+minute   minute/60   5**2   (5+9)*(15-7)
 ```
 
-The tokens `+`, `-`, and `*`, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk (`*`) is the token for multiplication, and `**` is the token for exponentiation.
+Các token `+`, `-`, và `*`, và việc sử dụng dấu ngoặc đơn để phân nhóm, ý nghĩa trong Python là ý nghĩa chúng có trong toán học. Dấu hoa thị (`*`) là token cho phép nhân và `**` là token cho phép tính lũy thừa.
+
+<details>
+  <summary>English version</summary>
+
+  > The tokens `+`, `-`, and `*`, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk (`*`) is the token for multiplication, and `**` is the token for exponentiation.
+</details>
 
 ```
 >>> 2 ** 3
@@ -386,11 +496,29 @@ The tokens `+`, `-`, and `*`, and the use of parenthesis for grouping, mean in P
 9
 ```
 
-When a variable name appears in the place of an operand, it is replaced with its value before the operation is performed.
+Khi một tên biến xuất hiện ở vị trí của một toán hạng, nó sẽ được thay thế bằng giá trị của nó trước khi thao tác được thực hiện.
 
-Addition, subtraction, multiplication, and exponentiation all do what you expect.
+<details>
+  <summary>English version</summary>
 
-Example: so let us convert 645 minutes into hours:
+  > When a variable name appears in the place of an operand, it is replaced with its value before the operation is performed.
+</details>
+
+Các phép cộng, trừ, nhân và lũy thừa đều làm được những gì bạn mong đợi.
+
+<details>
+  <summary>English version</summary>
+
+  > Addition, subtraction, multiplication, and exponentiation all do what you expect.
+</details>
+
+Ví dụ: chúng ta hãy chuyển đổi 645 phút thành giờ:
+
+<details>
+  <summary>English version</summary>
+
+  > Example: so let us convert 645 minutes into hours:
+</details>
 
 ```python
 >>> minutes = 645
@@ -399,7 +527,14 @@ Example: so let us convert 645 minutes into hours:
 10.75
 ```
 
-Oops! In Python 3, the division operator `/` always yields a floating point result. What we might have wanted to know was how many *whole* hours there are, and how many minutes remain. Python gives us two different flavors of the division operator. The second, called **floor division** uses the token `//`. Its result is always a whole number — and if it has to adjust the number it always moves it to the left on the number line. So 6 // 4 yields 1, but -6 // 4 might surprise you!
+Ối! Trong Python 3, toán tử chia `/` luôn mang lại kết quả có kiểu dữ liệu là dấu phẩy động. Những gì chúng ta có thể muốn biết là có bao nhiêu giờ và còn lại bao nhiêu phút. Python cung cấp cho chúng ta hai toán tử chia. Loại thứ hai, được gọi là **floor division** (phép chia làm tròn kết quả xuống) sử dụng token `//`. Kết quả của nó luôn là một số nguyên - và nếu nó cần làm tròn, nó luôn di chuyển dấu phẩy sang trái trên trục số. Vì vậy, 6 // 4 cho kết quả là 1, nhưng -6 // 4 có thể khiến bạn ngạc nhiên!
+
+<details>
+  <summary>English version</summary>
+
+  > Oops! In Python 3, the division operator `/` always yields a floating point result. What we might have wanted to know was how many *whole* hours there are, and how many minutes remain. Python gives us two different flavors of the division operator. The second, called **floor division** uses the token `//`. Its result is always a whole number — and if it has to adjust the number it always moves it to the left on the number line. So 6 // 4 yields 1, but -6 // 4 might surprise you!
+
+</details>
 
 ```python
 >>> 7 / 4
@@ -412,7 +547,14 @@ Oops! In Python 3, the division operator `/` always yields a floating point resu
 10
 ```
 
-Take care that you choose the correct flavor of the division operator. If you’re working with expressions where you need floating point values, use the division operator that does the division accurately.
+Hãy chú ý rằng bạn chọn đúng loại của toán tử chia. Nếu bạn đang làm việc với các biểu thức trong đó bạn cần giá trị dấu phẩy động, hãy sử dụng toán tử phép chia (`/`) để thực hiện phép chia chính xác.
+
+<details>
+  <summary>English version</summary>
+
+  > Take care that you choose the correct flavor of the division operator. If you’re working with expressions where you need floating point values, use the division operator that does the division accurately.
+
+</details>
 
 ## 2.7. Type converter functions
 
