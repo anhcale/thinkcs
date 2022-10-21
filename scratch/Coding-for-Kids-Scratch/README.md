@@ -4,16 +4,16 @@ bởi Nathan Jobs
 
 ## Table of Contents
 
-- Introduction
-- Chapter 1: Introduction to Programming
-  + What is Programming?
-  + Why Kids Should Learn Programming?
-  + Why Scratch?
-  + Answers To Important Questions
-  + Requirements
-  + Safety and Security
-  + Exposure
-- Chapter 2: Digital Legos
+- [Introduction](introduction.md)
+- [Chapter 1: Introduction to Programming](01-Introduction-to-Programming.md)
+  + [What is Programming?](01-Introduction-to-Programming.md#what-is-programming)
+  + [Why Kids Should Learn Programming?](01-Introduction-to-Programming.md#why-kids-should-learn-programming)
+  + [Why Scratch?](01-Introduction-to-Programming.md#why-scratch)
+  + [Answers To Important Questions](01-Introduction-to-Programming.md#answers-to-important-questions)
+  + [Requirements](01-Introduction-to-Programming.md#requirements)
+  + [Safety and Security](01-Introduction-to-Programming.md#safety-and-security)
+  + [Exposure](01-Introduction-to-Programming.md#exposure)
+- [Chapter 2: Digital Legos](02-Digital-Legos.md)
   + What Are Blocks?
   + Blocks In Programming
   + Building Lego

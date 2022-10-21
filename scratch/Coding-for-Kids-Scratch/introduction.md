@@ -124,12 +124,6 @@ what that might translate to in the future. It’s fun in its own way, isn’t i
 Let’s teach every kid something that will help them for the rest of their lives.
 </details>
 
-<details>
-  <summary>English version</summary>
-
-  >
-</details>
-
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
 - [Trang trước](copyright.md) - Copyright
