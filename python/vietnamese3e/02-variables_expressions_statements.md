@@ -952,7 +952,7 @@ print("Hrs=", hours, "  mins=", minutes,
 
 ## 2.13. Bảng chú giải
 
-| Từ khóa | Sự mô tả |
+| Từ khóa | Mô tả |
 | --- | --- |
 | câu lệnh gán | Một câu lệnh gán giá trị cho một biến. Ở bên trái của toán tử gán, `=`, là một cái tên. Ở bên phải là một biểu thức được đánh giá bởi trình thông dịch Python và sau đó được gán cho tên. Sự khác biệt giữa bên trái và bên phải của câu lệnh gán thường gây nhầm lẫn cho các lập trình viên mới. Trong phép gán sau: `n = n + 1`, `n` đóng một vai trò rất khác nhau ở mỗi bên của `=`. Ở bên phải, nó là một *giá trị* và tạo nên một phần của *biểu thức* sẽ được đánh giá bởi trình thông dịch Python trước khi gán nó cho tên ở bên trái. |
 | token gán | `=` là token gán của Python. Đừng nhầm nó với *bằng*, là một toán tử để so sánh các giá trị. |
