@@ -556,11 +556,25 @@ Hãy chú ý rằng bạn chọn đúng loại của toán tử chia. Nếu bạ
 
 </details>
 
-## 2.7. Type converter functions
+## 2.7. Hàm chuyển đổi kiểu dữ liệu
 
-Here we’ll look at three more Python functions, `int`, `float` and `str`, which will (attempt to) convert their arguments into types `int`, `float` and `str` respectively. We call these **type converter** functions.
+Ở đây chúng ta sẽ xem xét thêm ba hàm Python, `int`, `float` và `str`, sẽ (cố gắng) chuyển đổi các đối số của chúng thành các kiểu tương ứng là `int`, `float` và `str`. Chúng tôi gọi đây là các hàm **chuyển đổi kiểu dữ liệu**.
 
-The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it *discards* the decimal portion of the number — a process we call *truncation towards zero* on the number line. Let us see this in action:
+<details>
+  <summary>English version</summary>
+
+  > Here we’ll look at three more Python functions, `int`, `float` and `str`, which will (attempt to) convert their arguments into types `int`, `float` and `str` respectively. We call these **type converter** functions.
+
+</details>
+
+Hàm `int` có thể nhận một số dấu phẩy động hoặc một chuỗi và biến nó thành một số nguyên. Đối với số dấu phẩy động, nó *loại bỏ* phần thập phân của số - một quá trình mà chúng tôi gọi là *cắt ngắn về 0* trên trục số. Hãy thử một chút:
+
+<details>
+  <summary>English version</summary>
+
+  > The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it *discards* the decimal portion of the number — a process we call *truncation towards zero* on the number line. Let us see this in action:
+
+</details>
 
 ```python
 >>> int(3.14)
@@ -580,7 +594,14 @@ The `int` function can take a floating point number or a string, and turn it int
 >>> int("23 bottles")
 ```
 
-This last case doesn’t look like a number — what do we expect?
+Trường hợp cuối cùng này không giống như một con số - chúng ta mong đợi điều gì?
+
+<details>
+  <summary>English version</summary>
+
+  > This last case doesn’t look like a number — what do we expect?
+
+</details>
 
 ```
 Traceback (most recent call last):
@@ -588,7 +609,14 @@ File "<interactive input>", line 1, in <module>
 ValueError: invalid literal for int() with base 10: '23 bottles'
 ```
 
-The type converter `float` can turn an integer, a float, or a syntactically legal string into a float:
+Hàm `float` có thể biến một số nguyên, một số float hoặc một chuỗi hợp pháp về mặt cú pháp thành một số float:
+
+<details>
+  <summary>English version</summary>
+
+  > The type converter `float` can turn an integer, a float, or a syntactically legal string into a float:
+
+</details>
 
 ```python
 >>> float(17)
@@ -597,7 +625,14 @@ The type converter `float` can turn an integer, a float, or a syntactically lega
 123.45
 ```
 
-The type converter `str` turns its argument into a string:
+Hàm `str` biến đối số thành một chuỗi:
+
+<details>
+  <summary>English version</summary>
+
+  > The type converter `str` turns its argument into a string:
+
+</details>
 
 ```python
 >>> str(17)
@@ -606,15 +641,22 @@ The type converter `str` turns its argument into a string:
 '123.45'
 ```
 
-## 2.8. Order of operations
+## 2.8. Độ ưu tiên của các toán tử
 
-When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS is a useful way to remember the order of operations:
+Khi nhiều toán tử xuất hiện trong một biểu thức, thứ tự đánh giá phụ thuộc vào **quy tắc ưu tiên**. Python tuân theo các quy tắc ưu tiên tương tự cho các toán tử toán học của nó mà toán học thực hiện. Từ viết tắt `PEMDAS` là một cách hữu ích để ghi nhớ thứ tự của các toán tử:
 
-1. **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, `2 * (3-1)` is 4, and `(1+1)**(5-2)` is 8. You can also use parentheses to make an expression easier to read, as in `(minute * 100) / 60`, even though it doesn’t change the result.
-2. **E**xponentiation has the next highest precedence, so `2**1+1` is 3 and not 4, and `3*1**3` is 3 and not 27.
-3. **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So `2*3-1` yields 5 rather than 4, and `5-2*2` is 1, not 6.
-4. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression `6-3+2`, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been `6-(3+2)`, which is 1. (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don’t be misled. Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
-   + Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator `**`, so a useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
+<details>
+  <summary>English version</summary>
+
+  > When more than one operator appears in an expression, the order of evaluation depends on the **rules of precedence**. Python follows the same precedence rules for its mathematical operators that mathematics does. The acronym PEMDAS is a useful way to remember the order of operations:
+
+</details>
+
+1. **P**arentheses: Dấu ngoặc đơn có mức độ ưu tiên cao nhất và có thể được sử dụng để buộc một biểu thức đánh giá theo thứ tự bạn muốn. Vì các biểu thức trong ngoặc đơn được đánh giá đầu tiên, `2 * (3-1)` là 4 và `(1 + 1) ** (5-2)` là 8. Bạn cũng có thể sử dụng dấu ngoặc đơn để làm cho một biểu thức dễ đọc hơn, như trong `(minute * 100) / 60`, mặc dù nó không thay đổi kết quả.
+2. **E**xponentiation: lũy thừa có mức độ ưu tiên cao nhất tiếp theo, vì vậy `2 ** 1 + 1` là 3 chứ không phải 4 và `3 * 1 ** 3` là 3 chứ không phải 27.
+3. **M**ultiplication, **D**ivision > **A**ddition, **S**ubtraction: Phép nhân và Phép chia có cùng mức độ ưu tiên, cao hơn cộng và trừ, cũng có cùng mức độ ưu tiên. Vì vậy, `2 * 3-1` là 5 thay vì 4, và `5-2 * 2` là 1, không phải 6.
+4. Các toán tử có cùng mức độ ưu tiên *giống nhau* được đánh giá từ trái sang phải. Trong đại số, chúng ta nói chúng là *left-associative*. Vì vậy, trong biểu thức `6-3 + 2`, phép trừ xảy ra đầu tiên, cho kết quả là 3. Sau đó, chúng ta cộng 2 để nhận được kết quả 5. Nếu các phép toán được đánh giá từ phải sang trái, kết quả sẽ là `6- ( 3 + 2)`, là 1. (Từ viết tắt PEDMAS có thể khiến bạn hiểu nhầm rằng phép chia có mức độ ưu tiên cao hơn phép nhân và phép cộng được thực hiện trước phép trừ - đừng nhầm lẫn. Phép trừ và phép cộng được ưu tiên như nhau, và áp dụng quy tắc từ trái sang phải.)
+   + Do một số điểm khác trong lịch sử, một ngoại lệ đối với quy tắc kết hợp trái sang phải là toán tử lũy thừa `**`, vì vậy, một gợi ý hữu ích là luôn sử dụng dấu ngoặc đơn để buộc chính xác thứ tự bạn muốn khi liên quan đến phép lũy thừa:
 
         ```python
         >>> 2 ** 3 ** 2     # The right-most ** operator gets done first!
@@ -623,11 +665,38 @@ When more than one operator appears in an expression, the order of evaluation de
         64
         ```
 
-        The immediate mode command prompt of Python is great for exploring and experimenting with expressions like this.
+        Chế độ tức thì của Python rất tuyệt vời để khám phá và thử nghiệm với các biểu thức như thế này.
 
-## 2.9. Operations on strings
+<details>
+  <summary>English version</summary>
 
-In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that `message` has type string):
+  > 1. **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, `2 * (3-1)` is 4, and `(1+1)**(5-2)` is 8. You can also use parentheses to make an expression easier to read, as in `(minute * 100) / 60`, even though it doesn’t change the result.
+  > 2. **E**xponentiation has the next highest precedence, so `2**1+1` is 3 and not 4, and `3*1**3` is 3 and not 27.
+  > 3. **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So `2*3-1` yields 5 rather than 4, and `5-2*2` is 1, not 6.
+  > 4. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression `6-3+2`, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been `6-(3+2)`, which is 1. (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don’t be misled. Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
+  >    + Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator `**`, so a useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
+  >
+  >         ```python
+  >         >>> 2 ** 3 ** 2     # The right-most ** operator gets done first!
+  >         512
+  >         >>> (2 ** 3) ** 2   # Use parentheses to force the order you want!
+  >         64
+  >         ```
+  >
+  >         The immediate mode command prompt of Python is great for exploring and experimenting with expressions like this.
+
+</details>
+
+## 2.9. Các toán tử trên chuỗi
+
+Nói chung, bạn không thể thực hiện các phép toán toán học trên chuỗi, ngay cả khi chuỗi trông giống như số. Những điều sau là bất hợp pháp (giả sử rằng `message` có kiểu chuỗi):
+
+<details>
+  <summary>English version</summary>
+
+  > In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that `message` has type string):
+
+</details>
 
 ```python
 >>> message - 1        # Error
@@ -636,7 +705,14 @@ In general, you cannot perform mathematical operations on strings, even if the s
 >>> "15" + 2           # Error
 ```
 
-Interestingly, the + operator does work with strings, but for strings, the + operator represents **concatenation**, not addition. Concatenation means joining the two operands by linking them end-to-end. For example:
+Điều thú vị là toán tử + hoạt động với chuỗi, nhưng đối với chuỗi, toán tử + đại diện cho **nối chuỗi**, không phải phép `cộng`. Kết nối có nghĩa là nối hai toán hạng bằng cách liên kết chúng từ đầu đến cuối. Ví dụ:
+
+<details>
+  <summary>English version</summary>
+
+  > Interestingly, the + operator does work with strings, but for strings, the + operator represents **concatenation**, not addition. Concatenation means joining the two operands by linking them end-to-end. For example:
+
+</details>
 
 ```python
 fruit = "banana"
@@ -644,39 +720,116 @@ baked_good = " nut bread"
 print(fruit + baked_good)
 ```
 
-The output of this program is `banana nut bread`. The space before the word `nut` is part of the string, and is necessary to produce the space between the concatenated strings.
+Đầu ra của chương trình này là `banana nut bread`. Khoảng trắng trước từ `nut` là một phần của chuỗi và cần thiết để tạo ra khoảng trắng giữa các chuỗi được nối.
 
-The `*` operator also works on strings; it performs repetition. For example, `'Fun'*3` is `'FunFunFun'`. One of the operands has to be a string; the other has to be an integer.
+<details>
+  <summary>English version</summary>
 
-On one hand, this interpretation of `+` and `*` makes sense by analogy with addition and multiplication. Just as `4*3` is equivalent to `4+4+4`, we expect `"Fun"*3` to be the same as `"Fun"+"Fun"+"Fun"`, and it is. On the other hand, there is a significant way in which string concatenation and repetition are different from integer addition and multiplication. Can you think of a property that addition and multiplication have that string concatenation and repetition do not?
+  > The output of this program is `banana nut bread`. The space before the word `nut` is part of the string, and is necessary to produce the space between the concatenated strings.
 
-## 2.10. Input
+</details>
 
-There is a built-in function in Python for getting input from the user:
+Toán tử `*` cũng hoạt động trên chuỗi; nó thực hiện lặp lại. Ví dụ: `'Fun '* 3` là `FunFunFun`. Một trong các toán hạng phải là một chuỗi; cái kia phải là một số nguyên.
+
+<details>
+  <summary>English version</summary>
+
+  > The `*` operator also works on strings; it performs repetition. For example, `'Fun'*3` is `'FunFunFun'`. One of the operands has to be a string; the other has to be an integer.
+
+</details>
+
+Một mặt, cách giải thích `+` và `*` này có ý nghĩa bởi sự tương tự với phép cộng và phép nhân. Cũng giống như `4 * 3` tương đương với `4 + 4 + 4`, chúng ta mong đợi `"Fun" * 3` giống với `"Fun" + "Fun" + "Fun"`, và đúng như vậy. Mặt khác, có một cách quan trọng trong đó việc nối và lặp lại chuỗi khác với phép cộng và phép nhân số nguyên. Bạn có thể nghĩ về một thuộc tính mà phép cộng và phép nhân có nối chuỗi và lặp lại không?
+
+<details>
+  <summary>English version</summary>
+
+  > On one hand, this interpretation of `+` and `*` makes sense by analogy with addition and multiplication. Just as `4*3` is equivalent to `4+4+4`, we expect `"Fun"*3` to be the same as `"Fun"+"Fun"+"Fun"`, and it is. On the other hand, there is a significant way in which string concatenation and repetition are different from integer addition and multiplication. Can you think of a property that addition and multiplication have that string concatenation and repetition do not?
+
+</details>
+
+## 2.10. Đầu vào
+
+Có một hàm tích hợp trong Python để lấy đầu vào từ người dùng:
+
+<details>
+  <summary>English version</summary>
+
+  > There is a built-in function in Python for getting input from the user:
+
+</details>
 
 ```python
 n = input("Please enter your name: ")
 ```
 
-A sample run of this script in PyScripter would pop up a dialog window like this:
+Một đoạn chạy mẫu của tập lệnh này trong VS Code sẽ cho phép người dùng nhập vào dữ liệu như sau:
+
+<details>
+  <summary>English version</summary>
+
+  > A sample run of this script in PyScripter would pop up a dialog window like this:
+
+</details>
 
 ![enter_name](images/enter_name_dialog.png)
 
-The user of the program can enter the name and click *OK*, and when this happens the text that has been entered is returned from the `input` function, and in this case assigned to the variable `n`.
+Người dùng chương trình có thể nhập tên và ấn phím *Enter*, và khi điều này xảy ra, văn bản đã được nhập sẽ được trả về từ hàm `input` và trong trường hợp này được gán cho biến `n`.
 
-Even if you asked the user to enter their age, you would get back a string like `"17"`. It would be your job, as the programmer, to convert that string into a `int` or a `float`, using the int or float converter functions we saw earlier.
+<details>
+  <summary>English version</summary>
 
-## 2.11. Composition
+  > The user of the program can enter the name and click *OK*, and when this happens the text that has been entered is returned from the `input` function, and in this case assigned to the variable `n`.
 
-So far, we have looked at the elements of a program — variables, expressions, statements, and function calls — in isolation, without talking about how to combine them.
+</details>
 
-One of the most useful features of programming languages is their ability to take small building blocks and **compose** them into larger chunks.
+Ngay cả khi bạn yêu cầu người dùng nhập tuổi của họ, bạn sẽ nhận lại một chuỗi như `"17"`. Với tư cách là lập trình viên, công việc của bạn là chuyển đổi chuỗi đó thành `int` hoặc `float`, bằng cách sử dụng các hàm chuyển đổi int hoặc float mà chúng ta đã thấy trước đó.
 
-For example, we know how to get the user to enter some input, we know how to convert the string we get into a float, we know how to write a complex expression, and we know how to print values. Let’s put these together in a small four-step program that asks the user to input a value for the radius of a circle, and then computes the area of the circle from the formula
+<details>
+  <summary>English version</summary>
 
-![circle_area](images/circle_area.png)
+  > Even if you asked the user to enter their age, you would get back a string like `"17"`. It would be your job, as the programmer, to convert that string into a `int` or a `float`, using the int or float converter functions we saw earlier.
 
-Firstly, we’ll do the four steps one at a time:
+</details>
+
+## 2.11. Kết hợp
+
+Cho đến nay, chúng ta đã xem xét các phần tử của một chương trình - các biến, biểu thức, câu lệnh và lệnh gọi hàm - một cách riêng biệt, mà không nói về cách kết hợp chúng.
+
+<details>
+  <summary>English version</summary>
+
+  > So far, we have looked at the elements of a program — variables, expressions, statements, and function calls — in isolation, without talking about how to combine them.
+
+</details>
+
+Một trong những tính năng hữu ích nhất của ngôn ngữ lập trình là khả năng lấy các khối nhỏ và **kết hợp** chúng thành các khối lớn hơn.
+
+<details>
+  <summary>English version</summary>
+
+  > One of the most useful features of programming languages is their ability to take small building blocks and **compose** them into larger chunks.
+
+</details>
+
+Ví dụ, chúng ta biết cách để người dùng nhập một số đầu vào, chúng ta biết cách chuyển chuỗi chúng ta nhận được thành một float, chúng ta biết cách viết một biểu thức phức tạp và chúng ta biết cách in các giá trị. Hãy tập hợp những thứ này lại với nhau trong một chương trình nhỏ gồm bốn bước yêu cầu người dùng nhập một giá trị cho bán kính của hình tròn, sau đó tính diện tích của hình tròn từ công thức
+
+<details>
+  <summary>English version</summary>
+
+  > For example, we know how to get the user to enter some input, we know how to convert the string we get into a float, we know how to write a complex expression, and we know how to print values. Let’s put these together in a small four-step program that asks the user to input a value for the radius of a circle, and then computes the area of the circle from the formula
+
+</details>
+
+![circle_area](images/circle_area.jpg)
+
+Đầu tiên, chúng ta sẽ thực hiện bốn bước:
+
+<details>
+  <summary>English version</summary>
+
+  > Firstly, we’ll do the four steps one at a time:
+
+</details>
 
 ```python
 response = input("What is your radius? ")
@@ -685,26 +838,61 @@ area = 3.14159 * r**2
 print("The area is ", area)
 ```
 
-Now let’s compose the first two lines into a single line of code, and compose the second two lines into another line of code.
+Bây giờ, hãy soạn hai dòng đầu tiên thành một dòng mã và soạn hai dòng thứ hai thành một dòng mã khác.
+
+<details>
+  <summary>English version</summary>
+
+  > Now let’s compose the first two lines into a single line of code, and compose the second two lines into another line of code.
+
+</details>
 
 ```python
 r = float( input("What is your radius? ") )
 print("The area is ", 3.14159 * r**2)
 ```
 
-If we really wanted to be tricky, we could write it all in one statement:
+Nếu chúng ta thực sự muốn, chúng ta có thể viết tất cả trong một câu lệnh:
+
+<details>
+  <summary>English version</summary>
+
+  > If we really wanted to be tricky, we could write it all in one statement:
+
+</details>
 
 ```python
 print("The area is ", 3.14159*float(input("What is your radius?"))**2)
 ```
 
-Such compact code may not be most understandable for humans, but it does illustrate how we can compose bigger chunks from our building blocks.
+Đoạn mã nhỏ gọn như vậy có thể không dễ hiểu đối với con người, nhưng nó minh họa cách chúng ta có thể tạo ra các khối lớn hơn từ các khối nhỏ của chúng ta.
 
-If you’re ever in doubt about whether to compose code or fragment it into smaller steps, try to make it as simple as you can for the human to follow. My choice would be the first case above, with four separate steps.
+<details>
+  <summary>English version</summary>
 
-## 2.12. The modulus operator
+  > Such compact code may not be most understandable for humans, but it does illustrate how we can compose bigger chunks from our building blocks.
 
-The **modulus operator** works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (`%`). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
+</details>
+
+Nếu bạn nghi ngờ về việc có nên viết mã theo kiểu kết hợp hay phân đoạn mã thành các bước nhỏ hơn, hãy cố gắng làm cho nó đơn giản nhất có thể để mọi người làm theo. Lựa chọn của tôi sẽ là trường hợp đầu tiên ở trên, với bốn bước riêng biệt.
+
+<details>
+  <summary>English version</summary>
+
+  > If you’re ever in doubt about whether to compose code or fragment it into smaller steps, try to make it as simple as you can for the human to follow. My choice would be the first case above, with four separate steps.
+
+</details>
+
+## 2.12. Toán tử modulus
+
+Toán tử **modulus** hoạt động trên số nguyên (và biểu thức số nguyên) và cho phần dư của phép tính chia. Trong Python, toán tử modulus là dấu phần trăm (`%`). Cú pháp giống như đối với các toán tử khác. Nó có cùng thứ tự ưu tiên với toán tử nhân.
+
+<details>
+  <summary>English version</summary>
+
+  > The **modulus operator** works on integers (and integer expressions) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign (`%`). The syntax is the same as for other operators. It has the same precedence as the multiplication operator.
+
+</details>
 
 ```python
 >>> q = 7 // 3     # This is integer division operator
@@ -715,69 +903,126 @@ The **modulus operator** works on integers (and integer expressions) and gives t
 1
 ```
 
-So 7 divided by 3 is 2 with a remainder of 1.
+Vậy 7 chia cho 3 được 2 với dư là 1.
 
-The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another—if `x % y` is zero, then `x` is divisible by `y`.
+<details>
+  <summary>English version</summary>
 
-Also, you can extract the right-most digit or digits from a number. For example, `x % 10` yields the right-most digit of `x` (in base 10). Similarly `x % 100` yields the last two digits.
+  > So 7 divided by 3 is 2 with a remainder of 1.
 
-It is also extremely useful for doing conversions, say from seconds, to hours, minutes and seconds. So let’s write a program to ask the user to enter some seconds, and we’ll convert them into hours, minutes, and remaining seconds.
+</details>
+
+Toán tử modulus hóa ra lại hữu ích một cách đáng ngạc nhiên. Ví dụ: bạn có thể kiểm tra xem một số có chia hết cho số khác hay không — nếu `x % y` bằng 0, thì `x` có chia hết cho `y`.
+
+<details>
+  <summary>English version</summary>
+
+  > The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another—if `x % y` is zero, then `x` is divisible by `y`.
+
+</details>
+
+Ngoài ra, bạn có thể trích xuất chữ số ngoài cùng bên phải hoặc các chữ số từ một số. Ví dụ: `x % 10` mang lại chữ số tận cùng bên phải của `x` (trong cơ số 10). Tương tự `x % 100` cho ra hai chữ số cuối cùng.
+
+<details>
+  <summary>English version</summary>
+
+  > Also, you can extract the right-most digit or digits from a number. For example, `x % 10` yields the right-most digit of `x` (in base 10). Similarly `x % 100` yields the last two digits.
+
+</details>
+
+Nó cũng cực kỳ hữu ích để thực hiện chuyển đổi, chẳng hạn như từ giây, sang giờ, phút và giây. Vì vậy, hãy viết một chương trình để yêu cầu người dùng nhập một số giây và chúng tôi sẽ chuyển đổi chúng thành giờ, phút và giây còn lại.
+
+<details>
+  <summary>English version</summary>
+
+  > It is also extremely useful for doing conversions, say from seconds, to hours, minutes and seconds. So let’s write a program to ask the user to enter some seconds, and we’ll convert them into hours, minutes, and remaining seconds.
+
+</details>
 
 ```python
 total_secs = int(input("How many seconds, in total?"))
 hours = total_secs // 3600
 secs_still_remaining = total_secs % 3600
 minutes =  secs_still_remaining // 60
-secs_finally_remaining = secs_still_remaining  % 60
+secs_finally_remaining = secs_still_remaining % 60
 
 print("Hrs=", hours, "  mins=", minutes,
                          "secs=", secs_finally_remaining)
 ```
 
-## 2.13. Glossary
+## 2.13. Bảng chú giải
 
-| Keyword | Description |
+| Từ khóa | Sự mô tả |
 | --- | --- |
-| assignment statement | A statement that assigns a value to a name (variable). To the left of the assignment operator, `=`, is a name. To the right of the assignment token is an expression which is evaluated by the Python interpreter and then assigned to the name. The difference between the left and right hand sides of the assignment statement is often confusing to new programmers. In the following assignment: ``` n = n + 1```, `n` plays a very different role on each side of the `=`. On the right it is a *value* and makes up part of the *expression* which will be evaluated by the Python interpreter before assigning it to the name on the left. |
-| assignment token | `=` is Python’s assignment token. Do not confuse it with *equals*, which is an operator for comparing values. |
-| composition | The ability to combine simple expressions and statements into compound statements and expressions in order to represent complex computations concisely. |
-| concatenate | To join two strings end-to-end. |
-| data type | A set of values. The type of a value determines how it can be used in expressions. So far, the types you have seen are integers (`int`), floating-point numbers (`float`), and strings (`str`). |
-| evaluate | To simplify an expression by performing the operations in order to yield a single value. |
-| expression | A combination of variables, operators, and values that represents a single result value. |
-| float | A Python data type which stores `floating-point` numbers. Floating-point numbers are stored internally in two parts: a *base* and an *exponent*. When printed in the standard format, they look like decimal numbers. Beware of rounding errors when you use `floats`, and remember that they are only approximate values. |
-| floor division | An operator (denoted by the token `//`) that divides one number by another and yields an integer, or, if the result is not already an integer, it yields the next smallest integer. |
-| int | A Python data type that holds positive and negative whole numbers. |
-| keyword | A reserved word that is used by the compiler to parse program; you cannot use keywords like `if`, `def`, and `while` as variable names. |
-| modulus operator | An operator, denoted with a percent sign ( `%`), that works on integers and yields the remainder when one number is divided by another. |
-| operand | One of the values on which an operator operates. |
-| operator | A special symbol that represents a simple computation like addition, multiplication, or string concatenation. |
-| rules of precedence | The set of rules governing the order in which expressions involving multiple operators and operands are evaluated. |
-| state snapshot | A graphical representation of a set of variables and the values to which they refer, taken at a particular instant during the program’s execution. |
-| statement | An instruction that the Python interpreter can execute. So far we have only seen the assignment statement, but we will soon meet the `import` statement and the `for` statement. |
-| str | A Python data type that holds a string of characters. |
-| value | A number or string (or other things to be named later) that can be stored in a variable or computed in an expression. |
-| variable | A name that refers to a value. |
-| variable name | A name given to a variable. Variable names in Python consist of a sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins with a letter. In best programming practice, variable names should be chosen so that they describe their use in the program, making the program *self documenting*. |
+| câu lệnh gán | Một câu lệnh gán giá trị cho một biến. Ở bên trái của toán tử gán, `=`, là một cái tên. Ở bên phải là một biểu thức được đánh giá bởi trình thông dịch Python và sau đó được gán cho tên. Sự khác biệt giữa bên trái và bên phải của câu lệnh gán thường gây nhầm lẫn cho các lập trình viên mới. Trong phép gán sau: `n = n + 1`, `n` đóng một vai trò rất khác nhau ở mỗi bên của `=`. Ở bên phải, nó là một *giá trị* và tạo nên một phần của *biểu thức* sẽ được đánh giá bởi trình thông dịch Python trước khi gán nó cho tên ở bên trái. |
+| token gán | `=` là token gán của Python. Đừng nhầm nó với *bằng*, là một toán tử để so sánh các giá trị. |
+| kết hợp | Khả năng kết hợp các biểu thức và câu lệnh đơn giản thành các câu lệnh và biểu thức ghép để biểu diễn các phép tính phức tạp một cách ngắn gọn. |
+| nối | Để nối hai chuỗi end-to-end. |
+| kiểu dữ liệu | Một tập hợp các giá trị. Kiểu của một giá trị xác định cách nó có thể được sử dụng trong các biểu thức. Cho đến nay, các kiểu bạn đã thấy là số nguyên (`int`), số dấu phẩy động (`float`) và chuỗi (`str`). |
+| đánh giá | Để đơn giản hóa một biểu thức bằng cách thực hiện các phép toán để mang lại một giá trị duy nhất. |
+| biểu thức | Sự kết hợp của các biến, toán tử và giá trị đại diện cho một giá trị kết quả duy nhất. |
+| float | Một kiểu dữ liệu Python lưu trữ các số `dấu phẩy động`. Số dấu phẩy động được lưu trữ bên trong thành hai phần: a *cơ số* và *số mũ*. Khi được in ở định dạng tiêu chuẩn, chúng trông giống như số thập phân. Hãy cẩn thận với các lỗi làm tròn khi bạn sử dụng `float` và hãy nhớ rằng chúng chỉ là các giá trị gần đúng. |
+| floor division | Một toán tử (được biểu thị bằng token `//`) chia một số cho một số khác và cho ra một số nguyên hoặc nếu kết quả chưa phải là một số nguyên thì nó sẽ cho ra một số nguyên nhỏ nhất tiếp theo. |
+| int | Một kiểu dữ liệu Python chứa các số nguyên dương và âm. |
+| từ khóa | Một từ dành riêng được trình biên dịch sử dụng để phân tích cú pháp chương trình; bạn không thể sử dụng các từ khóa như `if`,`def` và `while` làm tên biến. |
+| toán tử modulus | Một toán tử, được biểu thị bằng dấu phần trăm (`%`), hoạt động trên số nguyên và trả về phần dư khi một số bị chia cho một số khác. |
+| toán hạng | Một trong những giá trị mà toán tử hoạt động. |
+| toán tử | Một ký hiệu đặc biệt đại diện cho một phép tính đơn giản như cộng, nhân hoặc nối chuỗi. |
+| quy tắc ưu tiên | Tập hợp các quy tắc điều chỉnh thứ tự trong đó các biểu thức liên quan đến nhiều toán tử và toán hạng được đánh giá. |
+| ảnh chụp trạng thái | Biểu diễn đồ họa của một tập hợp các biến và các giá trị mà chúng tham chiếu đến, được thực hiện tại một thời điểm cụ thể trong quá trình thực thi chương trình. |
+| câu lệnh | Một lệnh mà trình thông dịch Python có thể thực thi. Cho đến nay chúng ta mới chỉ thấy câu lệnh gán, nhưng chúng ta sẽ sớm gặp câu lệnh `import` và `for`. |
+| str | Một kiểu dữ liệu Python chứa một chuỗi ký tự. |
+| giá trị | Một số hoặc chuỗi (hoặc những thứ khác sẽ được đặt tên sau này) có thể được lưu trữ trong một biến hoặc tính toán trong một biểu thức. |
+| biến | Tên đề cập đến một giá trị. |
+| tên biến | Tên được đặt cho một biến. Tên biến trong Python bao gồm một chuỗi các chữ cái (a..z, A..Z và _) và các chữ số (0..9) bắt đầu bằng một chữ cái. Trong thực tiễn lập trình, tốt nhất tên biến nên được chọn để chúng mô tả việc sử dụng chúng trong chương trình, làm cho chương trình *tự tài liệu hóa*. |
 
-## 2.14. Exercises
+<details>
+  <summary>English version</summary>
 
-1. Take the sentence: *All work and no play makes Jack a dull boy*. Store each word in a separate variable, then print out the sentence on one line using `print`.
-2. Add parenthesis to the expression `6 * 1 - 2` to change its value from 4 to -6.
-3. Place a comment before a line of code that previously worked, and record what happens when you rerun the program.
-4. Start the Python interpreter and enter `bruce + 4` at the prompt. This will give you an error:
+  > | Keyword | Description |
+  > | --- | --- |
+  > | assignment statement | A statement that assigns a value to a name (variable). To the left of the assignment operator, `=`, is a name. To the right of the assignment token is an expression which is evaluated by the Python interpreter and then assigned to the name. The difference between the left and right hand sides of the assignment statement is often confusing to new programmers. In the following assignment: ``` n = n + 1```, `n` plays a very different role on each side of the `=`. On the right it is a *value* and makes up part of the *expression* which will be evaluated by the Python interpreter before assigning it to the name on the left. |
+  > | assignment token | `=` is Python’s assignment token. Do not confuse it with *equals*, which is an operator for comparing values. |
+  > | composition | The ability to combine simple expressions and statements into compound statements and expressions in order to represent complex computations concisely. |
+  > | concatenate | To join two strings end-to-end. |
+  > | data type | A set of values. The type of a value determines how it can be used in expressions. So far, the types you have seen are integers (`int`), floating-point numbers (`float`), and strings (`str`). |
+  > | evaluate | To simplify an expression by performing the operations in order to yield a single value. |
+  > | expression | A combination of variables, operators, and values that represents a single result value. |
+  > | float | A Python data type which stores `floating-point` numbers. Floating-point numbers are stored internally in two parts: a *base* and an *exponent*. When printed in the standard format, they look like decimal numbers. Beware of rounding errors when you use `floats`, and remember that they are only approximate values. |
+  > | floor division | An operator (denoted by the token `//`) that divides one number by another and yields an integer, or, if the result is not already an integer, it yields the next smallest integer. |
+  > | int | A Python data type that holds positive and negative whole numbers. |
+  > | keyword | A reserved word that is used by the compiler to parse program; you cannot use keywords like `if`, `def`, and `while` as variable names. |
+  > | modulus operator | An operator, denoted with a percent sign ( `%`), that works on integers and yields the remainder when one number is divided by another. |
+  > | operand | One of the values on which an operator operates. |
+  > | operator | A special symbol that represents a simple computation like addition, multiplication, or string concatenation. |
+  > | rules of precedence | The set of rules governing the order in which expressions involving multiple operators and operands are evaluated. |
+  > | state snapshot | A graphical representation of a set of variables and the values to which they refer, taken at a particular instant during the program’s execution. |
+  > | statement | An instruction that the Python interpreter can execute. So far we have only seen the assignment statement, but we will soon meet the `import` statement and the `for` statement. |
+  > | str | A Python data type that holds a string of characters. |
+  > | value | A number or string (or other things to be named later) that can be stored in a variable or computed in an expression. |
+  > | variable | A name that refers to a value. |
+  > | variable name | A name given to a variable. Variable names in Python consist of a sequence of letters (a..z, A..Z, and _) and digits (0..9) that begins with a letter. In best programming practice, variable names should be chosen so that they describe their use in the program, making the program *self documenting*. |
+
+</details>
+
+## 2.14. Bài tập
+
+1. Lấy câu: *All work and no play makes Jack a dull boy*. Lưu trữ từng từ trong một biến riêng biệt, sau đó in câu trên một dòng bằng cách sử dụng `print`.
+2. Thêm dấu ngoặc vào biểu thức `6 * 1 - 2` để thay đổi giá trị của nó từ 4 thành -6.
+3. Đặt một chú thích trước dòng mã đã hoạt động trước đó và ghi lại những gì sẽ xảy ra khi bạn chạy lại chương trình.
+4. Khởi động trình thông dịch Python và nhập `bruce + 4` tại dấu nhắc. Điều này sẽ cung cấp cho bạn một lỗi:
 
    ```python
    NameError: name 'bruce' is not defined
    ```
 
-   Assign a value to `bruce` so that `bruce + 4` evaluates to `10`.
-5. The formula for computing the final amount if one is earning compound interest is given on Wikipedia as
+   Gán giá trị cho `bruce` để `bruce + 4` có kết quả là `10`.
+5. Công thức tính số tiền cuối cùng nếu một người đang kiếm [lãi kép](https://vi.wikipedia.org/wiki/L%C3%A3i_k%C3%A9p) được đưa ra trên Wikipedia dưới dạng
 
    ![compoundInterest](images/compoundInterest.png)
 
-   Write a Python program that assigns the principal amount of $10000 to variable *P*, assign to *n* the value 12, and assign to *r* the interest rate of 8%. Then have the program prompt the user for the number of years *t* that the money will be compounded for. Calculate and print the final amount after *t* years.
-6. Evaluate the following numerical expressions in your head, then use the Python interpreter to check your results:
+   Viết chương trình Python gán số tiền gốc $10000 cho biến *P*, gán cho *n* giá trị 12 và gán cho *r* lãi suất 8%. Sau đó, yêu cầu chương trình nhắc người dùng về số năm *t* mà số tiền sẽ được cộng lại. Tính toán và in ra số tiền cuối cùng sau *t* năm.
+6. Đánh giá các biểu thức số sau trong đầu bạn, sau đó sử dụng trình thông dịch Python để kiểm tra kết quả của bạn:
 
    1. `>>> 5 % 2`
    2. `>>> 9 % 5`
@@ -787,9 +1032,42 @@ print("Hrs=", hours, "  mins=", minutes,
    6. `>>> 0 % 7`
    7. `>>> 7 % 0`
 
-   What happened with the last example? Why? If you were able to correctly anticipate the computer’s response in all but the last one, it is time to move on. If not, take time now to make up examples of your own. Explore the modulus operator until you are confident you understand how it works.
-7. You look at the clock and it is exactly 2pm. You set an alarm to go off in 51 hours. At what time does the alarm go off? (Hint: you could count on your fingers, but this is not what we’re after. If you are tempted to count on your fingers, change the 51 to 5100.)
-8. Write a Python program to solve the general version of the above problem. Ask the user for the time now (in hours), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off.
+   Điều gì đã xảy ra với ví dụ cuối cùng? Tại sao? Nếu bạn có thể dự đoán chính xác phản hồi của máy tính trong tất cả ngoại trừ phản hồi cuối cùng, thì đã đến lúc phải tiếp tục. Nếu không, hãy dành thời gian để tạo ra các ví dụ của riêng bạn. Khám phá toán tử modulus cho đến khi bạn tự tin rằng mình hiểu cách hoạt động của nó.
+7. Bạn nhìn đồng hồ thì đúng 2 giờ chiều. Bạn đặt báo thức sẽ kêu sau 51 giờ nữa. Lúc mấy giờ chuông báo thức kêu? (Gợi ý: bạn có thể đếm trên đầu ngón tay của mình, nhưng đây không phải là điều chúng ta đang theo đuổi. Nếu bạn muốn đếm trên đầu ngón tay, hãy đổi 51 thành 5100.)
+8. Viết chương trình Python để giải quyết phiên bản chung của vấn đề trên. Hỏi người dùng về thời gian hiện tại (tính bằng giờ) và hỏi số giờ phải chờ. Chương trình của bạn sẽ xuất ra thời gian sẽ hiển thị trên đồng hồ khi chuông báo thức reo.
+
+<details>
+  <summary>English version</summary>
+
+  > 1. Take the sentence: *All work and no play makes Jack a dull boy*. Store each word in a separate variable, then print out the sentence on one line using `print`.
+  > 2. Add parenthesis to the expression `6 * 1 - 2` to change its value from 4 to -6.
+  > 3. Place a comment before a line of code that previously worked, and record what happens when you rerun the program.
+  > 4. Start the Python interpreter and enter `bruce + 4` at the prompt. This will give you an error:
+  >
+  >    ```python
+  >    NameError: name 'bruce' is not defined
+  >    ```
+  >
+  >    Assign a value to `bruce` so that `bruce + 4` evaluates to `10`.
+  > 5. The formula for computing the final amount if one is earning compound interest is given on Wikipedia as
+  >
+  >    ![compoundInterest](images/compoundInterest.png)
+  >
+  >    Write a Python program that assigns the principal amount of $10000 to variable *P*, assign to *n* the value 12, and assign to *r* the interest rate of 8%. Then have the program prompt the user for the number of years *t* that the money will be compounded for. Calculate and print the final amount after *t* years.
+  > 6. Evaluate the following numerical expressions in your head, then use the Python interpreter to check your results:
+  >
+  >    1. `>>> 5 % 2`
+  >    2. `>>> 9 % 5`
+  >    3. `>>> 15 % 12`
+  >    4. `>>> 12 % 15`
+  >    5. `>>> 6 % 6`
+  >    6. `>>> 0 % 7`
+  >    7. `>>> 7 % 0`
+  >
+  >    What happened with the last example? Why? If you were able to correctly anticipate the computer’s response in all but the last one, it is time to move on. If not, take time now to make up examples of your own. Explore the modulus operator until you are confident you understand how it works.
+  > 7. You look at the clock and it is exactly 2pm. You set an alarm to go off in 51 hours. At what time does the alarm go off? (Hint: you could count on your fingers, but this is not what we’re after. If you are tempted to count on your fingers, change the 51 to 5100.)
+  > 8. Write a Python program to solve the general version of the above problem. Ask the user for the time now (in hours), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off.
+</details>
 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)

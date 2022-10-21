@@ -138,7 +138,7 @@ Các chi tiết có thể khác nhau ở các ngôn ngữ khác nhau, nhưng m�
   > The details look different in different languages, but a few basic instructions appear in just about every language:
 </details>
 
-|kw|ds|
+| Từ khóa | Mô tả |
 | --- | --- |
 |input|Nhận dữ liệu từ bàn phím, tệp hoặc một số thiết bị khác.|
 |output|Hiển thị dữ liệu trên màn hình hoặc gửi dữ liệu đến một tệp hoặc thiết bị khác.|
@@ -149,6 +149,8 @@ Các chi tiết có thể khác nhau ở các ngôn ngữ khác nhau, nhưng m�
 <details>
   <summary>English version</summary>
 
+  > | Key | Mô tả |
+  > | --- | --- |
   > |input|Get data from the keyboard, a file, or some other device.|
   > |output|Display data on the screen or send data to a file or other device.|
   > |math|Perform basic mathematical operations like addition and multiplication.|
