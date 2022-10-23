@@ -280,5 +280,5 @@ continue with this book! It’s time for magic!
 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
-- [Trang trước](introduction.md) - Introduction
-- [Trang kế](02-Digital-Legos.md) - Chapter 2: Digital Legos
+- [Trang trước](introduction.md) - Giới thiệu
+- [Trang kế](02-Digital-Legos.md) - Chương 2: Legos kỹ thuật số

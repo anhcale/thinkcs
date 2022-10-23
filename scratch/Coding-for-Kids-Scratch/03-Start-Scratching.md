@@ -932,5 +932,5 @@ After all this work, the stage will look like this:
 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
-- [Trang trước](02-Digital-Legos.md) - Chapter 2: Digital Legos
+- [Trang trước](02-Digital-Legos.md) - Chương 2: Legos kỹ thuật số
 - [Trang kế](03-Start-Scratching.md) - Chapter 3: Start Scratching

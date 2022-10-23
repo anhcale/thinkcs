@@ -13,12 +13,12 @@ bởi Nathan Jobs
   + [Yêu cầu](01-Introduction-to-Programming.md#yêu-cầu)
   + [An toàn và bảo mật](01-Introduction-to-Programming.md#an-toàn-và-bảo-mật)
   + [Chia sẻ](01-Introduction-to-Programming.md#chia-sẻ)
-- [Chapter 2: Digital Legos](02-Digital-Legos.md)
-  + [What Are Blocks?](02-Digital-Legos.md#what-are-blocks)
-  + [Blocks In Programming](02-Digital-Legos.md#blocks-in-programming)
+- [Chương 2: Legos kỹ thuật số](02-Digital-Legos.md)
+  + [Khối là gì?](02-Digital-Legos.md#khối-là-gì)
+  + [Khối trong lập trình](02-Digital-Legos.md#khối-trong-lập-trình)
   + [Building Lego](02-Digital-Legos.md#building-lego)
-  + [Things we need](02-Digital-Legos.md#things-we-need)
-  + [Build](02-Digital-Legos.md#build)
+  + [Những thứ chúng ta cần](02-Digital-Legos.md#những-thứ-chúng-ta-cần)
+  + [Lắp ráp](02-Digital-Legos.md#lắp-ráp)
 - [Chapter 3: Start Scratching](03-Start-Scratching.md)
   + Install and Setup
   + Online Platform
