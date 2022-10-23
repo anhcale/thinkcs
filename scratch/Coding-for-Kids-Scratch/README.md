@@ -4,15 +4,15 @@ bởi Nathan Jobs
 
 ## Table of Contents
 
-- [Introduction](introduction.md)
-- [Chapter 1: Introduction to Programming](01-Introduction-to-Programming.md)
-  + [What is Programming?](01-Introduction-to-Programming.md#lập-trình-là-gì)
-  + [Why Kids Should Learn Programming?](01-Introduction-to-Programming.md#why-kids-should-learn-programming)
-  + [Why Scratch?](01-Introduction-to-Programming.md#why-scratch)
-  + [Answers To Important Questions](01-Introduction-to-Programming.md#answers-to-important-questions)
-  + [Requirements](01-Introduction-to-Programming.md#requirements)
-  + [Safety and Security](01-Introduction-to-Programming.md#safety-and-security)
-  + [Exposure](01-Introduction-to-Programming.md#exposure)
+- [Giới thiệu](introduction.md)
+- [Chương 1: Giới thiệu về lập trình](01-Introduction-to-Programming.md)
+  + [Lập trình là gì?](01-Introduction-to-Programming.md#lập-trình-là-gì)
+  + [Tại sao trẻ em nên học lập trình?](01-Introduction-to-Programming.md#tại-sao-trẻ-em-nên-học-lập-trình)
+  + [Tại sao Scratch?](01-Introduction-to-Programming.md#tại-sao-scratch)
+  + [Câu trả lời cho các câu hỏi quan trọng](01-Introduction-to-Programming.md#câu-trả-lời-cho-các-câu-hỏi-quan-trọng)
+  + [Yêu cầu](01-Introduction-to-Programming.md#yêu-cầu)
+  + [An toàn và bảo mật](01-Introduction-to-Programming.md#an-toàn-và-bảo-mật)
+  + [Chia sẻ](01-Introduction-to-Programming.md#chia-sẻ)
 - [Chapter 2: Digital Legos](02-Digital-Legos.md)
   + [What Are Blocks?](02-Digital-Legos.md#what-are-blocks)
   + [Blocks In Programming](02-Digital-Legos.md#blocks-in-programming)
@@ -65,4 +65,4 @@ bởi Nathan Jobs
 
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
-- [Trang kế](copyright.md) - Copyright
+- [Trang kế](copyright.md) - Bản quyền

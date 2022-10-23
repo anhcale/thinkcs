@@ -39,4 +39,4 @@ Lifelong Kindergarten Group at the MIT Media Lab. It is available for free at
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
 - [Trang trước](README.md)
-- [Trang kế](introduction.md) - Introduction
+- [Trang kế](introduction.md) - Giới thiệu
