@@ -1,11 +1,16 @@
 # Chapter 1: Introduction to Programming
 
+Hey kid. Hello, yes, you there. It’s me, Nat again! Let me ask you something.
+
 <details>
   <summary>English version</summary>
 
   > Hey kid. Hello, yes, you there. It’s me, Nat again! Let me ask you something.
 
 </details>
+
+What’s the best thing that ever happened to you? Think hard, because it is
+important.
 
 <details>
   <summary>English version</summary>
@@ -14,6 +19,10 @@
 important.
 </details>
 
+Was it the first birthday party you remember? Was it when you made your
+first friend? Was it when mommy hugged you and said she loves you more
+than anything? Was it your dad telling you the best bed-time story ever?
+
 <details>
   <summary>English version</summary>
 
@@ -21,6 +30,13 @@ important.
 first friend? Was it when mommy hugged you and said she loves you more
 than anything? Was it your dad telling you the best bed-time story ever?
 </details>
+
+It was definitely not your first day at school (if it is, you are very lucky,
+believe me). I am sure that you love that moment because it makes you
+happy. I can tell you what is the best thing that ever happened to computers.
+It was programming. Well, it doesn’t make computers happy (because they
+can’t feel anything!), but they made people who work with computers very
+happy. So, what is programming?
 
 <details>
   <summary>English version</summary>
@@ -33,7 +49,7 @@ can’t feel anything!), but they made people who work with computers very
 happy. So, what is programming?
 </details>
 
-## What is Programming?
+## Lập trình là gì?
 
 <details>
   <summary>English version</summary>

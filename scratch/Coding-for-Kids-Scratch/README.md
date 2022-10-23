@@ -6,7 +6,7 @@ bởi Nathan Jobs
 
 - [Introduction](introduction.md)
 - [Chapter 1: Introduction to Programming](01-Introduction-to-Programming.md)
-  + [What is Programming?](01-Introduction-to-Programming.md#what-is-programming)
+  + [What is Programming?](01-Introduction-to-Programming.md#lập-trình-là-gì)
   + [Why Kids Should Learn Programming?](01-Introduction-to-Programming.md#why-kids-should-learn-programming)
   + [Why Scratch?](01-Introduction-to-Programming.md#why-scratch)
   + [Answers To Important Questions](01-Introduction-to-Programming.md#answers-to-important-questions)
