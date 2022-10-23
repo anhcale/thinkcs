@@ -14,12 +14,12 @@ bởi Nathan Jobs
   + [Safety and Security](01-Introduction-to-Programming.md#safety-and-security)
   + [Exposure](01-Introduction-to-Programming.md#exposure)
 - [Chapter 2: Digital Legos](02-Digital-Legos.md)
-  + What Are Blocks?
-  + Blocks In Programming
-  + Building Lego
-  + Things we need
-  + Build
-- Chapter 3: Start Scratching
+  + [What Are Blocks?](02-Digital-Legos.md#what-are-blocks)
+  + [Blocks In Programming](02-Digital-Legos.md#blocks-in-programming)
+  + [Building Lego](02-Digital-Legos.md#building-lego)
+  + [Things we need](02-Digital-Legos.md#things-we-need)
+  + [Build](02-Digital-Legos.md#build)
+- [Chapter 3: Start Scratching](03-Start-Scratching.md)
   + Install and Setup
   + Online Platform
   + Offline Application (Preferred)
