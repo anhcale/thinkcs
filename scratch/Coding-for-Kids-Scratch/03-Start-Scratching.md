@@ -1,10 +1,6 @@
-# Chapter 3: Start Scratching!
+# Chương 3: Bắt đầu Scratch nào!
 
-Kid, it is time we have some adventure, action and fun. Do you have
-permission to install something on the home computer or the smart device
-you usually use? If yes, you should follow the next sections to install and
-setup Scratch. If not, you need help from an adult again. Sorry, I know, I
-promise this is the last time!
+Nhóc con, đã đến lúc chúng ta có một số cuộc phiêu lưu, hành động và vui chơi. Bạn có quyền cài đặt thứ gì đó trên máy tính gia đình hoặc thiết bị thông minh mà bạn thường sử dụng không? Nếu có, bạn nên làm theo các phần tiếp theo để cài đặt và thiết lập Scratch. Nếu không, bạn lại cần đến sự giúp đỡ của người lớn. Xin lỗi, tôi biết, tôi hứa đây là lần cuối cùng!
 
 <details>
   <summary>English version</summary>
@@ -16,11 +12,11 @@ setup Scratch. If not, you need help from an adult again. Sorry, I know, I
 promise this is the last time!
 </details>
 
-## Install and Setup
+## Cài đặt và Thiết lập
 
-There are two ways we can use Scratch
-  - Online platform
-  - Offline software (preferred)
+Có hai cách chúng ta có thể sử dụng Scratch:
+   - Nền tảng trực tuyến
+   - Phần mềm ngoại tuyến (bạn nên sử dụng cách này)
 
 <details>
   <summary>English version</summary>
@@ -30,11 +26,9 @@ There are two ways we can use Scratch
   > - Offline software (preferred)
 </details>
 
-### Online Platform
+### Nền tảng trực tuyến
 
-The official link to the Scratch website is [https://scratch.mit.edu/](https://scratch.mit.edu/). Open up a
-web browser on your device. In this book we have used Google Chrome. The
-website will look like the picture below.
+Liên kết chính thức đến trang web Scratch là [https://scratch.mit.edu/](https://scratch.mit.edu/). Mở trình duyệt web trên thiết bị của bạn. Trong cuốn sách này, chúng tôi đã sử dụng Google Chrome. Trang web sẽ giống như hình bên dưới.
 
 <details>
   <summary>English version</summary>
@@ -46,8 +40,11 @@ website will look like the picture below.
 
 ![scratch.mit.edu](images/scratch.mit.edu.png)
 
-If you want to start building projects right away, click on “Create” at the top
-menu.
+Cuộn xuống dưới cuối cùng của trang web và bạn có thể chỉnh ngôn ngữ về tiếng Việt
+
+![website-language](images/website-language.png)
+
+Nếu bạn muốn bắt đầu xây dựng dự án ngay lập tức, hãy nhấp vào “Khởi tạo” ở menu trên cùng.
 
 <details>
   <summary>English version</summary>
@@ -58,9 +55,7 @@ menu.
 
 ![scratch-website-menu](images/scratch-website-menu.png)
 
-Creating an account will allow you to share projects with others and make
-friends online in a safe, regulated online community! Click on “Join Scratch”
-to create a Scratch account. It is absolutely free.
+Tạo một tài khoản sẽ cho phép bạn chia sẻ các dự án với những người khác và kết bạn trực tuyến trong một cộng đồng trực tuyến an toàn, được quản lý! Nhấp vào “Tham gia Scratch” để tạo tài khoản Scratch. Nó hoàn toàn miễn phí.
 
 <details>
   <summary>English version</summary>
@@ -70,12 +65,7 @@ friends online in a safe, regulated online community! Click on “Join Scratch�
 to create a Scratch account. It is absolutely free.
 </details>
 
-The sign-up form gives helpful prompts to explain the sign-up process.
-Please make sure to write down the password and place it somewhere safe.
-Remember that online account passwords must never be shared with anyone
-under any circumstances. Modern browsers have the option to save the login
-details, which makes subsequent logins convenient and faster. You can also
-benefit from that feature.
+Biểu mẫu đăng ký cung cấp các lời nhắc hữu ích để giải thích quy trình đăng ký. Hãy nhớ ghi lại mật khẩu và đặt nó ở nơi an toàn. Hãy nhớ rằng mật khẩu tài khoản trực tuyến không bao giờ được chia sẻ với bất kỳ ai trong bất kỳ trường hợp nào. Các trình duyệt hiện đại có tùy chọn để lưu các chi tiết đăng nhập, giúp các lần đăng nhập tiếp theo trở nên thuận tiện và nhanh chóng hơn. Bạn cũng có thể hưởng lợi từ tính năng đó.
 
 <details>
   <summary>English version</summary>
@@ -88,7 +78,7 @@ details, which makes subsequent logins convenient and faster. You can also
 benefit from that feature.
 </details>
 
-The sign up form will initially look like the screenshot below.
+Biểu mẫu đăng ký ban đầu sẽ giống như ảnh chụp màn hình bên dưới.
 
 <details>
   <summary>English version</summary>
@@ -98,9 +88,7 @@ The sign up form will initially look like the screenshot below.
 
 ![scratch-website-sign-up](images/scratch-website-sign-up.png)
 
-Click on “Next” after filling in username and password. The username cannot
-be changed later and is used to identify users on Scratch platform, so make
-sure it is something you will love.
+Nhấp vào “Kế tiếp” sau khi điền username và mật khẩu. Username  không thể thay đổi sau này và được sử dụng để xác định người dùng trên nền tảng Scratch, vì vậy hãy đảm bảo rằng bạn yêu thích tên đó.
 
 <details>
   <summary>English version</summary>
@@ -110,8 +98,7 @@ be changed later and is used to identify users on Scratch platform, so make
 sure it is something you will love.
 </details>
 
-Next, you will be asked about the country you are located in. I live in the
-United States, so I chose that.
+Tiếp theo, bạn sẽ được hỏi về quốc gia bạn đang ở. Tôi sống ở Việt Nam, vì vậy tôi đã chọn Vietnam.
 
 <details>
   <summary>English version</summary>
@@ -122,9 +109,7 @@ United States, so I chose that.
 
 ![scratch-website-country](images/scratch-website-country.png)
 
-Then it’s your birthday. Make sure you use the correct date for the birthday.
-In case you forget the password, usually this piece of information is requested
-to verify if it is really you.
+Sau đó là sinh nhật của bạn. Đảm bảo rằng bạn sử dụng đúng ngày sinh nhật. Trong trường hợp bạn quên mật khẩu, thông thường phần thông tin này sẽ được yêu cầu để xác minh xem đó có thực sự là bạn hay không.
 
 <details>
   <summary>English version</summary>
@@ -136,7 +121,7 @@ to verify if it is really you.
 
 ![scratch-website-born](images/scratch-website-born.png)
 
-The next screen will ask about gender. Select the appropriate option.
+Màn hình tiếp theo sẽ hỏi về giới tính. Chọn tùy chọn thích hợp.
 
 <details>
   <summary>English version</summary>
@@ -146,12 +131,7 @@ The next screen will ask about gender. Select the appropriate option.
 
 ![scratch-website-gender](images/scratch-website-gender.png)
 
-An email ID is required in the last step to complete sign up. Most common
-email services like Gmail do not allow accounts for anyone younger than 13
-years old. However, there are many kids-friendly email services such as
-Zillamail that have built-in profanity filters offering a safe email service to
-kids. On the flipside, most such services are paid. Alternatively, you can use
-your parent's email ID to complete the sign up.
+Email là bước bắt buộc cuối cùng để hoàn tất đăng ký. Hầu hết các dịch vụ email phổ biến như Gmail không cho phép tài khoản dưới 13 tuổi. Tuy nhiên, có nhiều dịch vụ email thân thiện với trẻ em như Zillamail có bộ lọc ngôn từ tục tĩu được tích hợp sẵn cung cấp dịch vụ email an toàn cho trẻ em. Mặt khác, hầu hết các dịch vụ như vậy đều phải trả phí. Ngoài ra, bạn có thể sử dụng Email của cha mẹ mình để hoàn tất quá trình đăng ký.
 
 <details>
   <summary>English version</summary>
@@ -164,12 +144,9 @@ kids. On the flipside, most such services are paid. Alternatively, you can use
 your parent's email ID to complete the sign up.
 </details>
 
-![scratch-website-email](images/scratch-website-menu.png)
+![scratch-website-email](images/scratch-website-email.png)
 
-And that’s it! You can start using the online version of Scratch to create and
-share Scratch projects. Scratch will send a confirmation link to the email
-address provided during sign up. Don’t forget to click on the link in the email
-to confirm your account.
+Và thế là xong! Bạn có thể bắt đầu sử dụng phiên bản Scratch trực tuyến để tạo và chia sẻ các dự án Scratch. Scratch sẽ gửi một liên kết xác nhận đến địa chỉ email được cung cấp trong quá trình đăng ký. Đừng quên nhấp vào liên kết trong email để xác nhận tài khoản của bạn.
 
 <details>
   <summary>English version</summary>
@@ -179,6 +156,8 @@ share Scratch projects. Scratch will send a confirmation link to the email
 address provided during sign up. Don’t forget to click on the link in the email
 to confirm your account.
 </details>
+
+![scratch-website-gender](images/scratch-website-done.png)
 
 ### Offline Application (Preferred)
 

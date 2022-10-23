@@ -19,9 +19,9 @@ bởi Nathan Jobs
   + [Building Lego](02-Digital-Legos.md#building-lego)
   + [Những thứ chúng ta cần](02-Digital-Legos.md#những-thứ-chúng-ta-cần)
   + [Lắp ráp](02-Digital-Legos.md#lắp-ráp)
-- [Chapter 3: Start Scratching](03-Start-Scratching.md)
-  + Install and Setup
-  + Online Platform
+- [Chương 3: Bắt đầu Scratch nào!](03-Start-Scratching.md)
+  + [Cài đặt và Thiết lập](03-Start-Scratching.md#cài-đặt-và-thiết-lập)
+  + [Nền tảng trực tuyến](03-Start-Scratching.md#nền-tảng-trực-tuyến)
   + Offline Application (Preferred)
   + Take Command, Peter Pan!
   + Things-That-Must-Not-Be-Done!
