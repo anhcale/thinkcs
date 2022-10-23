@@ -496,7 +496,6 @@ about them, as you have me and this book!
   > - The fifth option is the “Tutorials” where you will find projects that you
 can run to understand different things about Scratch. No need to worry
 about them, as you have me and this book!
-
 </details>
 
 - The last option is a field where you can give a name to your current
@@ -519,6 +518,410 @@ on “File” or “Edit”.
 
   > As promised, I am going to briefly explain the options you see after clicking
 on “File” or “Edit”.
+</details>
+
+##### “File” Options
+
+New: Use this option to create a new project. If you have already worked on
+a current project and haven’t saved the changes, you will be reminded with a
+prompt. See, even Scratch knows how forgetful we are!
+
+<details>
+  <summary>English version</summary>
+
+  > New: Use this option to create a new project. If you have already worked on
+a current project and haven’t saved the changes, you will be reminded with a
+prompt. See, even Scratch knows how forgetful we are!
+</details>
+
+Load from your computer: You can load an already saved project using this
+option. You will need to remember where you saved your project and what
+the project name was.
+
+<details>
+  <summary>English version</summary>
+
+  > Load from your computer: You can load an already saved project using this
+option. You will need to remember where you saved your project and what
+the project name was.
+</details>
+
+Save to your computer: I know how important it is to take a bathroom break,
+or go eat cookies. You can do both without any worries because you can save
+your project using this option. Scratch will ask where to save the project and
+what to name it. Try to save it somewhere you will remember. I usually just
+select “Desktop”. The name you gave to your project is automatically given
+to the filename.
+
+<details>
+  <summary>English version</summary>
+
+  > Save to your computer: I know how important it is to take a bathroom break,
+or go eat cookies. You can do both without any worries because you can save
+your project using this option. Scratch will ask where to save the project and
+what to name it. Try to save it somewhere you will remember. I usually just
+select “Desktop”. The name you gave to your project is automatically given
+to the filename.
+</details>
+
+##### “Edit” Options
+
+Restore: If you deleted something by accident and want it back, you can use
+this option. Beware that this is **not** an UNDO button, so it will not revert
+everything you do in Scratch.
+
+<details>
+  <summary>English version</summary>
+
+  > Restore: If you deleted something by accident and want it back, you can use
+this option. Beware that this is **not** an UNDO button, so it will not revert
+everything you do in Scratch.
+</details>
+
+Turn on Turbo Mode: If your project has a lot of complex calculations,
+activate this mode and the projects may run faster.
+
+<details>
+  <summary>English version</summary>
+
+  > Turn on Turbo Mode: If your project has a lot of complex calculations,
+activate this mode and the projects may run faster.
+</details>
+
+#### Tabs
+
+You will see three tabs on the Scratch screen like this:
+
+<details>
+  <summary>English version</summary>
+
+  > You will see three tabs on the Scratch screen like this:
+</details>
+
+![scratch-desktop-tabs](images/scratch-desktop-tabs.png)
+
+We will learn about the three tabs in greater detail in the next chapters. For
+now, you should know their purpose.
+
+<details>
+  <summary>English version</summary>
+
+  > We will learn about the three tabs in greater detail in the next chapters. For
+now, you should know their purpose.
+</details>
+
+##### “Code” Tab
+
+This is where you will find all the blocks you can use to create projects. The
+blocks are grouped together by their type such as “motion”, “looks” and
+“sound”.
+
+<details>
+  <summary>English version</summary>
+
+  > This is where you will find all the blocks you can use to create projects. The
+blocks are grouped together by their type such as “motion”, “looks” and
+“sound”.
+</details>
+
+##### “Costumes” Tab
+
+This tab gives you options to customize the look and behavior of characters
+in your project.
+
+<details>
+  <summary>English version</summary>
+
+  > This tab gives you options to customize the look and behavior of characters
+in your project.
+</details>
+
+##### “Sounds” Tab
+
+If you have used a sound block in your project, here you will be able to
+customize each sound component.
+
+<details>
+  <summary>English version</summary>
+
+  > If you have used a sound block in your project, here you will be able to
+customize each sound component.
+</details>
+
+#### Controls
+
+In the same line as the tabs, but towards the right side of your screen, you
+will see the following buttons.
+
+<details>
+  <summary>English version</summary>
+
+  > In the same line as the tabs, but towards the right side of your screen, you
+will see the following buttons.
+</details>
+
+![scratch-desktop-controls](images/scratch-desktop-controls.png)
+
+##### Green flag
+
+This runs your project
+
+<details>
+  <summary>English version</summary>
+
+  > This runs your project
+</details>
+
+##### Red sign
+
+This stops your project from running.
+
+<details>
+  <summary>English version</summary>
+
+  > This stops your project from running.
+</details>
+
+##### Turbo Mode
+
+You see this if you have enabled the Turbo Mode from the Edit option in the
+menu bar.
+
+<details>
+  <summary>English version</summary>
+
+  > You see this if you have enabled the Turbo Mode from the Edit option in the
+menu bar.
+</details>
+
+##### View Options
+
+The next three options change the look of the entire Scratch screen.
+
+<details>
+  <summary>English version</summary>
+
+  > The next three options change the look of the entire Scratch screen.
+</details>
+
+#### Stage
+
+This is where you will see how your project runs. Every project starts with
+the cat character, so that’s what we see on the stage.
+
+<details>
+  <summary>English version</summary>
+
+  > This is where you will see how your project runs. Every project starts with
+the cat character, so that’s what we see on the stage.
+</details>
+
+#### Sprites and backdrops
+
+We are going to learn two new words - sprites and backdrops.
+
+<details>
+  <summary>English version</summary>
+
+  > We are going to learn two new words - sprites and backdrops.
+</details>
+
+##### Sprites
+
+Sprites are objects that you can add to your object. The blocks we choose
+from the code tab are applied to these sprites.
+
+<details>
+  <summary>English version</summary>
+
+  > Sprites are objects that you can add to your object. The blocks we choose
+from the code tab are applied to these sprites.
+</details>
+
+##### Backdrop
+
+These are the backgrounds we can choose for our projects
+
+<details>
+  <summary>English version</summary>
+
+  > These are the backgrounds we can choose for our projects
+</details>
+
+### First Project
+
+Our cat, Mona, is hungry. In our first project, we will enable Mona to go near
+Abby, and demand some food! Well, Mona would just say “meow” but Abby
+will know what Mona wants. We all know what cats want - food!
+
+<details>
+  <summary>English version</summary>
+
+  > Our cat, Mona, is hungry. In our first project, we will enable Mona to go near
+Abby, and demand some food! Well, Mona would just say “meow” but Abby
+will know what Mona wants. We all know what cats want - food!
+</details>
+
+Let’s add Mona and Abby to our project “First Project”. Here is how to do
+that.
+
+<details>
+  <summary>English version</summary>
+
+  > Let’s add Mona and Abby to our project “First Project”. Here is how to do
+that.
+</details>
+
+  1. To rename this project, click on the field beside Tutorials in the
+menu bar and type in “First Project”.
+
+<details>
+  <summary>English version</summary>
+
+  > 1. To rename this project, click on the field beside Tutorials in the
+menu bar and type in “First Project”.
+</details>
+
+![scratch-desktop-project-rename](images/scratch-desktop-project-rename.png)
+
+  2. Our cat will already be added to the project. We have to move the cat towards the bottom left side of the stage. On the stage, click and drag on the cat to move it.
+  3. Towards the bottom right hand corner of your screen, in the “sprites and backdrops” section, hover your mouse on the icon that looks like a cat icon (it will say “Choose a Sprite”) and a blue strip will slide up. Select the first icon from the bottom that looks like a magnifying glass (that’s the icon usually used to say “search”).
+
+<details>
+  <summary>English version</summary>
+
+  > 2. Our cat will already be added to the project. We have to move the cat towards the bottom left side of the stage. On the stage, click and drag on the cat to move it.
+  > 3. Towards the bottom right hand corner of your screen, in the “sprites and backdrops” section, hover your mouse on the icon that looks like a cat icon (it will say “Choose a Sprite”) and a blue strip will slide up. Select the first icon from the bottom that looks like a magnifying glass (that’s the icon usually used to say “search”).
+</details>
+
+![scratch-windows-sprite](images/scratch-windows-sprite.png)
+
+4. You will see a new window with a lot of characters. Select the one
+that says “Abby”.
+
+<details>
+  <summary>English version</summary>
+
+  > 4. You will see a new window with a lot of characters. Select the one
+that says “Abby”.
+</details>
+
+![scratch-window-abby](images/scratch-window-abby.png)
+
+Now, in the “sprites and backdrops” section, you will see two sprites.
+
+<details>
+  <summary>English version</summary>
+
+  > Now, in the “sprites and backdrops” section, you will see two sprites.
+</details>
+
+You will notice that Abby is selected because her icon has a thick blue
+border. We have to flip her so she faces toward the west. Click on the
+“Direction” and change the direction of the arrow so it points toward the
+west. Also, click on the “arrow heads” icon in the middle. On the next page, I
+have given before and after images to avoid any confusion.
+
+<details>
+  <summary>English version</summary>
+
+  > You will notice that Abby is selected because her icon has a thick blue
+border. We have to flip her so she faces toward the west. Click on the
+“Direction” and change the direction of the arrow so it points toward the
+west. Also, click on the “arrow heads” icon in the middle. On the next page, I
+have given before and after images to avoid any confusion.
+</details>
+
+![scratch-windows-before](images/scratch-windows-before.png)
+
+*Before*
+
+![scratch-windows-after](images/scratch-windows-after.png)
+
+*After*
+
+We also have to rename our cat
+
+<details>
+  <summary>English version</summary>
+
+  > We also have to rename our cat
+</details>
+
+![scratch-windows-mona](images/scratch-windows-mona.png)
+
+In the “sprites and backdrops” section, click on the cat icon so it becomes
+highlighted. In the field that says “Sprite”, change ‘Sprite1’ to Mona (Press
+the ENTER key on your keyboard after you type Mona for the change to take
+effect). After the edit, the two sprites should look like this.
+
+<details>
+  <summary>English version</summary>
+
+  > In the “sprites and backdrops” section, click on the cat icon so it becomes
+highlighted. In the field that says “Sprite”, change ‘Sprite1’ to Mona (Press
+the ENTER key on your keyboard after you type Mona for the change to take
+effect). After the edit, the two sprites should look like this.
+</details>
+
+![scratch-winodws-sprites](images/scratch-winodws-sprites.png)
+
+We also need to change the backdrop. Towards the bottom right hand corner
+of your screen, in the “sprites and backdrops” section, hover your mouse on
+the icon that looks like an image icon (it will say “Choose a Backdrop”) and a
+blue strip will slide up. Select the first icon from the bottom that looks like a
+magnifying glass.
+
+<details>
+  <summary>English version</summary>
+
+  > We also need to change the backdrop. Towards the bottom right hand corner
+of your screen, in the “sprites and backdrops” section, hover your mouse on
+the icon that looks like an image icon (it will say “Choose a Backdrop”) and a
+blue strip will slide up. Select the first icon from the bottom that looks like a
+magnifying glass.
+</details>
+
+You will see a new window with a lot of backdrops. Select the one that says
+“Bedroom 1”.
+
+<details>
+  <summary>English version</summary>
+
+  > You will see a new window with a lot of backdrops. Select the one that says
+“Bedroom 1”.
+</details>
+
+![scratch-windows-backdrop](images/scratch-windows-backdrop.png)
+
+![scratch-windows-bedroom](images/scratch-windows-bedroom.png)
+
+One last thing we need to do is move the sprites to correct locations.
+
+<details>
+  <summary>English version</summary>
+
+  > One last thing we need to do is move the sprites to correct locations.
+</details>
+
+Click on Mona, and in the box “x”, enter -184. In the “y” box, enter -126.
+
+<details>
+  <summary>English version</summary>
+
+  > Click on Mona, and in the box “x”, enter -184. In the “y” box, enter -126.
+</details>
+
+![xy.png](images/xy.png)
+
+Click on Abby, then enter 29 in the box “x”, and enter -76 in the “y” box.
+After all this work, the stage will look like this:
+
+<details>
+  <summary>English version</summary>
+
+  > Click on Abby, then enter 29 in the box “x”, and enter -76 in the “y” box.
+After all this work, the stage will look like this:
 </details>
 
 <details>
