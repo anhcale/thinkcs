@@ -159,12 +159,9 @@ to confirm your account.
 
 ![scratch-website-gender](images/scratch-website-done.png)
 
-### Offline Application (Preferred)
+### Phần mềm ngoại tuyến (bạn nên sử dụng cách này)
 
-You do not need to sign up for an account to use the Scratch application on
-your own computer. The downside is, you will not be able to share your
-projects with others on the Internet. But, this option is better for kids like you
-who want to become a master.
+Bạn không cần đăng ký tài khoản để sử dụng ứng dụng Scratch trên máy tính của chính mình. Nhược điểm là bạn sẽ không thể chia sẻ dự án của mình với người khác trên Internet. Tuy nhiên, tùy chọn này tốt hơn cho những đứa trẻ như bạn muốn trở thành một bậc thầy.
 
 <details>
   <summary>English version</summary>
@@ -175,8 +172,7 @@ projects with others on the Internet. But, this option is better for kids like y
 who want to become a master.
 </details>
 
-On a Windows operating system, there are two ways to install the offline
-version of Scratch.
+Trên hệ điều hành Windows, có hai cách để cài đặt phiên bản ngoại tuyến của Scratch.
 
 <details>
   <summary>English version</summary>
@@ -185,7 +181,7 @@ version of Scratch.
 version of Scratch.
 </details>
 
-#### Download Installer from Scratch Website
+#### Tải xuống Trình cài đặt từ Trang web Scratch
 
 To download and install the Scratch application on your computer, use the
 download link: [https://scratch.mit.edu/download](https://scratch.mit.edu/download). Choose the Operating
