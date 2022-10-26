@@ -1,4 +1,4 @@
-# Dùng google translate thử dịch sách lập trình
+# Vietnamese Programming Books - Dùng google translate thử dịch sách lập trình
 
 - Python
   + [How to Think Like a Computer Scientist - Learning with Python 3 (RLE) - Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers](python/thinkcs/README.md)
