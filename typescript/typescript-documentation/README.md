@@ -19,7 +19,7 @@ Một bài đọc đầu tiên tuyệt vời cho công việc TS hàng ngày c�
 - [Sổ tay TypeScript](handbook/intro.md)
 - [Những thứ cơ bản](handbook/2/basic-types.md)
 - [Everyday Types](handbook/2/everyday-types.md)
-- Narrowing
+- [Narrowing](handbook/2/narrowing.md)
 - More on Functions
 - Object Types
 - Type Manipulation
