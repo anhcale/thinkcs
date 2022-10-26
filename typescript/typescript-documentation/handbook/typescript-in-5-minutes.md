@@ -220,12 +220,12 @@ _Lưu ý_: Nếu bạn di chuột qua `MyBool` ở trên, bạn sẽ thấy nó 
   > _Note_: If you hover over `MyBool` above, you’ll see that it is classed as `boolean`. That’s a property of the Structural Type System. More on this below.
 </details>
 
-Một trường hợp sử dụng phổ biến cho các kiểu union là mô tả tập hợp `chuỗi` hoặc `số` [literals](everyday-types.md#literal-types) là một giá trị được phép là:
+Một trường hợp sử dụng phổ biến cho các kiểu union là mô tả tập hợp `chuỗi` hoặc `số` [literals](2/everyday-types.md#literal-types) là một giá trị được phép là:
 
 <details>
   <summary>English version</summary>
 
-  > A popular use-case for union types is to describe the set of `string` or `number` [literals](everyday-types.md#literal-types) that a value is allowed to be:
+  > A popular use-case for union types is to describe the set of `string` or `number` [literals](2/everyday-types.md#literal-types) that a value is allowed to be:
 </details>
 
 ```typescript

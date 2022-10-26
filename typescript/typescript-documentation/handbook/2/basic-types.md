@@ -2,7 +2,7 @@
 
 [Online version](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
 
-Chào mừng đến với trang đầu tiên của cuốn sổ tay. Nếu đây là trải nghiệm đầu tiên của bạn với TypeScript - bạn có thể muốn bắt đầu tại một trong các hướng dẫn ['Bắt đầu'](intro.md#bắt-đầu)
+Chào mừng đến với trang đầu tiên của cuốn sổ tay. Nếu đây là trải nghiệm đầu tiên của bạn với TypeScript - bạn có thể muốn bắt đầu tại một trong các hướng dẫn ['Bắt đầu'](../intro.md#bắt-đầu)
 
 <details>
   <summary>English version</summary>
@@ -10,7 +10,7 @@ Chào mừng đến với trang đầu tiên của cuốn sổ tay. Nếu đây 
   > Welcome to the first page of the handbook. If this is your first experience with TypeScript - you may want to start at one of the 'Getting Started' guides
 </details>
 
-Mỗi và mọi giá trị trong JavaScript đều có một tập hợp các hành vi mà bạn có thể quan sát khi chạy các hoạt động khác nhau. Điều đó nghe có vẻ trừu tượng, nhưng là một ví dụ nhanh, hãy xem xét một số hoạt động chúng ta có thể chạy trên một thông báo có tên biến.
+Mỗi và mọi giá trị trong JavaScript đều có một tập hợp các hành vi mà bạn có thể quan sát khi chạy các hoạt động khác nhau. Điều đó nghe có vẻ trừu tượng, nhưng là một ví dụ nhanh, hãy xem xét một số hoạt động chúng ta có thể chạy trên một biến có tên message.
 
 <details>
   <summary>English version</summary>
@@ -76,15 +76,15 @@ Giả sử `message` được xác định theo cách sau.
 const message = "Hello World!";
 ```
 
-Như bạn có thể đoán, nếu chúng ta cố gắng chạy message.toLowerCase (), chúng ta sẽ chỉ nhận được cùng một chuỗi viết thường.
+Như bạn có thể đoán, nếu chúng ta cố gắng chạy `message.toLowerCase()`, chúng ta sẽ chỉ nhận được cùng một chuỗi viết thường.
 
 <details>
   <summary>English version</summary>
 
-  > As you can probably guess, if we try to run message.toLowerCase(), we’ll get the same string only in lower-case.
+  > As you can probably guess, if we try to run `message.toLowerCase()`, we’ll get the same string only in lower-case.
 </details>
 
-Còn dòng mã thứ hai thì sao? Nếu bạn đã quen với JavaScript, bạn sẽ biết điều này không thành công với một ngoại lệ:
+Còn dòng mã thứ hai thì sao? Nếu bạn đã quen với JavaScript, bạn sẽ biết điều này không thành công có một lỗi ngoại lễ xãy ra:
 
 <details>
   <summary>English version</summary>
@@ -160,7 +160,7 @@ Hãy nghĩ lại về `TypeError` mà chúng ta đã có trước đó khi cố 
   > Think back to that `TypeError` we got earlier from trying to call a `string` as a function. _Most people_ don’t like to get any sorts of errors when running their code - those are considered bugs! And when we write new code, we try our best to avoid introducing new bugs.
 </details>
 
-Nếu chúng ta chỉ thêm một chút mã, lưu tệp của mình, chạy lại mã và ngay lập tức thấy lỗi, chúng ta có thể nhanh chóng giải quyết vấn đề; nhưng không phải lúc nào cũng vậy. Chúng ta có thể đã không kiểm tra tính năng này đủ kỹ lưỡng, vì vậy chúng ta có thể không bao giờ thực sự gặp phải một lỗi tiềm ẩn sẽ xảy ra! Hoặc nếu chúng ta đủ may mắn để chứng kiến lỗi, chúng ta có thể đã thực hiện tái cấu trúc lớn và thêm nhiều mã khác nhau mà chúng ta buộc phải tìm hiểu kỹ.
+Nếu chúng ta chỉ thêm một chút mã, lưu file của mình, chạy lại mã và ngay lập tức thấy lỗi, chúng ta có thể nhanh chóng giải quyết vấn đề; nhưng không phải lúc nào cũng vậy. Chúng ta có thể đã không kiểm tra tính năng này đủ kỹ lưỡng, vì vậy chúng ta có thể không bao giờ thực sự gặp phải một lỗi tiềm ẩn sẽ xảy ra! Hoặc nếu chúng ta đủ may mắn để chứng kiến lỗi, chúng ta có thể đã thực hiện tái cấu trúc lớn và thêm nhiều mã khác nhau mà chúng ta buộc phải tìm hiểu kỹ.
 
 <details>
   <summary>English version</summary>
@@ -176,9 +176,9 @@ Lý tưởng nhất là chúng ta có thể có một công cụ giúp chúng ta
   > Ideally, we could have a tool that helps us find these bugs _before_ our code runs. That’s what a static type-checker like TypeScript does. _Static types systems_ describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going off the rails.
 </details>
 
-![static-type-checking](../images/static-type-checking.png)
+![static-type-checking](../../images/static-type-checking.png)
 
-Chạy mẫu cuối cùng đó với TypeScript sẽ cung cấp cho chúng tôi một thông báo lỗi trước khi chúng tôi chạy mã ngay từ đầu.
+Chạy mẫu cuối cùng đó với TypeScript sẽ cung cấp cho chúng ta một thông báo lỗi trước khi chúng ta chạy mã ngay từ đầu.
 
 <details>
   <summary>English version</summary>
@@ -188,7 +188,7 @@ Chạy mẫu cuối cùng đó với TypeScript sẽ cung cấp cho chúng tôi 
 
 ## Không có lỗi ngoại lệ
 
-Cho đến nay, chúng ta đã thảo luận về một số vấn đề nhất định như lỗi thời gian chạy - các trường hợp thời gian chạy JavaScript cho chúng ta biết rằng nó nghĩ rằng điều gì đó vô nghĩa. Những trường hợp đó xảy ra vì [đặc tả ECMAScript](https://tc39.github.io/ecma262/) có hướng dẫn rõ ràng về cách ngôn ngữ sẽ hoạt động khi nó gặp sự cố không mong muốn.
+Cho đến giờ, chúng ta đã thảo luận về một số vấn đề nhất định như lỗi thời gian chạy - các trường hợp JavaScript runtime cho chúng ta biết rằng nó nghĩ rằng điều gì đó vô nghĩa. Những trường hợp đó xảy ra vì [đặc tả ECMAScript](https://tc39.github.io/ecma262/) có hướng dẫn rõ ràng về cách ngôn ngữ sẽ hoạt động khi nó gặp sự cố không mong muốn.
 
 <details>
   <summary>English version</summary>
@@ -212,7 +212,7 @@ const user = {
 user.location; // returns undefined
 ```
 
-Cuối cùng, hệ thống loại tĩnh phải thực hiện lệnh gọi mã nào sẽ được gắn cờ là lỗi trong hệ thống của nó, ngay cả khi JavaScript “hợp lệ” sẽ không gây ra lỗi ngay lập tức. Trong TypeScript, đoạn mã sau tạo ra lỗi về `location` không được xác định:
+Cuối cùng, hệ thống kiểu tĩnh phải thực hiện lệnh gọi mã nào sẽ được gắn cờ là lỗi trong hệ thống của nó, ngay cả khi JavaScript “hợp lệ” sẽ không gây ra lỗi ngay lập tức. Trong TypeScript, đoạn mã sau tạo ra lỗi về `location` không được xác định:
 
 <details>
   <summary>English version</summary>
@@ -220,7 +220,7 @@ Cuối cùng, hệ thống loại tĩnh phải thực hiện lệnh gọi mã n�
   > Ultimately, a static type system has to make the call over what code should be flagged as an error in its system, even if it’s “valid” JavaScript that won’t immediately throw an error. In TypeScript, the following code produces an error about location not being defined:
 </details>
 
-![location_is_not_exists](../images/location_is_not_exists.png)
+![location_is_not_exists](../../images/location_is_not_exists.png)
 
 Mặc dù đôi khi điều đó ngụ ý đánh đổi những gì bạn có thể thể hiện, nhưng mục đích là để tìm ra các lỗi hợp pháp trong các chương trình của chúng ta. Và TypeScript bắt được rất nhiều lỗi hợp pháp.
 
@@ -257,7 +257,7 @@ các hàm không thể gọi,
   > uncalled functions,
 </details>
 
-![uncalled-funcs](../images/uncalled-funcs.png)
+![uncalled-funcs](../../images/uncalled-funcs.png)
 
 hoặc các lỗi logic cơ bản.
 
@@ -267,7 +267,7 @@ hoặc các lỗi logic cơ bản.
   > or basic logic errors.
 </details>
 
-![logic-errors](../images/logic-errors.png)
+![logic-errors](../../images/logic-errors.png)
 
 ## Types for Tooling
 
@@ -295,7 +295,7 @@ Trình kiểm tra kiểu có thông tin để kiểm tra những thứ như li�
   > That means TypeScript can be leveraged for editing code too, and the core type-checker can provide error messages and code completion as you type in the editor. That’s part of what people often refer to when they talk about tooling in TypeScript.
 </details>
 
-![suggestion](../images/suggestion.png)
+![suggestion](../../images/suggestion.png)
 
 TypeScript coi trọng việc sử dụng công cụ và điều đó vượt ra ngoài sự hoàn thiện và sai sót khi bạn nhập. Một trình soạn thảo hỗ trợ TypeScript có thể cung cấp "các bản sửa lỗi nhanh" để tự động sửa lỗi, tái cấu trúc để dễ dàng tổ chức lại mã và các tính năng điều hướng hữu ích để chuyển đến định nghĩa của một biến hoặc tìm tất cả các tham chiếu đến một biến nhất định. Tất cả điều này được xây dựng trên trình kiểm tra kiểu và hoàn toàn đa nền tảng, vì vậy hãy xem [trình soạn thảo yêu thích của bạn có hỗ trợ TypeScript](https://github.com/Microsoft/TypeScript/wiki/TypeScript-Editor-Support).
 
@@ -340,7 +340,7 @@ Bây giờ chúng ta hãy chuyển đến một thư mục trống và thử vi�
 console.log("Hello world!");
 ```
 
-Lưu ý rằng không có kiểu cách nào ở đây; chương trình “hello world” này trông giống với những gì bạn viết cho chương trình “hello world” bằng JavaScript. Và bây giờ chúng ta hãy gõ kiểm tra nó bằng cách chạy lệnh `tsc` đã được cài đặt cho chúng ta bởi gói `typescript`.
+Lưu ý rằng không có kiểu cách nào ở đây; chương trình “hello world” này trông giống với những gì bạn viết cho chương trình “hello world” bằng JavaScript. Và bây giờ chúng ta hãy kiểm tra kiểu nó bằng cách chạy lệnh `tsc` đã được cài đặt cho chúng ta bởi gói `typescript`.
 
 <details>
   <summary>English version</summary>
@@ -375,7 +375,7 @@ Nhưng hãy kiểm tra lại - chúng ta đã nhận được một số _file_ 
 console.log("Hello world!");
 ```
 
-Trong trường hợp này, TypeScript có rất ít biến đổi, vì vậy nó trông giống với những gì chúng ta đã viết. Trình biên dịch cố gắng cho ra mã có thể đọc được sạch sẽ trông giống như một thứ gì đó mà một người sẽ viết. Mặc dù điều đó không phải lúc nào cũng dễ dàng như vậy, nhưng TypeScript thụt lề một cách nhất quán, lưu ý đến thời điểm mã của chúng tôi trải dài trên các dòng mã khác nhau và cố gắng giữ các chú thích xung quanh.
+Trong trường hợp này, TypeScript có rất ít biến đổi, vì vậy nó trông giống với những gì chúng ta đã viết. Trình biên dịch cố gắng cho ra mã có thể đọc được sạch sẽ trông giống như một thứ gì đó mà một người sẽ viết. Mặc dù điều đó không phải lúc nào cũng dễ dàng như vậy, nhưng TypeScript thụt lề một cách nhất quán, lưu ý đến thời điểm mã của chúng ta trải dài trên các dòng mã khác nhau và cố gắng giữ các chú thích xung quanh.
 
 <details>
   <summary>English version</summary>
@@ -383,7 +383,7 @@ Trong trường hợp này, TypeScript có rất ít biến đổi, vì vậy n�
   > In this case, there was very little for TypeScript to transform, so it looks identical to what we wrote. The compiler tries to emit clean readable code that looks like something a person would write. While that’s not always so easy, TypeScript indents consistently, is mindful of when our code spans across different lines of code, and tries to keep comments around.
 </details>
 
-Còn nếu chúng ta _đưa ra_ lỗi kiểm tra kiểu thì sao? Hãy viết lại `hello.ts`:
+Còn nếu chúng ta _cố tình tạo ra_ lỗi kiểm tra kiểu thì sao? Hãy viết lại `hello.ts`:
 
 <details>
   <summary>English version</summary>
@@ -422,7 +422,7 @@ TypeScript đang cho chúng ta biết rằng chúng ta đã quên truyền một
 
 ## Emitting with Errors
 
-Một điều bạn có thể không nhận thấy từ ví dụ trước là file `hello.js` của chúng ta đã thay đổi một lần nữa. Nếu chúng ta mở tệp đó lên thì chúng ta sẽ thấy rằng nội dung về cơ bản vẫn giống với tệp đầu vào của chúng ta. Điều đó có thể hơi ngạc nhiên vì thực tế là `tsc` đã báo lỗi về mã của chúng tôi, nhưng điều này dựa trên một trong những giá trị cốt lõi của TypeScript: phần lớn thời gian, bạn sẽ biết rõ hơn TypeScript.
+Một điều bạn có thể không nhận thấy từ ví dụ trước là file `hello.js` của chúng ta đã thay đổi một lần nữa. Nếu chúng ta mở file đó lên thì chúng ta sẽ thấy rằng nội dung về cơ bản vẫn giống với file đầu vào của chúng ta. Điều đó có thể hơi ngạc nhiên vì thực tế là `tsc` đã báo lỗi về mã của chúng ta, nhưng điều này dựa trên một trong những giá trị cốt lõi của TypeScript: phần lớn thời gian, bạn sẽ biết rõ hơn TypeScript.
 
 <details>
   <summary>English version</summary>
@@ -474,7 +474,7 @@ function greet(person: string, date: Date) {
 }
 ```
 
-Những gì chúng ta đã làm là thêm _type annotations_ trên `person` và `date` để mô tả những kiểu giá trị mà `greet` có thể được gọi với. Bạn có thể đọc là “`greet` nhận một `person` thuộc kiểu `string`, và một `date` thuộc kiểu `Date` ”.
+Những gì chúng ta đã làm là thêm _type annotations_ trên `person` và `date` để mô tả những kiểu giá trị mà `greet` có thể được gọi. Bạn có thể đọc là “`greet` nhận một `person` thuộc kiểu `string`, và một `date` thuộc kiểu `Date` ”.
 
 <details>
   <summary>English version</summary>
@@ -482,7 +482,7 @@ Những gì chúng ta đã làm là thêm _type annotations_ trên `person` và 
   > What we did was add _type annotations_ on `person` and `date` to describe what types of values `greet` can be called with. You can read that signature as “`greet` takes a `person` of type `string`, and a `date` of type `Date`”.
 </details>
 
-Với điều này, TypeScript có thể cho chúng tôi biết về các trường hợp khác mà `greet` có thể đã được gọi không chính xác. Ví dụ…
+Với điều này, TypeScript có thể cho chúng ta biết về các trường hợp khác mà `greet` có thể đã được gọi không chính xác. Ví dụ…
 
 <details>
   <summary>English version</summary>
@@ -490,7 +490,7 @@ Với điều này, TypeScript có thể cho chúng tôi biết về các trư�
   > With this, TypeScript can tell us about other cases where `greet` might have been called incorrectly. For example…
 </details>
 
-![types-date](../images/types-date.png)
+![types-date](../../images/types-date.png)
 
 Huh? TypeScript đã báo cáo lỗi trên đối số thứ hai của chúng ta, nhưng tại sao?
 
@@ -524,7 +524,7 @@ function greet(person: string, date: Date) {
 greet("Maddison", new Date());
 ```
 
-Hãy nhớ rằng không phải lúc nào chúng ta cũng phải viết _type annotations_ rõ ràng. Trong nhiều trường hợp, TypeScript thậm chí có thể chỉ _suy luận_ (hoặc “tìm ra”) các kiểu cho chúng ta ngay cả khi chúng ta bỏ qua chúng.
+Hãy nhớ rằng không phải lúc nào chúng ta cũng phải viết _type annotations_ rõ ràng. Trong nhiều trường hợp, TypeScript thậm chí có thể _suy luận_ (hoặc “tìm ra”) các kiểu cho chúng ta ngay cả khi chúng ta bỏ qua chúng.
 
 <details>
   <summary>English version</summary>
@@ -532,7 +532,7 @@ Hãy nhớ rằng không phải lúc nào chúng ta cũng phải viết _type an
   > Keep in mind, we don’t always have to write explicit type annotations. In many cases, TypeScript can even just _infer_ (or “figure out”) the types for us even if we omit them.
 </details>
 
-![msg-string](../images/msg-string.png)
+![msg-string](../../images/msg-string.png)
 
 Mặc dù chúng ta không nói với TypeScript rằng `msg` có kiểu `string`, nó vẫn có thể tìm ra điều đó. Đó là một tính năng và tốt nhất là không nên thêm _annotations_ khi hệ thống kiểu vẫn suy ra cùng một kiểu.
 
@@ -571,7 +571,7 @@ greet("Maddison", new Date());
 Lưu ý hai điều ở đây:
 
    1. Các tham số `person` và `date` của chúng ta không còn có _type annotations_ nữa.
-   2. “Template string” của chúng tôi - chuỗi đã sử dụng dấu gạch ngược (ký tự `\``) - đã được chuyển đổi thành chuỗi đơn giản với các phép nối.
+   2. “Template string” của chúng ta - chuỗi đã sử dụng dấu gạch ngược (ký tự \`) - đã được chuyển đổi thành chuỗi đơn giản với các phép nối.
 
 <details>
   <summary>English version</summary>
@@ -579,10 +579,10 @@ Lưu ý hai điều ở đây:
   > Notice two things here:
   >
   >   1. Our `person` and `date` parameters no longer have type annotations.
-  >   2. Our “template string” - that string that used backticks (the `\`` character) - was converted to plain strings with concatenations.
+  >   2. Our “template string” - that string that used backticks (the \` character) - was converted to plain strings with concatenations.
 </details>
 
-Sau đó sẽ nói thêm về điểm thứ hai, nhưng bây giờ chúng ta hãy tập trung vào điểm đầu tiên đó. _Type annotations_ không phải là một phần của JavaScript (hoặc ECMAScript), vì vậy thực sự không có bất kỳ trình duyệt hoặc thời gian chạy nào khác có thể chạy TypeScript mà không bị sửa đổi. Đó là lý do tại sao TypeScript cần một trình biên dịch ngay từ đầu - nó cần một số cách để loại bỏ hoặc chuyển đổi bất kỳ mã nào dành riêng cho TypeScript để bạn có thể chạy nó. Hầu hết các mã cụ thể của TypeScript đều bị xóa và tương tự, ở đây các _type annotations_ của chúng ta đã bị xóa hoàn toàn.
+Sau đó sẽ nói thêm về điểm thứ hai, nhưng bây giờ chúng ta hãy tập trung vào điểm đầu tiên đó. _Type annotations_ không phải là một phần của JavaScript (hoặc ECMAScript), vì vậy thực sự không có bất kỳ trình duyệt hoặc runtime nào khác có thể chạy TypeScript mà không bị sửa đổi. Đó là lý do tại sao TypeScript cần một trình biên dịch ngay từ đầu - nó cần một số cách để loại bỏ hoặc chuyển đổi bất kỳ mã nào dành riêng cho TypeScript để bạn có thể chạy nó. Hầu hết các mã cụ thể của TypeScript đều bị xóa và tương tự, ở đây các _type annotations_ của chúng ta đã bị xóa hoàn toàn.
 
 <details>
   <summary>English version</summary>
@@ -659,7 +659,7 @@ greet("Maddison", new Date());
 
 ## Sự nghiêm khắc
 
-Những người dùng khác nhau đến với TypeScript để tìm kiếm những thứ khác nhau trong trình kiểm tra kiểu. Một số người đang tìm kiếm trải nghiệm chọn tham gia lỏng lẻo hơn có thể giúp chỉ xác thực một số phần trong chương trình của họ và vẫn có công cụ tốt. Đây là trải nghiệm mặc định với TypeScript, trong đó các loại là tùy chọn, suy luận lấy các loại khoan dung nhất và không có kiểm tra các giá trị tiềm ẩn `null`/`undefined`. Giống như cách mà `tsc` phát ra khi gặp lỗi, các giá trị mặc định này được đặt ra để tránh theo cách của bạn. Nếu bạn đang di chuyển JavaScript hiện có, đó có thể là bước đầu tiên đáng mong đợi.
+Những người dùng khác nhau đến với TypeScript để tìm kiếm những thứ khác nhau trong trình kiểm tra kiểu. Một số người đang tìm kiếm trải nghiệm chọn tham gia lỏng lẻo hơn có thể giúp chỉ xác thực một số phần trong chương trình của họ và vẫn có công cụ tốt. Đây là trải nghiệm mặc định với TypeScript, trong đó các kiểu là tùy chọn, suy luận lấy các kiểu khoan dung nhất và không có kiểm tra các giá trị tiềm ẩn `null`/`undefined`. Giống như cách mà `tsc` phát ra khi gặp lỗi, các giá trị mặc định này được đặt ra để tránh theo cách của bạn. Nếu bạn đang di chuyển JavaScript hiện có, đó có thể là bước đầu tiên đáng mong đợi.
 
 <details>
   <summary>English version</summary>
@@ -675,7 +675,7 @@ Ngược lại, nhiều người dùng thích để TypeScript xác thực càng
   > In contrast, a lot of users prefer to have TypeScript validate as much as it can straight away, and that’s why the language provides strictness settings as well. These strictness settings turn static type-checking from a switch (either your code is checked or not) into something closer to a dial. The further you turn this dial up, the more TypeScript will check for you. This can require a little extra work, but generally speaking it pays for itself in the long run, and enables more thorough checks and more accurate tooling. When possible, a new codebase should always turn these strictness checks on.
 </details>
 
-TypeScript có một số cờ kiểm tra mức độ nghiêm ngặt kiểm tra kiểu có thể được bật hoặc tắt và tất cả các ví dụ của chúng tôi sẽ được viết với tất cả chúng được bật trừ khi có quy định khác. Cờ [strict](../tsconfig.md#strict---strict) trong CLI hoặc `"strict": true` trong [tsconfig.json](tsconfig-json.md) bật tất cả chúng đồng thời , nhưng chúng tôi có thể chọn không tham gia riêng lẻ. Hai công cụ lớn nhất mà bạn nên biết là [noImplicitAny](../tsconfig.md#no-implicit-any---noimplicitany) và [strictNullChecks](../tsconfig.md#strict-null-checks---strictnullchecks).
+TypeScript có một số cờ kiểm tra mức độ nghiêm ngặt kiểm tra kiểu có thể được bật hoặc tắt và tất cả các ví dụ của chúng tôi sẽ được viết với tất cả chúng được bật trừ khi có quy định khác. Cờ [strict](../tsconfig.md#strict---strict) trong CLI hoặc `"strict": true` trong [tsconfig.json](tsconfig-json.md) bật tất cả chúng đồng thời, nhưng chúng ta có thể chọn chỉ bật một số thứ. Hai công cụ lớn nhất mà bạn nên biết là [noImplicitAny](../tsconfig.md#no-implicit-any---noimplicitany) và [strictNullChecks](../tsconfig.md#strict-null-checks---strictnullchecks).
 
 <details>
   <summary>English version</summary>
@@ -685,10 +685,33 @@ TypeScript có một số cờ kiểm tra mức độ nghiêm ngặt kiểm tra 
 
 ## `noImplicitAny`
 
-Recall that in some places, TypeScript doesn’t try to infer types for us and instead falls back to the most lenient type: any. This isn’t the worst thing that can happen - after all, falling back to any is just the plain JavaScript experience anyway.
+Hãy nhớ lại rằng ở một số nơi, TypeScript không cố gắng suy ra các loại cho chúng ta và thay vào đó, chuyển trở lại loại khoan dung nhất: `any`. Đây không phải là điều tồi tệ nhất có thể xảy ra - dù sao thì việc quay trở lại `any` chỉ là trải nghiệm JavaScript đơn giản.
 
-However, using any often defeats the purpose of using TypeScript in the first place. The more typed your program is, the more validation and tooling you’ll get, meaning you’ll run into fewer bugs as you code. Turning on the noImplicitAny flag will issue an error on any variables whose type is implicitly inferred as any.
+<details>
+  <summary>English version</summary>
+
+  > Recall that in some places, TypeScript doesn’t try to infer types for us and instead falls back to the most lenient type: `any`. This isn’t the worst thing that can happen - after all, falling back to `any` is just the plain JavaScript experience anyway.
+</details>
+
+Tuy nhiên, việc sử dụng `any` thường đánh bại mục đích của việc sử dụng TypeScript ngay từ đầu. Chương trình của bạn càng được nhập rõ ràng, bạn sẽ nhận được nhiều công cụ và xác thực hơn, có nghĩa là bạn sẽ gặp ít lỗi hơn khi viết mã. Việc bật cờ [noImplicitAny](../tsconfig.md#no-implicit-any---noimplicitany) sẽ gây ra lỗi trên bất kỳ biến nào có kiểu được suy ra ngầm là `any`.
+
+<details>
+  <summary>English version</summary>
+
+  > However, using `any` often defeats the purpose of using TypeScript in the first place. The more typed your program is, the more validation and tooling you’ll get, meaning you’ll run into fewer bugs as you code. Turning on the [noImplicitAny](../tsconfig.md#no-implicit-any---noimplicitany) flag will issue an error on any variables whose type is implicitly inferred as `any`.
+</details>
 
 ## `strictNullChecks`
 
-By default, values like null and undefined are assignable to any other type. This can make writing some code easier, but forgetting to handle null and undefined is the cause of countless bugs in the world - some consider it a billion dollar mistake! The strictNullChecks flag makes handling null and undefined more explicit, and spares us from worrying about whether we forgot to handle null and undefined.
+Theo mặc định, các giá trị như `null` và` undefined` có thể được gán cho bất kỳ loại nào khác. Điều này có thể giúp việc viết một số mã dễ dàng hơn, nhưng việc quên xử lý `null` và `undefined` là nguyên nhân gây ra vô số lỗi trên thế giới - một số người coi đó là [sai lầm hàng tỷ đô la](https://www.youtube.com/watch?v=ybrQvs4x0Ps)! Cờ [strictNullChecks](../tsconfig.md#strict-null-checks---strictnullchecks) làm cho việc xử lý `null` và `undefined` rõ ràng hơn, đồng thời giúp chúng ta không phải lo lắng về việc liệu chúng ta có quên xử lý `null` và `undefined` hay không.
+
+<details>
+  <summary>English version</summary>
+
+  > By default, values like `null` and `undefined` are assignable to any other type. This can make writing some code easier, but forgetting to handle `null` and `undefined` is the cause of countless bugs in the world - some consider it a [billion dollar mistake](https://www.youtube.com/watch?v=ybrQvs4x0Ps)! The [strictNullChecks](../tsconfig.md#strict-null-checks---strictnullchecks) flag makes handling `null` and `undefined` more explicit, and spares us from worrying about whether we forgot to handle `null` and `undefined`.
+</details>
+
+## Liên kết hữu dụng
+- [Trước](../intro.md) - Sổ tay TypeScript - Bước đầu tiên của bạn để học TypeScript
+- [Tiếp theo](everyday-types.md) - Everyday Types - Các kiểu nguyên thủy của ngôn ngữ.
+

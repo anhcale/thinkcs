@@ -1,24 +1,24 @@
-# TypeScript Documentation
+# Tài liệu TypeScript
 
 [Online version](https://www.typescriptlang.org/docs/)
 
-## Get Started
+## Bắt đầu
 
-Quick introductions based on your background or preference.
+Giới thiệu nhanh dựa trên kiến thức nền hoặc sở thích của bạn.
 
-- [TS for the New Programmer](handbook/typescript-from-scratch.md)
+- [TS dành cho Lập trình viên mới](handbook/typescript-from-scratch.md)
 - [TypeScript dành cho lập trình viên JavaScript](handbook/typescript-in-5-minutes.md)
-- [TS for Java/C# Programmers](handbook/typescript-in-5-minutes-oop.md)
-- [TS for Functional Programmers](handbook/typescript-in-5-minutes-func.md)
-- TypeScript Tooling in 5 minutes
+- [TS dành cho lập trình viên Java/C#](handbook/typescript-in-5-minutes-oop.md)
+- [TTS dành cho lập trình viên hàm](handbook/typescript-in-5-minutes-func.md)
+- [Công cụ TypeScript trong 5 phút](handbook/typescript-tooling-in-5-minutes.md)
 
-## Handbook
+## Sổ tay
 
-A great first read for your daily TS work.
+Một bài đọc đầu tiên tuyệt vời cho công việc TS hàng ngày của bạn.
 
-- [The TypeScript Handbook](handbook/intro.md)
-- [The Basics](handbook/basic-types.md)
-- Everyday Types
+- [Sổ tay TypeScript](handbook/intro.md)
+- [Những thứ cơ bản](handbook/2/basic-types.md)
+- [Everyday Types](handbook/2/everyday-types.md)
 - Narrowing
 - More on Functions
 - Object Types
@@ -133,7 +133,7 @@ Downloadable syntax reference pages for different parts of everyday TypeScript c
 
 ### Handbook
 
-- [Basic Types](handbook/basic-types.md)
+- [Basic Types](handbook/2/basic-types.md)
 - Advanced Types
 - Interfaces
 - Variable Declarations
