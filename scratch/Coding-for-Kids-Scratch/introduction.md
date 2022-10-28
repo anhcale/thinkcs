@@ -1,5 +1,7 @@
 # Giới thiệu
 
+[Download PDF](download/00-introduction.pdf)
+
 Này nhóc, đây là người nhện hàng xóm thân thiện của bạn! Không? Yeah, không dấu được bạn, tôi thực sự là Nathan. Bạn có thể gọi tôi là Nat vì tôi cũng rất thân thiện (và một chút hài hước ở tuổi teen). Tôi sẽ đưa bạn vào một cuộc phiêu lưu thú vị, nơi bạn sẽ có được niềm vui và học hỏi những điều mới cùng một lúc. Mọi người đều nghĩ Harry Potter thật tuyệt vì cậu ấy có thể làm phép thuật, nhưng hãy để tôi kể cho bạn nghe một bí mật. Bạn cũng có thể làm phép thuật, bạn chỉ cần học cách làm điều đó. Có nhiều tin tốt! Bạn có thể làm điều đó mà không cần đến Hogwarts, cũng không cần rời khỏi bạn bè và gia đình của bạn!
 
 <details>
