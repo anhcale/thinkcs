@@ -727,11 +727,9 @@ have given before and after images to avoid any confusion.
 </details>
 
 ![scratch-windows-before](images/scratch-windows-before.png)
-
 *trước*
 
 ![scratch-windows-after](images/scratch-windows-after.png)
-
 *sau*
 
 Chúng ta cũng phải đổi tên con mèo của mình
@@ -832,11 +830,108 @@ Trong phần “Nhân vật”, hãy đảm bảo rằng Mona đang được ch�
 ![sk-gr-flag-2](images/sk-gr-flag-2.png)
 *Biểu tượng chú mèo mờ mờ nằm trong không gian làm việc cho chúng ta biết rằng chúng ta đang làm việc với Nhân vật chú mèo Mona*
 
+Bây giờ, hãy chọn tùy chọn “Chuyển động” trong tab code. Bạn sẽ có thể thấy khối "di chuyển 10 bước".
 
 <details>
   <summary>English version</summary>
 
+  > Now, select the “Motion” option in the code tab. You should be able to see the “move 10 steps” block.
+</details>
+
+![move-10-steps](images/move-10-steps.png)
+
+Kéo khối này vào không gian làm việc để nó xếp chồng xuống dưới khối trước đó. Nhấp vào khối màu xanh lam có ghi “10” và thay đổi thành “150” bước. Các khối của bạn bây giờ sẽ trông như thế này.
+
+<details>
+  <summary>English version</summary>
+
+  > Drag the block to the workspace so it stacks down with the previous block. Click on the blue block where it says “10” and change it to “150” steps. Your blocks should now look like this.
+</details>
+
+![grfl-move150](images/grfl-move150.png)
+
+Liên kết các khối như thế này có nghĩa là chúng sẽ được chạy lần lượt.
+
+Bây giờ, chúng ta thêm tiếng nói cho Mona. Chọn tùy chọn "Âm thanh" trong tab code, sau đó kéo khối "bắt đầu âm thanh Meo" và xếp nó với các khối còn lại.
+
+Các khối sẽ trông như thế này.
+
+<details>
+  <summary>English version</summary>
+
+  > Linking blocks like this means they will be run one after the other.
   >
+  > Now, we need to give Mona a voice. Select the "Sound” option in the Code tab, then drag the “start sound Meow” block and stack it with the remaining blocks.
+  >
+  > The blocks will look like this now.
+</details>
+
+![grfl-move150-meo](images/grfl-move150-meo.png)
+
+Chúng ta cần thêm văn bản để mọi người có thể biết "Meo" nghĩa là gì. Hãy chuyển đến tùy chọn “Hiển thị” trong tab code và kéo nút “nói xin chào trong 2 giây” để liên kết với các khối khác.
+
+<details>
+  <summary>English version</summary>
+
+  > We need to add some text so everyone can know what Meow means. Let’s go to the “Looks” option in the Code tab and drag the “say Hello! for 2 seconds” block to link with other blocks.
+</details>
+
+![say-hello](images/say-hello.png)
+
+Các khối sẽ trông như thế này.
+
+<details>
+  <summary>English version</summary>
+
+  > The blocks should look like this.
+</details>
+
+![grfl-move150-meo-hello](images/grfl-move150-meo-hello.png)
+
+Chúng ta cũng cần thay đổi cài đặt của khối cuối cùng (khối màu tím). Nhấp vào nơi có nội dung "Xin chào!" và thay đổi văn bản thành "Tôi cần thức ăn!". Thay đổi giây “2” thành “1”. Sau khi bạn hoàn thành, các khối sẽ trông như thế này.
+
+<details>
+  <summary>English version</summary>
+
+  > We also need to change the last block’s settings (the purple block). Click where it says “Hello!” and change the text to “I need food!”. Change the “2” seconds to “1”. After you are done, the blocks should look like this.
+</details>
+
+![grfl-move150-meo-hello-finish](images/grfl-move150-meo-hello-finish.png)
+
+Dự án của chúng ta đã hoàn thành. Chúng ta chỉ cần lưu nó và chạy nó. Nhấp vào “Tập tin” trên thanh menu và chọn tùy chọn lưu. Đặt tên cho tệp dự án là “Dự án đầu tiên”. Nếu Scratch yêu cầu thay thế một tập tin khác có cùng tên, hãy làm điều đó.
+
+Bạn đã sẵn sàng để xem thành quả tuyệt vời của mình chưa? Tim tôi đập rộn ràng. Hãy nhấp vào lá cờ màu xanh lá cây bên cạnh dấu hiệu màu đỏ.
+
+<details>
+  <summary>English version</summary>
+
+  > Our project is complete. We just need to save it and run it. Click on “File” in the menu bar and select the save option. Name the project file “First Project”. If Scratch asks to replace another file with the same name, do it.
+  >
+  > Ready to see something amazing? My heart is racing with excitement. Let’s click on the green flag next to the red sign.
+</details>
+
+![grfl-redsg](images/grfl-redsg.png)
+
+Con mèo sẽ tiến lại gần Abby, kêu meo và nói: "Tôi cần thức ăn!"
+
+<details>
+  <summary>English version</summary>
+
+  > The cat will move closer to Abby, there will be a meow sound, and a popup will say, “I need food!”
+</details>
+
+![prj1-finish](images/prj1-finish.png)
+
+Chúng ta đã hoàn thành dự án đầu tiên của mình! Thật tuyệt vời, phải không? Con mèo Mona của chúng ta đã thành công khi nói với Abby rằng nó đói và Abby là một cô gái ngoan, vì vậy cô ấy sẽ lấy cho Mona một ít thức ăn ngay lập tức. Mọi người đều thắng!
+
+Trong chương này, chúng ta đã học cách cài đặt và thiết lập Scratch. Chúng ta đã tìm hiểu về các phần khác nhau của màn hình Scratch và chúng ta cũng đã thực hiện dự án dễ thương đầu tiên của mình. Peter Pan, đã đến lúc cho thứ lớn lao tiếp theo của chúng ta: hộp công cụ.
+
+<details>
+  <summary>English version</summary>
+
+  > We completed our first project! Feels amazing, right? Our cat Mona was successful in telling Abby she’s hungry and Abby is a good girl so she’ll get Mona some food right away. Everybody wins!
+  >
+  > In this chapter, we learned how to install and set up Scratch. We learned about the different parts of the Scratch screen and we also made our first cute project. Peter Pan, it’s time for our next big thing: toy boxes.
 </details>
 
 ## Liên kết hữu dụng
