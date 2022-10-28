@@ -790,7 +790,7 @@ Một điều cuối cùng chúng ta cần làm là di chuyển các nhân vật
   > One last thing we need to do is move the sprites to correct locations.
 </details>
 
-Click on Mona, and in the box “x”, enter -184. In the “y” box, enter -126.
+Nhấp vào Mona, và trong ô “x”, nhập -184. Trong ô “y”, nhập -126.
 
 <details>
   <summary>English version</summary>
@@ -800,8 +800,7 @@ Click on Mona, and in the box “x”, enter -184. In the “y” box, enter -12
 
 ![xy.png](images/xy.png)
 
-Click on Abby, then enter 29 in the box “x”, and enter -76 in the “y” box.
-After all this work, the stage will look like this:
+Nhấp vào Abby, sau đó nhập 29 vào ô “x” và nhập -76 vào ô “y”. Xong việc, Sân khấu sẽ trông như thế này:
 
 <details>
   <summary>English version</summary>
@@ -809,6 +808,29 @@ After all this work, the stage will look like this:
   > Click on Abby, then enter 29 in the box “x”, and enter -76 in the “y” box.
 After all this work, the stage will look like this:
 </details>
+
+![sankhau](images/sankhau.png)
+
+Bây giờ, đã đến lúc đưa ra hướng dẫn cho Mona bằng cách sử dụng các khối để nó có thể di chuyển về phía Abby và đòi ăn.
+
+<details>
+  <summary>English version</summary>
+
+  > Now, it is time to give instructions to Mona using blocks so it can move towards Abby and demand some food.
+</details>
+
+Trong phần “Nhân vật”, hãy đảm bảo rằng Mona đang được chọn. Từ tab code, hãy chọn tùy chọn "Sự kiện". Bạn sẽ thấy khối có nội dung “Khi bấm vào” ![icon-green-flag](images/icon-green-flag.png). Kéo nó vào không gian làm việc. Trong cuốn sách của chúng ta, hầu hết mọi dự án sẽ bắt đầu với khối này. Nó cho phép dự án chạy khi chúng ta nhấp vào lá cờ màu xanh lá cây trên màn hình Scratch.
+
+<details>
+  <summary>English version</summary>
+
+  > In the “sprites and backdrops” section, make sure Mona is selected. From the code tab, select the “Events” option. You will see the block that says “when clicked”. Drag it to the workspace. In our book, almost every project will start with this block. It makes the project run when we click the green flag on the Scratch screen.
+</details>
+
+![sk-gr-flag](images/sk-gr-flag.png)
+
+![sk-gr-flag-2 {caption=Biểu tượng chú mèo mờ mờ nằm trong không gian làm việc cho chúng ta biết rằng chúng ta đang làm việc với Nhân vật chú mèo Mona}](images/sk-gr-flag-2.png)
+
 
 <details>
   <summary>English version</summary>
