@@ -829,7 +829,8 @@ Trong phần “Nhân vật”, hãy đảm bảo rằng Mona đang được ch�
 
 ![sk-gr-flag](images/sk-gr-flag.png)
 
-![sk-gr-flag-2 {caption=Biểu tượng chú mèo mờ mờ nằm trong không gian làm việc cho chúng ta biết rằng chúng ta đang làm việc với Nhân vật chú mèo Mona}](images/sk-gr-flag-2.png)
+![sk-gr-flag-2](images/sk-gr-flag-2.png)
+*Biểu tượng chú mèo mờ mờ nằm trong không gian làm việc cho chúng ta biết rằng chúng ta đang làm việc với Nhân vật chú mèo Mona*
 
 
 <details>
