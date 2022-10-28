@@ -23,11 +23,11 @@ bởi Nathan Jobs
   + [Cài đặt và Thiết lập](03-Start-Scratching.md#cài-đặt-và-thiết-lập)
   + [Nền tảng trực tuyến](03-Start-Scratching.md#nền-tảng-trực-tuyến)
   + [Phần mềm ngoại tuyến - bạn nên sử dụng cách này](03-Start-Scratching.md#phần-mềm-ngoại-tuyến-bạn-nên-sử-dụng-cách-này)
-  + Take Command, Peter Pan!
-  + Things-That-Must-Not-Be-Done!
-  + The Concept of Give and Take
-  + Scratch Basics
-  + First Project
+  + [Hãy chỉ huy, Peter Pan!](03-Start-Scratching.md#hãy-chỉ-huy-peter-pan)
+  + [Những-Điều-Không-Nên-Làm!](03-Start-Scratching.md#những-điều-không-nên-làm)
+  + [Khái niệm Cho và Nhận](03-Start-Scratching.md#khái-niệm-cho-và-nhận)
+  + [Kiến thức cơ bản về Scratch](03-Start-Scratching.md#kiến-thức-cơ-bản-về-scratch)
+  + [Khởi động Scratch](03-Start-Scratching.md#khởi-động-scratch)
 - Chapter 4: Toolbox
   + Events
   + Control

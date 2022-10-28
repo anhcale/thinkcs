@@ -1,5 +1,7 @@
 # Chương 2: Legos kỹ thuật số
 
+[Download PDF](download/02-Digital-Legos.pdf)
+
 Bạn có thích Lego? Tôi yêu Lego khi tôi còn là một đứa trẻ, và giờ tôi vẫn yêu chúng. Tôi nghĩ mọi người đều yêu thích Lego. Chúng rất vui (mặc dù không thú vị lắm đối với những bà mẹ phải dọn dẹp sau khi bọn trẻ chơi xong). Bạn có thể lắp ráp thành những thứ thực sự thú vị bằng cách ghép các mảnh Lego lại với nhau, giống như đứa trẻ đang cố gắng lắp ráp một thứ gì đó trong hình dưới đây.
 
 <details>

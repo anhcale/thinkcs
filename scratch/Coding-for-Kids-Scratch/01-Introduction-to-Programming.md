@@ -1,5 +1,7 @@
 # Chương 1: Giới thiệu về lập trình
 
+[Download PDF](download/01-Introduction-to-Programming.pdf)
+
 Này nhóc. Xin chào, vâng, bạn đang ở đây à. Lại là tôi, Nat! Cho tôi hỏi bạn vài điều nhé.
 
 <details>

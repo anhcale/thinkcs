@@ -1,5 +1,7 @@
 # Chương 3: Bắt đầu Scratch nào!
 
+[Download PDF](download/03-Start-Scratching.pdf)
+
 Nhóc con, đã đến lúc chúng ta có một số cuộc phiêu lưu, hành động và vui chơi. Bạn có quyền cài đặt thứ gì đó trên máy tính gia đình hoặc thiết bị thông minh mà bạn thường sử dụng không? Nếu có, bạn nên làm theo các phần tiếp theo để cài đặt và thiết lập Scratch. Nếu không, bạn lại cần đến sự giúp đỡ của người lớn. Xin lỗi, tôi biết, tôi hứa đây là lần cuối cùng!
 
 <details>
@@ -937,4 +939,4 @@ Trong chương này, chúng ta đã học cách cài đặt và thiết lập Sc
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
 - [Trang trước](02-Digital-Legos.md) - Chương 2: Legos kỹ thuật số
-- [Trang kế](03-Start-Scratching.md) - Chapter 3: Start Scratching
+- [Trang kế](04-Toolbox.md) - Chương 4: Hộp công cụ
