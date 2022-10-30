@@ -50,7 +50,7 @@ RIGHT ARROW. Add the “move 10 steps” and “start sound MEOW” blocks
 so the stack looks like below.
 </details>
 
-![c4-1](images/c4-1-30.10.2022_09.02.40_REC.png)
+![c4-1](images/c4-1.png)
 
 Bây giờ, chúng ta sao chép ngăn xếp này bằng cách nhấp chuột phải vào khối trên cùng của ngăn xếp và chọn “Nhân bản”.
 
