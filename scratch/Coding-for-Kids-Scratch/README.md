@@ -28,10 +28,10 @@ bởi Nathan Jobs
   + [Khái niệm Cho và Nhận](03-Start-Scratching.md#khái-niệm-cho-và-nhận)
   + [Kiến thức cơ bản về Scratch](03-Start-Scratching.md#kiến-thức-cơ-bản-về-scratch)
   + [Khởi động Scratch](03-Start-Scratching.md#khởi-động-scratch)
-- Chapter 4: Toolbox
-  + Events
-  + Control
-  + Sensors
+- [Chapter 4: Toolbox](04-Toolbox.md)
+  + [Sự kiện](04-Toolbox.md#sự-kiện)
+  + [Điều khiển](04-Toolbox.md#điều-khiển)
+  + [Cảm biến](04-Toolbox.md#cảm-biến)
 - Chapter 5: Merry Go Round
   + Loop #1
   + Loop #2
