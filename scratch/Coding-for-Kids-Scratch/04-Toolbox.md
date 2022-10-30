@@ -1,5 +1,7 @@
 # Chương 4: Hộp công cụ
 
+[Download PDF](download/04-Toolbox.pdf)
+
 Mỗi hộ gia đình đều có một hộp dụng cụ. Hãy để tôi nói lại: mỗi người cha đều có một hộp dụng cụ mặc dù mẹ nói rằng họ không thể sửa chữa bất cứ thứ gì! Nhưng, các người cha rất thích hộp công cụ vì theo họ, chúng có những công cụ quan trọng có thể dùng để sửa chữa hoặc sáng tạo.
 
 <details>
@@ -187,7 +189,7 @@ Chọn nhân vật "Sữa" và thay đổi kích thước của nó thành 50 v�
 values to 199 and 60.
 </details>
 
-![c4-milk](images/c4-milk-30.10.2022_10.15.27_REC.png)
+![c4-milk](images/c4-milk.png)
 
 Bây giờ, chọn nhân vật “Con mèo” và thêm các khối theo thứ tự sau.
    1. Thêm khối “khi nhấn phím `phím trắng`” (tab code >> “Sự kiện”). Thay đổi `phím trắng` bằng `mũi tên phải`.
