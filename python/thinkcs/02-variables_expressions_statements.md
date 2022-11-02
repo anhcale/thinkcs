@@ -1072,4 +1072,4 @@ print("Hrs=", hours, "  mins=", minutes,
 ## Liên kết hữu dụng
 - [Mục lục](README.md)
 - [Trang trước](01-way_of_the_program.md) - Cách thức của chương trình
-- [Trang kế](03-hello_little_turtles.md) - Hello, little turtles!
+- [Trang kế](03-hello_little_turtles.md) - Xin chào, những chú rùa con!
