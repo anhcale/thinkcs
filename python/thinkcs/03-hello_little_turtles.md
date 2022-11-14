@@ -311,3 +311,127 @@ Hi Paris.  Please come to my party on Saturday!
   > - If there are items still to be processed, the loop variable is updated to refer to the next item in the list. This means, in this case, that the loop body is executed here 7 times, and each time `f` will refer to a different friend.
   > - At the end of each execution of the body of the loop, Python returns to the `for` statement, to see if there are more items to be handled, and to assign the next one to `f`.
 </details>
+
+## Luồng thực thi của vòng lặp for
+
+Khi chương trình thực thi, trình thông dịch luôn theo dõi câu lệnh nào được thực thi. Chúng ta gọi đây là **luồng điều khiển**, của **luồng thực thi** của chương trình. Khi con người thực hiện các chương trình, họ thường sử dụng ngón tay của mình để lần lượt chỉ vào từng câu lệnh. Vì vậy, chúng ta có thể coi luồng điều khiển là “ngón tay di chuyển của Python”.
+
+Luồng điều khiển cho đến nay đã được thực hiện nghiêm ngặt từ trên xuống dưới, mỗi lần một tuyên bố. Vòng lặp `for` thay đổi điều này.
+
+<details>
+  <summary>English version</summary>
+
+  > As a program executes, the interpreter always keeps track of which statement is about to be executed. We call this the **control flow**, of the **flow of execution** of the program. When humans execute programs, they often use their finger to point to each statement in turn. So we could think of control flow as “Python’s moving finger”.
+  >
+  > Control flow until now has been strictly top to bottom, one statement at a time. The `for` loop changes this.
+</details>
+
+> Lưu đồ của vòng lặp for
+> Luồng điều khiển thường dễ hình dung và dễ hiểu nếu chúng ta vẽ sơ đồ. Điều này cho thấy các bước chính xác và logic về cách thực thi câu lệnh for.
+> ![python-for-loop-diagram](images/python-for-loop-diagram.png)
+
+<details>
+  <summary>English version</summary>
+
+  > Flowchart of a for loop
+  > Control flow is often easy to visualize and understand if we draw a flowchart. This shows the exact steps and logic of how the for statement executes.
+</details>
+
+## Vòng lặp đơn giản hóa chương trình rùa của chúng ta
+
+Để vẽ một hình vuông, chúng ta muốn làm những điều tương tự bốn lần - di chuyển con rùa và quay. Trước đây chúng ta đã sử dụng 8 dòng để vẽ `alex` bốn cạnh của một hình vuông. Chúng ta sẽ thực hiện điều này hoàn toàn tương tự, nhưng chỉ sử dụng ba dòng:
+
+<details>
+  <summary>English version</summary>
+
+  > To draw a square we’d like to do the same thing four times — move the turtle, and turn. We previously used 8 lines to have `alex` draw the four sides of a square. This does exactly the same, but using just three lines:
+</details>
+
+```python
+for i in [0,1,2,3]:
+    alex.forward(50)
+    alex.left(90)
+```
+
+Một số nhận xét:
+- Mặc dù "tiết kiệm một số dòng mã" có thể thuận tiện, nhưng nó không phải là vấn đề lớn ở đây. Điều quan trọng hơn nhiều là chúng ta đã tìm thấy "mẫu lặp lại" của các câu lệnh và tổ chức lại chương trình của chúng ta để lặp lại mẫu. Tìm kiếm các phần và bằng cách nào đó sắp xếp các chương trình của chúng ta xung quanh các phần đó là một kỹ năng quan trọng trong tư duy tính toán.
+- Các giá trị [0,1,2,3] được cung cấp để làm cho phần thân của vòng lặp thực thi 4 lần. Chúng ta có thể đã sử dụng bốn giá trị bất kỳ, nhưng đây là những giá trị thông thường để sử dụng. Trên thực tế, chúng phổ biến đến mức Python cung cấp cho chúng ta các đối tượng đặc biệt tích hợp sẵn `range`:
+
+<details>
+  <summary>English version</summary>
+
+  > Some observations:
+  > - While “saving some lines of code” might be convenient, it is not the big deal here. What is much more important is that we’ve found a “repeating pattern” of statements, and reorganized our program to repeat the pattern. Finding the chunks and somehow getting our programs arranged around those chunks is a vital skill in computational thinking.
+  > - The values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values, but these are the conventional ones to use. In fact, they are so popular that Python gives us special built-in `range` objects:
+</details>
+
+```python
+for i in range(4):
+    # Executes the body with i = 0, then 1, then 2, then 3
+for x in range(10):
+    # Sets x to each of ... [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+- Các nhà khoa học máy tính thích đếm từ 0!
+- `range` có thể cung cấp một chuỗi giá trị cho biến vòng lặp trong vòng lặp `for`. Chúng bắt đầu từ 0 và trong những trường hợp này không bao gồm 4 hoặc 10.
+- Mẹo nhỏ của chúng ta trước đó để đảm bảo rằng `alex` đã thực hiện lượt cuối cùng để hoàn thành 360 độ đã thành công: nếu chúng ta không làm điều đó, thì chúng ta sẽ không thể sử dụng một vòng lặp cho cạnh thứ tư của hình vuông. Nó sẽ trở thành một "trường hợp đặc biệt", khác với các trường hợp khác. Khi có thể, chúng ta muốn làm cho mã của mình phù hợp với một mẫu chung hơn là phải tạo một trường hợp đặc biệt.
+
+<details>
+  <summary>English version</summary>
+
+  > - Computer scientists like to count from 0!
+  > - `range` can deliver a sequence of values to the loop variable in the `for` loop. They start at 0, and in these cases do not include the 4 or the 10.
+  > - Our little trick earlier to make sure that `alex` did the final turn to complete 360 degrees has paid off: if we had not done that, then we would not have been able to use a loop for the fourth side of the square. It would have become a “special case”, different from the other sides. When possible, we’d much prefer to make our code fit a general pattern, rather than have to create a special case.
+</details>
+
+Vì vậy, để lặp lại điều gì đó bốn lần, một lập trình viên Python giỏi sẽ làm điều này:
+
+<details>
+  <summary>English version</summary>
+
+  > - So to repeat something four times, a good Python programmer would do this:
+</details>
+
+```python
+for i in range(4):
+    alex.forward(50)
+    alex.left(90)
+```
+
+Bây giờ, bạn sẽ có thể xem cách chương trình trước đây của chúng ta thay đổi để `tess` cũng có thể sử dụng vòng lặp `for` để vẽ tam giác đều của cô ấy.
+
+Nhưng bây giờ, điều gì sẽ xảy ra nếu chúng tôi thực hiện thay đổi này?
+
+<details>
+  <summary>English version</summary>
+
+  > By now you should be able to see how to change our previous program so that `tess` can also use a `for` loop to draw her equilateral triangle.
+  >
+  > But now, what would happen if we made this change?
+</details>
+
+```python
+for c in ["yellow", "red", "purple", "blue"]:
+    alex.color(c)
+    alex.forward(50)
+    alex.left(90)
+```
+
+Một biến cũng có thể được gán một giá trị là một danh sách. Vì vậy, danh sách cũng có thể được sử dụng trong các tình huống tổng quát hơn, không chỉ trong vòng lặp for. Đoạn mã trên có thể được viết lại như thế này:
+
+<details>
+  <summary>English version</summary>
+
+  > A variable can also be assigned a value that is a list. So lists can also be used in more general situations, not only in the for loop. The code above could be rewritten like this:
+</details>
+
+```python
+# Assign a list to a variable
+clrs = ["yellow", "red", "purple", "blue"]
+for c in clrs:
+    alex.color(c)
+    alex.forward(50)
+    alex.left(90)
+```
+
+## Một số phương thức turtle và thủ thuật khác
